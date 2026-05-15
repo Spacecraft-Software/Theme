@@ -1,4 +1,4 @@
-# Steelbore Zsh Theme
+# Spacecraft Software Zsh Theme
 # Add to ~/.zshrc
 
 autoload -Uz vcs_info

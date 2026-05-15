@@ -1,14 +1,14 @@
-# Installing Steelbore Theme for Ghostty
+# Installing Spacecraft Software Theme for Ghostty
 
-**Version:** 1.0 | **Author:** Mohamed Hammd | **License:** GPL3+ | **Website:** [steelbore.com](https://steelbore.com)
+**Version:** 1.0 | **Author:** Mohamed Hammad | **License:** GPL3+ | **Website:** [SpacecraftSoftware.org](https://SpacecraftSoftware.org)
 
 ## Installation
 
-1. Copy the `steelbore` file to your Ghostty themes directory:
+1. Copy the `spacecraft-software` file to your Ghostty themes directory:
    - **Linux:** `~/.config/ghostty/themes/`
    - **macOS:** `~/Library/Application Support/com.mitchellh.ghostty/themes/`
 2. In your Ghostty config, set:
    ```
-   theme = steelbore
+   theme = spacecraft-software
    ```
 3. Restart Ghostty.

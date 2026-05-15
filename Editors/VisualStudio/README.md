@@ -1,6 +1,6 @@
-# Steelbore Theme for Visual Studio (IDE)
+# Spacecraft Software Theme for Visual Studio (IDE)
 
-Bring the industrial Steelbore aesthetic to Visual Studio 2022.
+Bring the industrial Spacecraft Software aesthetic to Visual Studio 2022.
 
 ## Installation
 
@@ -8,13 +8,13 @@ Bring the industrial Steelbore aesthetic to Visual Studio 2022.
 1. Open Visual Studio 2022.
 2. Go to **Tools > Options**.
 3. Navigate to **Environment > Fonts and Colors**.
-4. Use the **Color Theme Designer** (if installed) to import the `Steelbore.vstheme` file.
+4. Use the **Color Theme Designer** (if installed) to import the `Spacecraft-Software.vstheme` file.
 
 ### Packaging (VSIX)
 To create a distributable `.vsix` package:
 1. Open the [Color Theme Designer](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.ColorThemeDesigner) extension in VS.
 2. Create an **Empty VSIX Project**.
-3. Add `Steelbore.vstheme` as an asset in the `source.extension.vsixmanifest`.
+3. Add `Spacecraft-Software.vstheme` as an asset in the `source.extension.vsixmanifest`.
 4. Build the project to generate the VSIX.
 
 ## Palette

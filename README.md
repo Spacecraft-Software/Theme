@@ -1,5 +1,5 @@
 # 🌐 Supported Environments
-Steelbore is designed to be a ubiquitous, cross-platform experience. It provides configurations and installation scripts for the following environments:
+Spacecraft Software is designed to be a ubiquitous, cross-platform experience. It provides configurations and installation scripts for the following environments:
 
 ### Desktop Environments & Window Managers (Linux)
 - **GNOME**: (GTK4/Libadwaita)
@@ -24,16 +24,16 @@ Steelbore is designed to be a ubiquitous, cross-platform experience. It provides
 We have provided automated POSIX-compliant shell scripts to deploy the theme across Linux/Unix systems, alongside manual templates for Windows and specialized software.
 
 ### 1. Linux / Unix (Automated)
-The easiest way to apply Steelbore to your Linux desktop, window managers, and browsers is using the all-in-one script.
+The easiest way to apply Spacecraft Software to your Linux desktop, window managers, and browsers is using the all-in-one script.
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Steelbore.git
-cd Steelbore/Scripts
-./install-steelbore.sh
+git clone https://github.com/Spacecraft-Software/Theme.git
+cd Spacecraft-Software/Scripts
+./install-spacecraft-software.sh
 ```
 
 This script will:
-- Install the **Steelbore GTK theme** (GNOME, XFCE, MATE, COSMIC).
+- Install the **Spacecraft Software GTK theme** (GNOME, XFCE, MATE, COSMIC).
 - Apply the **.colors scheme** to KDE Plasma.
 - Set up the **Starship prompt** configuration.
 - Install **terminal color presets** (Alacritty, Kitty, Konsole, Windows Terminal).
@@ -44,31 +44,31 @@ This script will:
 ## 🪟 Windows Installation
 For Windows users, we provide:
 - **Microsoft Office**: VBA macros to recolor Word, Excel, and PowerPoint.
-- **Windows Terminal**: JSON templates for the Steelbore color scheme.
+- **Windows Terminal**: JSON templates for the Spacecraft Software color scheme.
 
 ## 🛠️ Manual Installation
 If you prefer to install components individually, follow the instructions below.
 ### Desktop Environments & Window Managers
 
 #### GNOME (GTK4/Libadwaita)
-1. Copy the `steelbore-dark` folder to `~/.themes/`.
-2. Run: `gsettings set org.gnome.desktop.interface gtk-theme 'steelbore-dark'`
+1. Copy the `spacecraft-software-dark` folder to `~/.themes/`.
+2. Run: `gsettings set org.gnome.desktop.interface gtk-theme 'spacecraft-software-dark'`
 
 #### KDE Plasma
-1. Copy the `steelbore.colors` file to `~/.local/share/color-schemes/`.
+1. Copy the `spacecraft-software.colors` file to `~/.local/share/color-schemes/`.
 2. Go to **System Settings** > **Appearance** > **Colors** > **Import**.
 
 #### COSMIC DE
-1. Copy the `steelbore.ron` file to `~/.config/cosmic/themes/`.
-2. Run: `cosmic-settings theme set steelbore`
+1. Copy the `spacecraft-software.ron` file to `~/.config/cosmic/themes/`.
+2. Run: `cosmic-settings theme set spacecraft-software`
 
 #### XFCE4 & MATE
-1. Copy the `steelbore-dark` folder to `~/.themes/`.
-2. Run: `xfconf-query -c xsettings -p /Net/ThemeName -s "steelbore-dark"`
+1. Copy the `spacecraft-software-dark` folder to `~/.themes/`.
+2. Run: `xfconf-query -c xsettings -p /Net/ThemeName -s "spacecraft-software-dark"`
 
 #### Tiling WMs (LeftWM/Niri)
-- **LeftWM**: Copy `steelbore.toml` to `~/.config/leftwm/themes/`.
-- **Niri**: Copy `steelbore.ron` to `~/.config/niri/themes/`.
+- **LeftWM**: Copy `spacecraft-software.toml` to `~/.config/leftwm/themes/`.
+- **Niri**: Copy `spacecraft-software.ron` to `~/.config/niri/themes/`.
 
 ### Terminals & Shells
 
@@ -79,21 +79,21 @@ eval "$(starship init bash)"
 ```
 
 #### POSIX Shells (Bash, Zsh, Fish)
-Source the `steelbore.sh` script in your shell profile:
+Source the `spacecraft-software.sh` script in your shell profile:
 ```bash
-source /path/to/Steelbore/Scripts/steelbore.sh
+source /path/to/Spacecraft-Software/Scripts/spacecraft-software.sh
 ```
 
 #### Nushell
 Add to your `env.nu` or `config.nu`:
 ```nushell
-source /path/to/Steelbore/Scripts/steelbore.nu
+source /path/to/Spacecraft-Software/Scripts/spacecraft-software.nu
 ```
 
 #### Ion (Redox OS)
 Add to your `ion.rc`:
 ```bash
-source /path/to/Steelbore/Scripts/steelbore.ion
+source /path/to/Spacecraft-Software/Scripts/spacecraft-software.ion
 ```
 
 #### Linux TTY
@@ -105,21 +105,21 @@ sudo ./install-tty-colors.sh
 ### Developer Tools & Applications
 
 #### VS Code
-Install the **Steelbore** extension from the VS Code Marketplace.
+Install the **Spacecraft Software** extension from the VS Code Marketplace.
 
 #### JetBrains IDEs
-1. Copy `steelbore.theme` to `~/.config/JetBrains/<VERSION>/colors/`.
+1. Copy `spacecraft-software.theme` to `~/.config/JetBrains/<VERSION>/colors/`.
 2. Select it in **Settings** > **Editor** > **Color Scheme**.
 
 #### Browsers (Chrome / Edge / Firefox)
-Install the **Steelbore** theme from the respective extension stores (Chrome Web Store / Firefox Add-ons).
+Install the **Spacecraft Software** theme from the respective extension stores (Chrome Web Store / Firefox Add-ons).
 
 #### Microsoft Office (VBA)
 1. Open Word/Excel/PowerPoint and press `Alt+F11`.
-2. Insert a new module and paste the contents of `Steelbore-Office-Theme.bas`.
-3. Run the `Apply_Steelbore_Theme` macro.
+2. Insert a new module and paste the contents of `Spacecraft-Software-Office-Theme.bas`.
+3. Run the `Apply_Spacecraft_Software_Theme` macro.
 
 #### Sandboxed & Containerized Apps
-- **Flatpak**: `flatpak override --user --env=GTK_THEME=steelbore-dark`
-- **Snap**: `snap set-theme steelbore-dark`
-- **AppImage**: Set `GTK_THEME=steelbore-dark` before execution.
+- **Flatpak**: `flatpak override --user --env=GTK_THEME=spacecraft-software-dark`
+- **Snap**: `snap set-theme spacecraft-software-dark`
+- **AppImage**: Set `GTK_THEME=spacecraft-software-dark` before execution.

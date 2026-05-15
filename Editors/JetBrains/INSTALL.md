@@ -1,6 +1,6 @@
-# Installing Steelbore Theme for JetBrains IDEs
+# Installing Spacecraft Software Theme for JetBrains IDEs
 
-**Version:** 1.0 | **Author:** Mohamed Hammd | **License:** GPL3+ | **Website:** [steelbore.com](https://steelbore.com)
+**Version:** 1.0 | **Author:** Mohamed Hammad | **License:** GPL3+ | **Website:** [SpacecraftSoftware.org](https://SpacecraftSoftware.org)
 
 Supports: IntelliJ IDEA, RustRover, GoLand, PyCharm, WebStorm, CLion, Rider, and all JetBrains IDEs.
 
@@ -8,9 +8,9 @@ Supports: IntelliJ IDEA, RustRover, GoLand, PyCharm, WebStorm, CLion, Rider, and
 
 1. Open your JetBrains IDE.
 2. Go to **Settings** → **Plugins** → ⚙️ gear icon → **Install Plugin from Disk…**
-3. Select the `steelbore-jetbrains-theme.zip` (or `.jar`) file.
+3. Select the `spacecraft-software-jetbrains-theme.zip` (or `.jar`) file.
 4. Restart the IDE.
-5. Go to **Settings** → **Appearance & Behavior** → **Appearance** → **Theme** → select **Steelbore**.
+5. Go to **Settings** → **Appearance & Behavior** → **Appearance** → **Theme** → select **Spacecraft Software**.
 
 ## Method 2: Manual Installation
 

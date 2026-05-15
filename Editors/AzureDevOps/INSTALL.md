@@ -1,12 +1,12 @@
-# Installing Steelbore Theme for Azure DevOps
+# Installing Spacecraft Software Theme for Azure DevOps
 
-**Version:** 1.0 | **Author:** Mohamed Hammd | **License:** GPL3+ | **Website:** [steelbore.com](https://steelbore.com)
+**Version:** 1.0 | **Author:** Mohamed Hammad | **License:** GPL3+ | **Website:** [SpacecraftSoftware.org](https://SpacecraftSoftware.org)
 
 ## Method 1: Install from VSIX (Organization)
 
 1. Go to your Azure DevOps organization's **Manage Extensions** page.
 2. Click **Browse Marketplace** or **Upload extension**.
-3. Upload the `SteelBore.steelbore-theme-1.0.0.vsix` file.
+3. Upload the `SteelBore.spacecraft-software-theme-1.0.0.vsix` file.
 4. Install the extension to your organization.
 5. The theme will become available under your Azure DevOps settings.
 

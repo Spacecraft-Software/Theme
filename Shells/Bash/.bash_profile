@@ -1,7 +1,7 @@
-# Steelbore Bash Theme
+# Spacecraft Software Bash Theme
 # Add to ~/.bashrc
 
-steelbore_prompt() {
+spacecraft_software_prompt() {
     local EXIT_CODE=$?
     
     # Color Definitions (TrueColor)
@@ -29,4 +29,4 @@ steelbore_prompt() {
     PS1="${C_DIR}\w${GIT_BRANCH} ${STATUS_COLOR}${STATUS_SYMBOL} ${C_RESET}"
 }
 
-PROMPT_COMMAND=steelbore_prompt
+PROMPT_COMMAND=spacecraft_software_prompt

@@ -1,11 +1,11 @@
-# Steelbore for JetBrains IDEs
+# Spacecraft Software for JetBrains IDEs
 
-This plugin implements the Steelbore Standard (Charcoal Navy, Midnight Blue, Vibrant Orange) across the entire JetBrains IDE interface.
+This plugin implements the Spacecraft Software Standard (Charcoal Navy, Midnight Blue, Vibrant Orange) across the entire JetBrains IDE interface.
 
 ## 📁 Source Structure
 - `src/META-INF/plugin.xml`: Plugin descriptor.
-- `src/steelbore.theme.json`: UI component color overrides.
-- `src/steelbore.xml`: Editor color scheme.
+- `src/spacecraft-software.theme.json`: UI component color overrides.
+- `src/spacecraft-software.xml`: Editor color scheme.
 
 ## 🚀 How to Load / Test
 1. Open **IntelliJ IDEA** (or any JetBrains IDE).

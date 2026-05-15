@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <metacity_theme>
 <info>
-  <name>Steelbore</name>
-  <author>Mohamed Hammd</author>
-  <copyright>Mohamed Hammd (GPL3+)</copyright>
-  <description>Industrial Void Navy Theme. Version: 1.0. URL: https://steelbore.com</description>
+  <name>Spacecraft Software</name>
+  <author>Mohamed Hammad</author>
+  <copyright>Mohamed Hammad (GPL3+)</copyright>
+  <description>Industrial Void Navy Theme. Version: 1.0. URL: https://SpacecraftSoftware.org</description>
 </info>
 
 <frame_geometry name="normal" has_title="true" title_scale="medium" parent="normal_base">

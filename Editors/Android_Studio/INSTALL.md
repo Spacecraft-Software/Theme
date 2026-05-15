@@ -1,14 +1,14 @@
-# Installing Steelbore Theme for Android Studio
+# Installing Spacecraft Software Theme for Android Studio
 
-**Version:** 1.0 | **Author:** Mohamed Hammd | **License:** GPL3+ | **Website:** [steelbore.com](https://steelbore.com)
+**Version:** 1.0 | **Author:** Mohamed Hammad | **License:** GPL3+ | **Website:** [SpacecraftSoftware.org](https://SpacecraftSoftware.org)
 
 ## Method 1: Install from JAR/ZIP (Recommended)
 
 1. Open Android Studio.
 2. Go to **Settings** → **Plugins** → ⚙️ gear icon → **Install Plugin from Disk…**
-3. Select the `steelbore-androidstudio-theme.zip` (or `.jar`) file.
+3. Select the `spacecraft-software-androidstudio-theme.zip` (or `.jar`) file.
 4. Restart Android Studio.
-5. Go to **Settings** → **Appearance & Behavior** → **Appearance** → **Theme** → select **Steelbore Android**.
+5. Go to **Settings** → **Appearance & Behavior** → **Appearance** → **Theme** → select **Spacecraft Software Android**.
 
 ## Method 2: Manual Installation
 

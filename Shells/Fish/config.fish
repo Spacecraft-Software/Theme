@@ -1,4 +1,4 @@
-# Steelbore Fish Theme
+# Spacecraft Software Fish Theme
 # Add to ~/.config/fish/config.fish
 
 # Syntax Highlighting Colors

@@ -1,6 +1,6 @@
 {
     "workbench.colorCustomizations": {
-        "[Steelbore]": {
+        "[Spacecraft Software]": {
             "editor.background": "#000027",
             "editor.foreground": "#D98E32",
             "activityBar.background": "#000027",
@@ -21,7 +21,7 @@
         }
     },
     "editor.tokenColorCustomizations": {
-        "[Steelbore]": {
+        "[Spacecraft Software]": {
             "textMateRules": [
                 {
                     "scope": [

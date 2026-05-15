@@ -1,6 +1,6 @@
 # 🛡️ Security Policy
 
-Security is an uncompromising priority of the **Steelbore Standard**. We build software under the assumption of a hostile environment. Our architecture mandates memory-safe languages (primarily Rust), aggressive compiler-level hardening (ASLR, CFI), and strict privacy boundaries.
+Security is an uncompromising priority of the **Spacecraft Software Standard**. We build software under the assumption of a hostile environment. Our architecture mandates memory-safe languages (primarily Rust), aggressive compiler-level hardening (ASLR, CFI), and strict privacy boundaries.
 
 If you believe you have found a vulnerability that compromises these principles, we want to know immediately.
 
@@ -17,11 +17,11 @@ We currently provide security updates for the following versions:
 
 ## 🎯 Scope of Vulnerabilities
 
-We consider the following to be critical security vulnerabilities within the context of the Steelbore Standard:
+We consider the following to be critical security vulnerabilities within the context of the Spacecraft Software Standard:
 
 - **Memory Safety Violations**: Buffer overflows, use-after-free, or memory leaks (especially in any `unsafe` Rust blocks or alternative languages like Zig/C).
 - **Mitigation Bypasses**: Any method that reliably bypasses Address Space Layout Randomization (ASLR), Control-Flow Integrity (CFI), or stack-smashing protections.
-- **Privacy Violations (PFA)**: Any unintended network calls, telemetry, local storage exposure, or data exfiltration. Steelbore is strictly offline unless explicitly configured by the user.
+- **Privacy Violations (PFA)**: Any unintended network calls, telemetry, local storage exposure, or data exfiltration. Spacecraft Software is strictly offline unless explicitly configured by the user.
 - **Cryptographic Failures**: Weak algorithms, improper key storage, or insecure random number generation.
 - **Privilege Escalation**: Any script or application component that allows a user to execute code outside of their intended permission scope.
 
@@ -42,7 +42,7 @@ We consider the following to be critical security vulnerabilities within the con
 To help us resolve the issue as rapidly as possible, please include:
 1. A detailed description of the vulnerability and its potential impact.
 2. Exact steps to reproduce the issue (a proof-of-concept script or video is highly appreciated).
-3. The OS, environment, and version of Steelbore you are testing against.
+3. The OS, environment, and version of Spacecraft Software you are testing against.
 4. Any potential mitigations you suggest.
 
 ## ⏱️ Response and Disclosure Timeline

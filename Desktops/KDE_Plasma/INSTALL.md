@@ -1,16 +1,16 @@
-# Installing Steelbore Theme for KDE Plasma
+# Installing Spacecraft Software Theme for KDE Plasma
 
-**Version:** 1.0 | **Author:** Mohamed Hammd | **License:** GPL3+ | **Website:** [steelbore.com](https://steelbore.com)
+**Version:** 1.0 | **Author:** Mohamed Hammad | **License:** GPL3+ | **Website:** [SpacecraftSoftware.org](https://SpacecraftSoftware.org)
 
 ## Installation
 
 ### Color Scheme
-1. Copy `Steelbore.colors` to:
+1. Copy `Spacecraft-Software.colors` to:
    - `~/.local/share/color-schemes/`
-2. Open **System Settings** → **Appearance** → **Colors** → select **Steelbore**.
+2. Open **System Settings** → **Appearance** → **Colors** → select **Spacecraft Software**.
 
 ### Wallpaper
-1. Copy `Steelbore_wallpaper_blue.png` to `~/Pictures/`.
+1. Copy `Spacecraft_Software_wallpaper_blue.png` to `~/Pictures/`.
 2. Right-click desktop → **Configure Desktop** → select the wallpaper.
 
 ### Konsole Terminal

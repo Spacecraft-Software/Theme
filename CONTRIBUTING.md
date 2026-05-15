@@ -1,9 +1,9 @@
-# Contributing to Steelbore
-Welcome to the Steelbore project! We appreciate your interest in contributing. To maintain the highest levels of security, performance, and user respect, all contributions must strictly adhere to the Steelbore Standard outlined below.
+# Contributing to Spacecraft Software
+Welcome to the Spacecraft Software! We appreciate your interest in contributing. To maintain the highest levels of security, performance, and user respect, all contributions must strictly adhere to the Spacecraft Software Standard outlined below.
 
 By submitting a Pull Request, you agree to abide by these guidelines.
 
-## 🛡️ The Steelbore Standard: Core Priorities
+## 🛡️ The Spacecraft Software Standard: Core Priorities
 Every line of code and design choice must be evaluated against these three uncompromising priorities:
 
 1. Memory-Safety (MSL): Memory-Safe Languages are mandatory. Rust is our primary and preferred language. If an alternative language must be used (e.g., Flutter/Dart or Zig), you must implement hardened memory-safety measures, strictly enforcing ASLR (Address Space Layout Randomization) and CFI (Control-Flow Integrity).
@@ -30,7 +30,7 @@ All shell scripts (installers, automation, wrappers) must be strictly POSIX-comp
 - **Measurements**: The Metric system is mandatory. Do not use imperial units in code, documentation, or the UI.
 
 ## 🔒 Privacy Friendly App (PFA) Principles
-Steelbore respects the user. Any application, script, or extension built under this standard must be a PFA:
+Spacecraft Software respects the user. Any application, script, or extension built under this standard must be a PFA:
 
 - **No Tracking or Ads**: The software must absolutely not contain any advertising, telemetry, analytics, or tracking mechanisms. User data is never shared with third parties.
 - **Minimal Permissions**: Request only the absolute minimum OS or browser permissions required for the tool to function.
@@ -41,7 +41,7 @@ Steelbore respects the user. Any application, script, or extension built under t
 When contributing UI elements, themes, or front-end code, the following standards apply:
 
 ### Visual Language
-- **Material Design**: UI architecture and component layouts must follow the principles of Material Design (grid systems, elevation, spacing) while utilizing the Steelbore "Void Navy" industrial palette.
+- **Material Design**: UI architecture and component layouts must follow the principles of Material Design (grid systems, elevation, spacing) while utilizing the Spacecraft Software "Void Navy" industrial palette.
 - **Accessibility**: All color combinations must be strictly WCAG compliant for contrast ratios to prevent eye strain and ensure legibility.
 
 ### Fonts
@@ -61,9 +61,9 @@ Key Bindings: Applications must support a dual-navigation approach:
 
 ## 🛠️ Pull Request Process
 1. Fork the repository and create your branch from `main`.
-2. Ensure your code adheres to every point of the Steelbore Standard above.
+2. Ensure your code adheres to every point of the Spacecraft Software Standard above.
 3. If you've added or changed scripts, verify they are POSIX compliant.
 4. Make sure your commit messages are clear, descriptive, and reference any relevant issue numbers.
 5. Submit your PR with a detailed summary of your changes. Ensure the SPDX identifier is present in any new files.
 
-By building to the Steelbore standard, we create tools that are unbreakable, private, and fiercely efficient. Thank you for contributing.
+By building to the Spacecraft Software standard, we create tools that are unbreakable, private, and fiercely efficient. Thank you for contributing.

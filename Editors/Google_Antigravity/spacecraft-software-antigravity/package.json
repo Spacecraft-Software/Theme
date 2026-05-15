@@ -1,0 +1,33 @@
+{
+    "name": "spacecraft-software-antigravity",
+    "displayName": "Spacecraft Software Theme (Antigravity)",
+    "description": "A high-contrast, industrial dark theme for Google Antigravity.",
+    "version": "1.0.0",
+    "publisher": "SteelBore",
+    "author": "Mohamed Hammad",
+    "license": "GPL3+",
+    "icon": "icon.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Spacecraft-Software/Theme"
+    },
+    "bugs": {
+        "url": "https://github.com/Spacecraft-Software/Theme/issues"
+    },
+    "homepage": "https://github.com/Spacecraft-Software/Theme",
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Spacecraft Software",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Spacecraft-Software-color-theme.json"
+            }
+        ]
+    }
+}

@@ -1,11 +1,11 @@
-# Steelbore for Android Studio
+# Spacecraft Software for Android Studio
 
-Steelbore Standard theme specifically for Android Studio.
+Spacecraft Software Standard theme specifically for Android Studio.
 
 ## 📁 Source Structure
 - `src/META-INF/plugin.xml`: Plugin descriptor.
-- `src/steelbore-android.theme.json`: UI theme overrides.
-- `src/steelbore-android.xml`: Editor color scheme.
+- `src/spacecraft-software-android.theme.json`: UI theme overrides.
+- `src/spacecraft-software-android.xml`: Editor color scheme.
 
 ## 🚀 Installation
 1. Open **Android Studio**.

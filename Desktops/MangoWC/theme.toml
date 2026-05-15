@@ -1,12 +1,12 @@
 # Version: 1.0
-# Author: Mohamed Hammd
+# Author: Mohamed Hammad
 # License: GPL3+
-# URL: https://steelbore.com
+# URL: https://SpacecraftSoftware.org
 
-# Steelbore MangoWC Theme
+# Spacecraft Software MangoWC Theme
 
 [Theme]
-name = "Steelbore"
+name = "Spacecraft Software"
 
 [Colors]
 bg_color = "#000027"

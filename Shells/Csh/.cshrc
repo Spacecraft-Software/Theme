@@ -1,4 +1,4 @@
-# Steelbore Csh Theme
+# Spacecraft Software Csh Theme
 # Add to ~/.cshrc
 
 # Colors (ANSI Escape Sequences)

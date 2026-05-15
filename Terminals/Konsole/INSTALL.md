@@ -1,11 +1,11 @@
-# Installing Steelbore Theme for Konsole (KDE)
+# Installing Spacecraft Software Theme for Konsole (KDE)
 
-**Version:** 1.0 | **Author:** Mohamed Hammd | **License:** GPL3+ | **Website:** [steelbore.com](https://steelbore.com)
+**Version:** 1.0 | **Author:** Mohamed Hammad | **License:** GPL3+ | **Website:** [SpacecraftSoftware.org](https://SpacecraftSoftware.org)
 
 ## Installation
 
-1. Copy `Steelbore.colorscheme` to:
+1. Copy `Spacecraft-Software.colorscheme` to:
    - `~/.local/share/konsole/`
 2. Open Konsole → **Settings** → **Edit Current Profile** → **Appearance**.
-3. Select **Steelbore** from the color scheme list.
+3. Select **Spacecraft Software** from the color scheme list.
 4. Click **Apply**.

@@ -1,5 +1,5 @@
-# Steelbore Nushell Module
-# Save to ~/.config/nushell/steelbore.nu
+# Spacecraft Software Nushell Module
+# Save to ~/.config/nushell/spacecraft-software.nu
 
 export def main [] { return {
     separator: "#6272A4"

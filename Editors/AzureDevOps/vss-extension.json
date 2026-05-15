@@ -1,16 +1,16 @@
 {
     "manifestVersion": 1,
-    "id": "steelbore-theme",
+    "id": "spacecraft-software-theme",
     "version": "1.0.0",
-    "name": "Steelbore Theme",
+    "name": "Spacecraft Software Theme",
     "description": "Industrial dark theme for Azure DevOps boards and pipelines.",
-    "publisher": "Mohamed Hammd",
+    "publisher": "Mohamed Hammad",
     "icons": {
         "default": "icon.png"
     },
     "links": {
         "home": {
-            "uri": "https://steelbore.com"
+            "uri": "https://SpacecraftSoftware.org"
         }
     },
     "categories": [
@@ -24,14 +24,14 @@
     ],
     "contributions": [
         {
-            "id": "steelbore-dark-theme",
+            "id": "spacecraft-software-dark-theme",
             "type": "ms.vss-web.theme",
-            "description": "Steelbore Dark Theme",
+            "description": "Spacecraft Software Dark Theme",
             "targets": [
                 "ms.vss-web.theme-collection"
             ],
             "properties": {
-                "name": "Steelbore",
+                "name": "Spacecraft Software",
                 "uiTheme": "dark",
                 "variables": {
                     "background-color": "#000027",

@@ -1,6 +1,6 @@
-# Steelbore Azure DevOps Theme
+# Spacecraft Software Azure DevOps Theme
 
-Port of the Steelbore aesthetic to Azure DevOps.
+Port of the Spacecraft Software aesthetic to Azure DevOps.
 
 ## Packaging
 
