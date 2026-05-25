@@ -1,0 +1,16 @@
+{
+  "name": "Steelbore",
+  "description": "Canonical Spacecraft Software color theme — The Steelbore Standard §9.1",
+  "version": "1.0",
+  "spdx-license-identifier": "GPL-3.0-or-later",
+  "copyright": "Copyright (C) 2026 Mohamed Hammad & Spacecraft Software",
+  "source": "https://Standard.SpacecraftSoftware.org/",
+  "tokens": {
+    "background": { "palette": "Void Navy",      "hex": "#000027", "rgb": [0, 0, 39]      },
+    "foreground": { "palette": "Molten Amber",   "hex": "#D98E32", "rgb": [217, 142, 50]  },
+    "accent":     { "palette": "Steel Blue",     "hex": "#4B7EB0", "rgb": [75, 126, 176]  },
+    "success":    { "palette": "Radium Green",   "hex": "#50FA7B", "rgb": [80, 250, 123]  },
+    "error":      { "palette": "Red Oxide",      "hex": "#FF5C5C", "rgb": [255, 92, 92]   },
+    "info":       { "palette": "Liquid Coolant", "hex": "#8BE9FD", "rgb": [139, 233, 253] }
+  }
+}
