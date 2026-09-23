@@ -1,0 +1,60 @@
+{
+  "manifest_version": 2,
+  "version": "2.0",
+  "name": "Steelbore NavyWhite High Contrast",
+  "description": "Steelbore NavyWhite High Contrast \u2014 the \u00a711.1.1 high-contrast Spacecraft Software theme for Zen Browser.",
+  "author": "Mohamed Hammad",
+  "developer": {
+    "name": "Mohamed Hammad",
+    "url": "https://SpacecraftSoftware.org"
+  },
+  "homepage_url": "https://SpacecraftSoftware.org",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "spacecraft-steelbore-navywhite-high-contrast-zen@SpacecraftSoftware.org",
+      "strict_min_version": "63.0"
+    }
+  },
+  "theme": {
+    "colors": {
+      "frame": "#E7E5E0",
+      "frame_inactive": "#1C2433",
+      "tab_background_text": "#1C2433",
+      "toolbar": "#F4F3F1",
+      "toolbar_text": "#111827",
+      "toolbar_field": "#D4D2CD",
+      "toolbar_field_text": "#111827",
+      "toolbar_field_border": "#1C2433",
+      "toolbar_field_focus": "#D4D2CD",
+      "toolbar_field_border_focus": "#1F4A73",
+      "toolbar_field_highlight": "#1F4A73",
+      "toolbar_field_highlight_text": "#E7E5E0",
+      "toolbar_top_separator": "#1C2433",
+      "toolbar_bottom_separator": "#E7E5E0",
+      "tab_line": "#1F4A73",
+      "tab_loading": "#1F4A73",
+      "tab_selected": "#F4F3F1",
+      "tab_text": "#111827",
+      "ntp_background": "#E7E5E0",
+      "ntp_text": "#111827",
+      "popup": "#F4F3F1",
+      "popup_text": "#111827",
+      "popup_border": "#1C2433",
+      "popup_highlight": "#1F4A73",
+      "popup_highlight_text": "#E7E5E0",
+      "sidebar": "#E7E5E0",
+      "sidebar_text": "#111827",
+      "sidebar_border": "#1C2433",
+      "sidebar_highlight": "#1F4A73",
+      "sidebar_highlight_text": "#E7E5E0",
+      "bookmark_text": "#111827",
+      "button_background_hover": "#F4F3F1",
+      "button_background_active": "#1F4A73",
+      "icons": "#111827",
+      "icons_attention": "#16452F"
+    },
+    "properties": {
+      "color_scheme": "light"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "spacecraft-software-solarized-light-theme",
+  "type": "ms.vss-web.theme",
+  "description": "Solarized Light theme for Azure DevOps",
+  "targets": [
+    "ms.vss-web.theme-collection"
+  ],
+  "properties": {
+    "name": "Solarized Light",
+    "uiTheme": "light",
+    "variables": {
+      "background-color": "#FDF6E3",
+      "primary-text-color": "#657B83",
+      "secondary-text-color": "#6C71C4",
+      "primary-button-background": "#268BD2",
+      "primary-button-text": "#FDF6E3",
+      "accent-color": "#268BD2",
+      "error-color": "#DC322F",
+      "success-color": "#859900",
+      "warning-color": "#B58900",
+      "link-color": "#6C71C4",
+      "border-color": "#6C71C4",
+      "card-background": "#EEE8D5",
+      "input-background": "#EEE8D5"
+    }
+  }
+}

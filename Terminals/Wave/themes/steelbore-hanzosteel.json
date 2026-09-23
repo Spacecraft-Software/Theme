@@ -1,0 +1,30 @@
+{
+  "name": "Steelbore Hanzo Steel",
+  "version": "2.0",
+  "author": "Mohamed Hammad",
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://SpacecraftSoftware.org",
+  "dark": true,
+  "terminal": {
+    "background": "#000000",
+    "foreground": "#F5F0E6",
+    "cursor": "#FCD612",
+    "selectionBackground": "#FCD612",
+    "black": "#000000",
+    "red": "#F04A44",
+    "green": "#5BE49B",
+    "yellow": "#F7D02A",
+    "blue": "#F4B900",
+    "magenta": "#FCD612",
+    "cyan": "#FCD612",
+    "white": "#F5F0E6",
+    "brightBlack": "#F4B900",
+    "brightRed": "#F04A44",
+    "brightGreen": "#5BE49B",
+    "brightYellow": "#F7D02A",
+    "brightBlue": "#F4B900",
+    "brightMagenta": "#FCD612",
+    "brightCyan": "#FCD612",
+    "brightWhite": "#F5F0E6"
+  }
+}

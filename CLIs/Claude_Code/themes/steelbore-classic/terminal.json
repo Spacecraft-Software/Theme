@@ -1,0 +1,23 @@
+{
+  "name": "Steelbore Classic",
+  "background": "#000027",
+  "foreground": "#D98E32",
+  "cursorColor": "#8BE9FD",
+  "selectionBackground": "#4B7EB040",
+  "black": "#000027",
+  "red": "#FF5C5C",
+  "green": "#50FA7B",
+  "yellow": "#D98E32",
+  "blue": "#4B7EB0",
+  "purple": "#4B7EB0",
+  "cyan": "#8BE9FD",
+  "white": "#D98E32",
+  "brightBlack": "#4B7EB0",
+  "brightRed": "#FF5C5C",
+  "brightGreen": "#50FA7B",
+  "brightYellow": "#D98E32",
+  "brightBlue": "#4B7EB0",
+  "brightPurple": "#4B7EB0",
+  "brightCyan": "#8BE9FD",
+  "brightWhite": "#D98E32"
+}

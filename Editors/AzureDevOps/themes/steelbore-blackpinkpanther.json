@@ -1,0 +1,27 @@
+{
+  "id": "spacecraft-software-steelbore-blackpinkpanther-theme",
+  "type": "ms.vss-web.theme",
+  "description": "Steelbore BlackPinkPanther theme for Azure DevOps",
+  "targets": [
+    "ms.vss-web.theme-collection"
+  ],
+  "properties": {
+    "name": "Steelbore BlackPinkPanther",
+    "uiTheme": "dark",
+    "variables": {
+      "background-color": "#000000",
+      "primary-text-color": "#FFFFFF",
+      "secondary-text-color": "#FF46AA",
+      "primary-button-background": "#F400A1",
+      "primary-button-text": "#000000",
+      "accent-color": "#F400A1",
+      "error-color": "#FF6B6B",
+      "success-color": "#5BE49B",
+      "warning-color": "#FFC857",
+      "link-color": "#FF46AA",
+      "border-color": "#FF46AA",
+      "card-background": "#2E0020",
+      "input-background": "#18000E"
+    }
+  }
+}

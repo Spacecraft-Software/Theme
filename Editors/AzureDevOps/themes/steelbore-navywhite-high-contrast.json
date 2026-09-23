@@ -1,0 +1,27 @@
+{
+  "id": "spacecraft-software-steelbore-navywhite-high-contrast-theme",
+  "type": "ms.vss-web.theme",
+  "description": "Steelbore NavyWhite High Contrast theme for Azure DevOps",
+  "targets": [
+    "ms.vss-web.theme-collection"
+  ],
+  "properties": {
+    "name": "Steelbore NavyWhite High Contrast",
+    "uiTheme": "light",
+    "variables": {
+      "background-color": "#E7E5E0",
+      "primary-text-color": "#111827",
+      "secondary-text-color": "#1C2433",
+      "primary-button-background": "#1F4A73",
+      "primary-button-text": "#E7E5E0",
+      "accent-color": "#1F4A73",
+      "error-color": "#7E1C1A",
+      "success-color": "#16452F",
+      "warning-color": "#5A3F09",
+      "link-color": "#1C2433",
+      "border-color": "#1C2433",
+      "card-background": "#F4F3F1",
+      "input-background": "#D4D2CD"
+    }
+  }
+}

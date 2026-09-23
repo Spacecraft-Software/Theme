@@ -1,0 +1,60 @@
+{
+  "manifest_version": 2,
+  "version": "2.0",
+  "name": "Steelbore Green Alt High Contrast",
+  "description": "Steelbore Green Alt High Contrast \u2014 the \u00a711.1.1 high-contrast Spacecraft Software theme for Mozilla Firefox.",
+  "author": "Mohamed Hammad",
+  "developer": {
+    "name": "Mohamed Hammad",
+    "url": "https://SpacecraftSoftware.org"
+  },
+  "homepage_url": "https://SpacecraftSoftware.org",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "spacecraft-steelbore-greenalt-high-contrast-firefox@SpacecraftSoftware.org",
+      "strict_min_version": "63.0"
+    }
+  },
+  "theme": {
+    "colors": {
+      "frame": "#0D0208",
+      "frame_inactive": "#25B85F",
+      "tab_background_text": "#25B85F",
+      "toolbar": "#08180C",
+      "toolbar_text": "#D7F5E0",
+      "toolbar_field": "#030303",
+      "toolbar_field_text": "#D7F5E0",
+      "toolbar_field_border": "#25B85F",
+      "toolbar_field_focus": "#030303",
+      "toolbar_field_border_focus": "#00FF41",
+      "toolbar_field_highlight": "#00FF41",
+      "toolbar_field_highlight_text": "#0D0208",
+      "toolbar_top_separator": "#25B85F",
+      "toolbar_bottom_separator": "#0D0208",
+      "tab_line": "#00FF41",
+      "tab_loading": "#00FF41",
+      "tab_selected": "#08180C",
+      "tab_text": "#D7F5E0",
+      "ntp_background": "#0D0208",
+      "ntp_text": "#D7F5E0",
+      "popup": "#08180C",
+      "popup_text": "#D7F5E0",
+      "popup_border": "#25B85F",
+      "popup_highlight": "#00FF41",
+      "popup_highlight_text": "#0D0208",
+      "sidebar": "#0D0208",
+      "sidebar_text": "#D7F5E0",
+      "sidebar_border": "#25B85F",
+      "sidebar_highlight": "#00FF41",
+      "sidebar_highlight_text": "#0D0208",
+      "bookmark_text": "#D7F5E0",
+      "button_background_hover": "#08180C",
+      "button_background_active": "#00FF41",
+      "icons": "#D7F5E0",
+      "icons_attention": "#00B81C"
+    },
+    "properties": {
+      "color_scheme": "dark"
+    }
+  }
+}

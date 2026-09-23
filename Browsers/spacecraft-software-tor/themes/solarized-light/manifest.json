@@ -1,0 +1,60 @@
+{
+  "manifest_version": 2,
+  "version": "2.0",
+  "name": "Solarized Light",
+  "description": "Solarized Light \u2014 a non-conforming \u00a711.5 fidelity palette, reproduced verbatim, for Tor Browser.",
+  "author": "Mohamed Hammad",
+  "developer": {
+    "name": "Mohamed Hammad",
+    "url": "https://SpacecraftSoftware.org"
+  },
+  "homepage_url": "https://SpacecraftSoftware.org",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "spacecraft-solarized-light-tor@SpacecraftSoftware.org",
+      "strict_min_version": "63.0"
+    }
+  },
+  "theme": {
+    "colors": {
+      "frame": "#FDF6E3",
+      "frame_inactive": "#6C71C4",
+      "tab_background_text": "#6C71C4",
+      "toolbar": "#EEE8D5",
+      "toolbar_text": "#657B83",
+      "toolbar_field": "#EEE8D5",
+      "toolbar_field_text": "#657B83",
+      "toolbar_field_border": "#6C71C4",
+      "toolbar_field_focus": "#EEE8D5",
+      "toolbar_field_border_focus": "#2AA198",
+      "toolbar_field_highlight": "#268BD2",
+      "toolbar_field_highlight_text": "#FDF6E3",
+      "toolbar_top_separator": "#6C71C4",
+      "toolbar_bottom_separator": "#FDF6E3",
+      "tab_line": "#268BD2",
+      "tab_loading": "#268BD2",
+      "tab_selected": "#EEE8D5",
+      "tab_text": "#657B83",
+      "ntp_background": "#FDF6E3",
+      "ntp_text": "#657B83",
+      "popup": "#EEE8D5",
+      "popup_text": "#657B83",
+      "popup_border": "#6C71C4",
+      "popup_highlight": "#268BD2",
+      "popup_highlight_text": "#FDF6E3",
+      "sidebar": "#FDF6E3",
+      "sidebar_text": "#657B83",
+      "sidebar_border": "#6C71C4",
+      "sidebar_highlight": "#268BD2",
+      "sidebar_highlight_text": "#FDF6E3",
+      "bookmark_text": "#657B83",
+      "button_background_hover": "#EEE8D5",
+      "button_background_active": "#268BD2",
+      "icons": "#657B83",
+      "icons_attention": "#859900"
+    },
+    "properties": {
+      "color_scheme": "light"
+    }
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "manifest_version": 3,
+  "version": "2.0",
+  "name": "Steelbore Blue High Contrast",
+  "description": "The Spacecraft Software Steelbore palette family for Google Chrome \u2014 Steelbore Blue High Contrast (Steelbore Blue palette).",
+  "author": "Mohamed Hammad",
+  "homepage_url": "https://Theme.SpacecraftSoftware.org/",
+  "theme": {
+    "colors": {
+      "frame": [
+        10,
+        16,
+        36
+      ],
+      "frame_inactive": [
+        10,
+        16,
+        36
+      ],
+      "frame_incognito": [
+        27,
+        36,
+        54
+      ],
+      "frame_incognito_inactive": [
+        27,
+        36,
+        54
+      ],
+      "toolbar": [
+        15,
+        23,
+        40
+      ],
+      "toolbar_text": [
+        230,
+        240,
+        255
+      ],
+      "tab_text": [
+        230,
+        240,
+        255
+      ],
+      "tab_background_text": [
+        102,
+        163,
+        255
+      ],
+      "tab_background_text_inactive": [
+        102,
+        163,
+        255
+      ],
+      "bookmark_text": [
+        230,
+        240,
+        255
+      ],
+      "ntp_background": [
+        10,
+        16,
+        36
+      ],
+      "ntp_text": [
+        230,
+        240,
+        255
+      ],
+      "ntp_link": [
+        102,
+        163,
+        255
+      ],
+      "ntp_header": [
+        15,
+        23,
+        40
+      ],
+      "ntp_section": [
+        15,
+        23,
+        40
+      ],
+      "ntp_section_text": [
+        230,
+        240,
+        255
+      ],
+      "ntp_section_link": [
+        102,
+        163,
+        255
+      ],
+      "button_background": [
+        15,
+        23,
+        40
+      ],
+      "omnibox_background": [
+        27,
+        36,
+        54
+      ],
+      "omnibox_text": [
+        230,
+        240,
+        255
+      ],
+      "toolbar_button_icon": [
+        230,
+        240,
+        255
+      ]
+    },
+    "tints": {
+      "buttons": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "properties": {
+      "ntp_background_alignment": "bottom"
+    }
+  }
+}

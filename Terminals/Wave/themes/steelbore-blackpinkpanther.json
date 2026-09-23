@@ -1,0 +1,30 @@
+{
+  "name": "Steelbore BlackPinkPanther",
+  "version": "2.0",
+  "author": "Mohamed Hammad",
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://SpacecraftSoftware.org",
+  "dark": true,
+  "terminal": {
+    "background": "#000000",
+    "foreground": "#FFFFFF",
+    "cursor": "#F400A1",
+    "selectionBackground": "#F400A1",
+    "black": "#000000",
+    "red": "#FF6B6B",
+    "green": "#5BE49B",
+    "yellow": "#FFC857",
+    "blue": "#FF46AA",
+    "magenta": "#F400A1",
+    "cyan": "#F400A1",
+    "white": "#FFFFFF",
+    "brightBlack": "#FF46AA",
+    "brightRed": "#FF6B6B",
+    "brightGreen": "#5BE49B",
+    "brightYellow": "#FFC857",
+    "brightBlue": "#FF46AA",
+    "brightMagenta": "#F400A1",
+    "brightCyan": "#F400A1",
+    "brightWhite": "#FFFFFF"
+  }
+}

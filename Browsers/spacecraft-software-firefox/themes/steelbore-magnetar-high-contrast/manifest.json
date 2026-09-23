@@ -1,0 +1,60 @@
+{
+  "manifest_version": 2,
+  "version": "2.0",
+  "name": "Steelbore Magnetar High Contrast",
+  "description": "Steelbore Magnetar High Contrast \u2014 the \u00a711.1.1 high-contrast Spacecraft Software theme for Mozilla Firefox.",
+  "author": "Mohamed Hammad",
+  "developer": {
+    "name": "Mohamed Hammad",
+    "url": "https://SpacecraftSoftware.org"
+  },
+  "homepage_url": "https://SpacecraftSoftware.org",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "spacecraft-steelbore-magnetar-high-contrast-firefox@SpacecraftSoftware.org",
+      "strict_min_version": "63.0"
+    }
+  },
+  "theme": {
+    "colors": {
+      "frame": "#141418",
+      "frame_inactive": "#FC8AFF",
+      "tab_background_text": "#FC8AFF",
+      "toolbar": "#1E1E22",
+      "toolbar_text": "#FFFFFF",
+      "toolbar_field": "#28282D",
+      "toolbar_field_text": "#FFFFFF",
+      "toolbar_field_border": "#FC8AFF",
+      "toolbar_field_focus": "#28282D",
+      "toolbar_field_border_focus": "#FDBBFF",
+      "toolbar_field_highlight": "#F07BFF",
+      "toolbar_field_highlight_text": "#141418",
+      "toolbar_top_separator": "#FC8AFF",
+      "toolbar_bottom_separator": "#141418",
+      "tab_line": "#F07BFF",
+      "tab_loading": "#F07BFF",
+      "tab_selected": "#1E1E22",
+      "tab_text": "#FFFFFF",
+      "ntp_background": "#141418",
+      "ntp_text": "#FFFFFF",
+      "popup": "#1E1E22",
+      "popup_text": "#FFFFFF",
+      "popup_border": "#FC8AFF",
+      "popup_highlight": "#F07BFF",
+      "popup_highlight_text": "#141418",
+      "sidebar": "#141418",
+      "sidebar_text": "#FFFFFF",
+      "sidebar_border": "#FC8AFF",
+      "sidebar_highlight": "#F07BFF",
+      "sidebar_highlight_text": "#141418",
+      "bookmark_text": "#FFFFFF",
+      "button_background_hover": "#1E1E22",
+      "button_background_active": "#F07BFF",
+      "icons": "#FFFFFF",
+      "icons_attention": "#5BE49B"
+    },
+    "properties": {
+      "color_scheme": "dark"
+    }
+  }
+}

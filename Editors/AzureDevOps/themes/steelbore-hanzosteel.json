@@ -1,0 +1,27 @@
+{
+  "id": "spacecraft-software-steelbore-hanzosteel-theme",
+  "type": "ms.vss-web.theme",
+  "description": "Steelbore Hanzo Steel theme for Azure DevOps",
+  "targets": [
+    "ms.vss-web.theme-collection"
+  ],
+  "properties": {
+    "name": "Steelbore Hanzo Steel",
+    "uiTheme": "dark",
+    "variables": {
+      "background-color": "#000000",
+      "primary-text-color": "#F5F0E6",
+      "secondary-text-color": "#F4B900",
+      "primary-button-background": "#FCD612",
+      "primary-button-text": "#000000",
+      "accent-color": "#FCD612",
+      "error-color": "#F04A44",
+      "success-color": "#5BE49B",
+      "warning-color": "#F7D02A",
+      "link-color": "#F4B900",
+      "border-color": "#F4B900",
+      "card-background": "#1C1811",
+      "input-background": "#0C0A06"
+    }
+  }
+}

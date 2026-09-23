@@ -1,20 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="SpacecraftSoftware.SpacecraftSoftwareTheme.VisualStudio" Version="1.0.0" Language="en-US" Publisher="Mohamed Hammad" />
+    <Identity Id="SpacecraftSoftware.SpacecraftSoftwareTheme.VisualStudio" Version="2.0.0" Language="en-US" Publisher="Spacecraft-Software" />
     <DisplayName>Spacecraft Software Theme</DisplayName>
-    <Description xml:space="preserve">Industrial dark theme for Visual Studio 2022. Part of the Spacecraft Software Ecosystem.</Description>
+    <Description xml:space="preserve">The Steelbore palette family (The Steelbore Standard §11) for Visual Studio 2022 — Steelbore default, ten alternates, high-contrast siblings and the Solarized fidelity pair.</Description>
     <License>LICENSE</License>
     <Icon>icon.png</Icon>
     <MoreInfo>https://SpacecraftSoftware.org</MoreInfo>
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0,18.0)" />
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[17.0,18.0)" />
+    <InstallationTarget Id="Microsoft.VisualStudio.Enterprise" Version="[17.0,18.0)" />
   </Installation>
   <Dependencies>
     <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="4.5" />
   </Dependencies>
   <Assets>
-    <Asset Type="Microsoft.VisualStudio.VsTheme" Path="Spacecraft-Software.vstheme" />
+    <Asset Type="Microsoft.VisualStudio.VsTheme" Path="themes/steelbore.vstheme" />
+    <Asset Type="Microsoft.VisualStudio.VsTheme" Path="themes/steelbore-high-contrast.vstheme" />
+    <Asset Type="Microsoft.VisualStudio.VsTheme" Path="themes/steelbore-blue.vstheme" />
+    <Asset Type="Microsoft.VisualStudio.VsTheme" Path="themes/steelbore-blue-high-contrast.vstheme" />
+    <Asset Type="Microsoft.VisualStudio.VsTheme" Path="themes/steelbore-magnetar.vstheme" />
+    <Asset Type="Microsoft.VisualStudio.VsTheme" Path="themes/steelbore-magnetar-high-contrast.vstheme" />
+    <Asset Type="Microsoft.VisualStudio.VsTheme" Path="themes/steelbore-biolume.vstheme" />
+    <Asset Type="Microsoft.VisualStudio.VsTheme" Path="themes/steelbore-biolume-high-contrast.vstheme" />
+    <Asset Type="Microsoft.VisualStudio.VsTheme" Path="themes/steelbore-navywhite.vstheme" />
+    <Asset Type="Microsoft.VisualStudio.VsTheme" Path="themes/steelbore-navywhite-high-contrast.vstheme" />
+    <Asset Type="Microsoft.VisualStudio.VsTheme" Path="themes/tokyonight.vstheme" />
+    <Asset Type="Microsoft.VisualStudio.VsTheme" Path="themes/tokyonight-high-contrast.vstheme" />
+    <Asset Type="Microsoft.VisualStudio.VsTheme" Path="themes/steelbore-hanzosteel.vstheme" />
+    <Asset Type="Microsoft.VisualStudio.VsTheme" Path="themes/steelbore-hanzosteel-high-contrast.vstheme" />
+    <Asset Type="Microsoft.VisualStudio.VsTheme" Path="themes/steelbore-blackpinkpanther.vstheme" />
+    <Asset Type="Microsoft.VisualStudio.VsTheme" Path="themes/steelbore-blackpinkpanther-high-contrast.vstheme" />
+    <Asset Type="Microsoft.VisualStudio.VsTheme" Path="themes/steelbore-green.vstheme" />
+    <Asset Type="Microsoft.VisualStudio.VsTheme" Path="themes/steelbore-green-high-contrast.vstheme" />
+    <Asset Type="Microsoft.VisualStudio.VsTheme" Path="themes/steelbore-greenalt.vstheme" />
+    <Asset Type="Microsoft.VisualStudio.VsTheme" Path="themes/steelbore-greenalt-high-contrast.vstheme" />
+    <Asset Type="Microsoft.VisualStudio.VsTheme" Path="themes/steelbore-classic.vstheme" />
+    <Asset Type="Microsoft.VisualStudio.VsTheme" Path="themes/steelbore-classic-high-contrast.vstheme" />
+    <Asset Type="Microsoft.VisualStudio.VsTheme" Path="themes/solarized-dark.vstheme" />
+    <Asset Type="Microsoft.VisualStudio.VsTheme" Path="themes/solarized-light.vstheme" />
   </Assets>
 </PackageManifest>

@@ -1,0 +1,30 @@
+{
+  "name": "Solarized Light",
+  "version": "2.0",
+  "author": "Mohamed Hammad",
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://SpacecraftSoftware.org",
+  "dark": false,
+  "terminal": {
+    "background": "#FDF6E3",
+    "foreground": "#657B83",
+    "cursor": "#2AA198",
+    "selectionBackground": "#268BD2",
+    "black": "#FDF6E3",
+    "red": "#DC322F",
+    "green": "#859900",
+    "yellow": "#B58900",
+    "blue": "#6C71C4",
+    "magenta": "#268BD2",
+    "cyan": "#2AA198",
+    "white": "#657B83",
+    "brightBlack": "#6C71C4",
+    "brightRed": "#DC322F",
+    "brightGreen": "#859900",
+    "brightYellow": "#B58900",
+    "brightBlue": "#6C71C4",
+    "brightMagenta": "#268BD2",
+    "brightCyan": "#2AA198",
+    "brightWhite": "#657B83"
+  }
+}

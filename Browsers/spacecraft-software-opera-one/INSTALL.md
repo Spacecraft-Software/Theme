@@ -1,6 +1,10 @@
 # Installing Spacecraft Software Theme for Opera One / Opera Air
 
-**Version:** 1.0 | **Author:** Mohamed Hammad | **License:** GPL3+ | **Website:** [SpacecraftSoftware.org](https://SpacecraftSoftware.org)
+**Version:** 2.0 | **Author:** Mohamed Hammad | **License:** GPL-3.0-or-later | **Website:** [SpacecraftSoftware.org](https://SpacecraftSoftware.org)
+
+Every registered Steelbore theme ships as its own MV3 theme manifest under
+`themes/<slug>/manifest.json`. Opera installs exactly one theme per
+extension, so each theme is its own loadable folder and its own zip.
 
 ## Method 1: Load as Unpacked Extension (Recommended)
 
@@ -8,23 +12,38 @@
 2. Navigate to `opera://extensions`.
 3. Enable **Developer mode** (toggle in the top-right corner).
 4. Click **Load unpacked**.
-5. Select the `spacecraft-software-opera-one/` folder.
-6. The Spacecraft Software theme will be applied immediately.
+5. Select the `themes/<slug>/` folder for the theme you want — `themes/steelbore/` for the default.
+6. The theme is applied immediately.
 
 ## Method 2: Load from ZIP
 
 1. Open Opera One.
 2. Navigate to `opera://extensions`.
 3. Enable **Developer mode**.
-4. Drag and drop the `spacecraft-software-opera-one.zip` file onto the extensions page.
+4. Drag and drop `themes/spacecraft-software-opera-one-<slug>.zip` onto the extensions page.
 
-## Using Opera One Classic Theme (Alternative)
+## Using Opera's Classic Theme (Alternative)
 
-If you prefer to use Opera's built-in Classic Theme with Spacecraft Software colors:
+If you prefer Opera's built-in Classic Theme instead of the extension:
 
 1. Open **Easy Setup** (three-bar icon in the top-right).
 2. Select the **Classic** theme.
 3. Click **+** at the end of the wallpapers list → **Add your wallpaper**.
 4. Select `background.png` from this folder.
-5. Adjust the color slider toward the **cool** and **calm** end.
-6. Set to **Dark mode**.
+5. Match the colour slider and light/dark toggle to your chosen theme's
+   polarity (dark for every theme except `steelbore-navywhite` and
+   `solarized-light`).
+
+## Choosing a theme
+
+| Theme | Notes |
+|-------|-------|
+| `steelbore` | **default** |
+| `steelbore-high-contrast` | accessible-mode sibling (§18.1) |
+| `steelbore-blue`, `-magnetar`, `-biolume`, `-navywhite`, `tokyonight`, `-hanzosteel`, `-blackpinkpanther`, `-green`, `-greenalt` | nine alternates, each with a `-high-contrast` sibling |
+| `steelbore-classic` | legacy six-role palette (§11.2), with a `-high-contrast` sibling |
+| `solarized-dark`, `solarized-light` | **fidelity palette (§11.5) — non-conforming**, shipped for interoperability only, no high-contrast sibling |
+
+`steelbore` is the default. `steelbore-navywhite` and `solarized-light` are the
+family's only light-canvas themes. There is no mono variant here — a Chrome
+MV3 theme manifest is hex colours only.

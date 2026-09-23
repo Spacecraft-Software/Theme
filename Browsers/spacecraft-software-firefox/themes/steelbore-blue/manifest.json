@@ -1,0 +1,60 @@
+{
+  "manifest_version": 2,
+  "version": "2.0",
+  "name": "Steelbore Blue",
+  "description": "Steelbore Blue \u2014 a Spacecraft Software Steelbore palette theme for Mozilla Firefox.",
+  "author": "Mohamed Hammad",
+  "developer": {
+    "name": "Mohamed Hammad",
+    "url": "https://SpacecraftSoftware.org"
+  },
+  "homepage_url": "https://SpacecraftSoftware.org",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "spacecraft-steelbore-blue-firefox@SpacecraftSoftware.org",
+      "strict_min_version": "63.0"
+    }
+  },
+  "theme": {
+    "colors": {
+      "frame": "#0A1024",
+      "frame_inactive": "#3390FF",
+      "tab_background_text": "#3390FF",
+      "toolbar": "#0F1728",
+      "toolbar_text": "#E6F0FF",
+      "toolbar_field": "#1B2436",
+      "toolbar_field_text": "#E6F0FF",
+      "toolbar_field_border": "#3390FF",
+      "toolbar_field_focus": "#1B2436",
+      "toolbar_field_border_focus": "#FF8A4B",
+      "toolbar_field_highlight": "#0066FF",
+      "toolbar_field_highlight_text": "#0A1024",
+      "toolbar_top_separator": "#3390FF",
+      "toolbar_bottom_separator": "#0A1024",
+      "tab_line": "#0066FF",
+      "tab_loading": "#0066FF",
+      "tab_selected": "#0F1728",
+      "tab_text": "#E6F0FF",
+      "ntp_background": "#0A1024",
+      "ntp_text": "#E6F0FF",
+      "popup": "#0F1728",
+      "popup_text": "#E6F0FF",
+      "popup_border": "#3390FF",
+      "popup_highlight": "#0066FF",
+      "popup_highlight_text": "#0A1024",
+      "sidebar": "#0A1024",
+      "sidebar_text": "#E6F0FF",
+      "sidebar_border": "#3390FF",
+      "sidebar_highlight": "#0066FF",
+      "sidebar_highlight_text": "#0A1024",
+      "bookmark_text": "#E6F0FF",
+      "button_background_hover": "#0F1728",
+      "button_background_active": "#0066FF",
+      "icons": "#E6F0FF",
+      "icons_attention": "#28C76F"
+    },
+    "properties": {
+      "color_scheme": "dark"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Steelbore NavyWhite High Contrast",
+  "version": "2.0",
+  "author": "Mohamed Hammad",
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://SpacecraftSoftware.org",
+  "dark": false,
+  "terminal": {
+    "background": "#E7E5E0",
+    "foreground": "#111827",
+    "cursor": "#1F4A73",
+    "selectionBackground": "#1F4A73",
+    "black": "#E7E5E0",
+    "red": "#7E1C1A",
+    "green": "#16452F",
+    "yellow": "#5A3F09",
+    "blue": "#1C2433",
+    "magenta": "#1F4A73",
+    "cyan": "#1F4A73",
+    "white": "#111827",
+    "brightBlack": "#1C2433",
+    "brightRed": "#7E1C1A",
+    "brightGreen": "#16452F",
+    "brightYellow": "#5A3F09",
+    "brightBlue": "#1C2433",
+    "brightMagenta": "#1F4A73",
+    "brightCyan": "#1F4A73",
+    "brightWhite": "#111827"
+  }
+}

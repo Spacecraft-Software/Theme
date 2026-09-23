@@ -1,0 +1,23 @@
+{
+  "name": "Steelbore Hanzo Steel High Contrast",
+  "background": "#000000",
+  "foreground": "#F5F0E6",
+  "cursorColor": "#FCD612",
+  "selectionBackground": "#FCD61240",
+  "black": "#000000",
+  "red": "#FF8F8F",
+  "green": "#5BE49B",
+  "yellow": "#F7D02A",
+  "blue": "#F4B900",
+  "purple": "#FCD612",
+  "cyan": "#FCD612",
+  "white": "#F5F0E6",
+  "brightBlack": "#F4B900",
+  "brightRed": "#FF8F8F",
+  "brightGreen": "#5BE49B",
+  "brightYellow": "#F7D02A",
+  "brightBlue": "#F4B900",
+  "brightPurple": "#FCD612",
+  "brightCyan": "#FCD612",
+  "brightWhite": "#F5F0E6"
+}

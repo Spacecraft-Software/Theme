@@ -1,0 +1,8 @@
+{
+  "statusLine": {
+    "type": "command",
+    "command": "jq -r '\"\\u001b[1;97m[\\(.model.display_name)]\\u001b[0m \\u001b[34m\\(.context_window.used_percentage // 0)% context\\u001b[0m\"'",
+    "padding": 1
+  },
+  "theme": "dark"
+}

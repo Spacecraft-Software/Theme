@@ -1,0 +1,30 @@
+{
+  "name": "Tokyo Night High Contrast",
+  "version": "2.0",
+  "author": "Mohamed Hammad",
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://SpacecraftSoftware.org",
+  "dark": true,
+  "terminal": {
+    "background": "#1A1B26",
+    "foreground": "#C0CAF5",
+    "cursor": "#7DCFFF",
+    "selectionBackground": "#97B6F9",
+    "black": "#1A1B26",
+    "red": "#F998AA",
+    "green": "#9ECE6A",
+    "yellow": "#E0AF68",
+    "blue": "#BB9AF7",
+    "magenta": "#97B6F9",
+    "cyan": "#7DCFFF",
+    "white": "#C0CAF5",
+    "brightBlack": "#BB9AF7",
+    "brightRed": "#F998AA",
+    "brightGreen": "#9ECE6A",
+    "brightYellow": "#E0AF68",
+    "brightBlue": "#BB9AF7",
+    "brightMagenta": "#97B6F9",
+    "brightCyan": "#7DCFFF",
+    "brightWhite": "#C0CAF5"
+  }
+}

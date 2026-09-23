@@ -1,0 +1,127 @@
+{
+  "manifest_version": 3,
+  "version": "2.0",
+  "name": "Steelbore Green High Contrast",
+  "description": "The Spacecraft Software Steelbore palette family for Trivalent \u2014 Steelbore Green High Contrast (Steelbore Green palette).",
+  "author": "Mohamed Hammad",
+  "homepage_url": "https://Theme.SpacecraftSoftware.org/",
+  "theme": {
+    "colors": {
+      "frame": [
+        13,
+        2,
+        8
+      ],
+      "frame_inactive": [
+        13,
+        2,
+        8
+      ],
+      "frame_incognito": [
+        3,
+        3,
+        3
+      ],
+      "frame_incognito_inactive": [
+        3,
+        3,
+        3
+      ],
+      "toolbar": [
+        8,
+        24,
+        12
+      ],
+      "toolbar_text": [
+        0,
+        255,
+        65
+      ],
+      "tab_text": [
+        0,
+        255,
+        65
+      ],
+      "tab_background_text": [
+        37,
+        184,
+        95
+      ],
+      "tab_background_text_inactive": [
+        37,
+        184,
+        95
+      ],
+      "bookmark_text": [
+        0,
+        255,
+        65
+      ],
+      "ntp_background": [
+        13,
+        2,
+        8
+      ],
+      "ntp_text": [
+        0,
+        255,
+        65
+      ],
+      "ntp_link": [
+        37,
+        184,
+        95
+      ],
+      "ntp_header": [
+        8,
+        24,
+        12
+      ],
+      "ntp_section": [
+        8,
+        24,
+        12
+      ],
+      "ntp_section_text": [
+        0,
+        255,
+        65
+      ],
+      "ntp_section_link": [
+        37,
+        184,
+        95
+      ],
+      "button_background": [
+        8,
+        24,
+        12
+      ],
+      "omnibox_background": [
+        3,
+        3,
+        3
+      ],
+      "omnibox_text": [
+        0,
+        255,
+        65
+      ],
+      "toolbar_button_icon": [
+        0,
+        255,
+        65
+      ]
+    },
+    "tints": {
+      "buttons": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "properties": {
+      "ntp_background_alignment": "bottom"
+    }
+  }
+}

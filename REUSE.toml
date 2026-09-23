@@ -1,0 +1,51 @@
+# SPDX-FileCopyrightText: 2026 Mohamed Hammad <Mohamed.Hammad@SpacecraftSoftware.org>
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+# REUSE (https://reuse.software) coverage for files that cannot carry an inline
+# SPDX header — generated JSON themes, browser manifests, images, archives,
+# .skill bundles — plus the document-class prose (Standard §4.1.1 / §4.3).
+# Files that do carry an inline header keep it ("closest" precedence).
+version = 1
+
+# Default: everything is software-class GPL-3.0-or-later.
+[[annotations]]
+path = "**"
+precedence = "closest"
+SPDX-FileCopyrightText = "2026 Mohamed Hammad <Mohamed.Hammad@SpacecraftSoftware.org>"
+SPDX-License-Identifier = "GPL-3.0-or-later"
+
+# Document-class prose (§4.1.1): READMEs, install guides, governance docs.
+[[annotations]]
+path = [
+  "README.md",
+  "**/README.md",
+  "**/INSTALL.md",
+  "AGENTS.md",
+  "CLAUDE.md",
+  "CONTRIBUTING.md",
+  "SECURITY.md",
+  "NOTICE.md",
+  "CREDITS.md",
+  "Themes.md",
+  "tools/README.md",
+]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Mohamed Hammad <Mohamed.Hammad@SpacecraftSoftware.org>"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+# Third-party-derived colour values carried inside the palette contract are
+# credited in CREDITS.md (§15.3): Tokyo Night (enkia, MIT), Solarized
+# (Ethan Schoonover, MIT). The TOML itself is GPL-3.0-or-later.
+[[annotations]]
+path = ["Steelbore/steelbore.toml", "AI/Claude/steelbore-color-palette/assets/steelbore.toml"]
+precedence = "override"
+SPDX-FileCopyrightText = ["2026 Mohamed Hammad <Mohamed.Hammad@SpacecraftSoftware.org>", "Tokyo Night colour values: enkia (MIT)", "Solarized colour values: Ethan Schoonover (MIT)"]
+SPDX-License-Identifier = "GPL-3.0-or-later"
+
+# The Starship theme files keep the catppuccin-powerline preset verbatim
+# (Catppuccin contributors, MIT) with the palette table substituted.
+[[annotations]]
+path = ["Shells/Starship/themes/**", "tools/steelbore_themes/renderers/starship.py"]
+precedence = "override"
+SPDX-FileCopyrightText = ["2026 Mohamed Hammad <Mohamed.Hammad@SpacecraftSoftware.org>", "Catppuccin Powerline preset: Catppuccin contributors (MIT)"]
+SPDX-License-Identifier = "GPL-3.0-or-later"

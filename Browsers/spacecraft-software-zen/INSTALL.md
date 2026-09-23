@@ -1,23 +1,42 @@
 # Installing Spacecraft Software Theme for Zen Browser
 
-**Version:** 1.0 | **Author:** Mohamed Hammad | **License:** GPL3+ | **Website:** [SpacecraftSoftware.org](https://SpacecraftSoftware.org)
+**Version:** 2.0 | **Author:** Mohamed Hammad | **License:** GPL-3.0-or-later | **Website:** [SpacecraftSoftware.org](https://SpacecraftSoftware.org)
+
+Every registered Steelbore palette family theme ships as its own WebExtension
+theme manifest under `themes/<slug>/manifest.json`, plus a matching one-theme
+`themes/zen-<slug>.xpi` archive. `steelbore` (Steelbore Modern) is the
+default; pick any other theme the same way.
 
 ## Method 1: Install from XPI (Recommended)
 
 1. Open Zen Browser.
 2. Navigate to `about:addons` (or press `Ctrl+Shift+A`).
 3. Click the gear icon ⚙️ → **Install Add-on From File…**
-4. Select the `spacecraft-software-zen-theme.xpi` file.
+4. Select `themes/zen-steelbore.xpi` (or another theme's `.xpi`).
 5. Click **Add** when prompted.
 
 ## Method 2: Temporary Installation (Developer)
 
 1. Open Zen Browser and navigate to `about:debugging#/runtime/this-firefox`.
 2. Click **Load Temporary Add-on…**
-3. Select the `manifest.json` file from the `spacecraft-software-zen/` folder.
+3. Select `themes/<slug>/manifest.json` — e.g. `themes/steelbore/manifest.json`.
 4. The theme will be applied immediately (until browser restart).
+
+## Choosing a theme
+
+| Slug | Theme | Notes |
+|------|-------|-------|
+| `steelbore` | Steelbore | default, dark |
+| `steelbore-high-contrast` | Steelbore High Contrast | §11.1.1 accessible-mode sibling |
+| `steelbore-blue`, `steelbore-magnetar`, `steelbore-biolume`, `tokyonight`, `steelbore-hanzosteel`, `steelbore-blackpinkpanther`, `steelbore-green`, `steelbore-greenalt`, `steelbore-classic` | alternate palettes (§11.3) | each has a `-high-contrast` sibling too |
+| `steelbore-navywhite` | Steelbore NavyWhite | light canvas |
+| `solarized-dark`, `solarized-light` | Solarized | §11.5 fidelity palette — reproduced verbatim, **non-conforming**, not adoptable as a project palette |
+
+`steelbore-mono` is not shipped here — Gecko's `theme.colors` is a hex-only
+field and cannot express the 4-bit ANSI mono variant.
 
 ## Notes
 
 - Zen Browser is a Firefox fork and supports WebExtension theme APIs.
-- If Zen offers its own theme settings, you may also use the wallpaper (`background.png`) and set the accent color to `#FE6B00` (Steel Orange) manually via Zen's settings.
+- If Zen offers its own theme settings, you may also match a theme's accent
+  and canvas manually from the table above and the wallpaper (`background.png`).

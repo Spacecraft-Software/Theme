@@ -1,0 +1,27 @@
+{
+  "id": "spacecraft-software-steelbore-magnetar-high-contrast-theme",
+  "type": "ms.vss-web.theme",
+  "description": "Steelbore Magnetar High Contrast theme for Azure DevOps",
+  "targets": [
+    "ms.vss-web.theme-collection"
+  ],
+  "properties": {
+    "name": "Steelbore Magnetar High Contrast",
+    "uiTheme": "dark",
+    "variables": {
+      "background-color": "#141418",
+      "primary-text-color": "#FFFFFF",
+      "secondary-text-color": "#FC8AFF",
+      "primary-button-background": "#F07BFF",
+      "primary-button-text": "#141418",
+      "accent-color": "#F07BFF",
+      "error-color": "#FF8F8F",
+      "success-color": "#5BE49B",
+      "warning-color": "#FFC857",
+      "link-color": "#FC8AFF",
+      "border-color": "#FC8AFF",
+      "card-background": "#1E1E22",
+      "input-background": "#28282D"
+    }
+  }
+}

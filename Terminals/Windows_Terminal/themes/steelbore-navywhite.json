@@ -1,0 +1,23 @@
+{
+  "name": "Steelbore NavyWhite",
+  "background": "#E7E5E0",
+  "foreground": "#111827",
+  "cursorColor": "#2A5580",
+  "selectionBackground": "#2A5580",
+  "black": "#E7E5E0",
+  "red": "#93211F",
+  "green": "#2A6349",
+  "yellow": "#6F4E0C",
+  "blue": "#1C2433",
+  "purple": "#2A5580",
+  "cyan": "#2A5580",
+  "white": "#111827",
+  "brightBlack": "#1C2433",
+  "brightRed": "#93211F",
+  "brightGreen": "#2A6349",
+  "brightYellow": "#6F4E0C",
+  "brightBlue": "#1C2433",
+  "brightPurple": "#2A5580",
+  "brightCyan": "#2A5580",
+  "brightWhite": "#111827"
+}

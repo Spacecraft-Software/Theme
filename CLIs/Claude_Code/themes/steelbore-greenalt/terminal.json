@@ -1,0 +1,23 @@
+{
+  "name": "Steelbore Green Alt",
+  "background": "#0D0208",
+  "foreground": "#D7F5E0",
+  "cursorColor": "#00FF41",
+  "selectionBackground": "#00FF4140",
+  "black": "#0D0208",
+  "red": "#FF6B6B",
+  "green": "#00AD15",
+  "yellow": "#FFC857",
+  "blue": "#1CA152",
+  "purple": "#00FF41",
+  "cyan": "#00FF41",
+  "white": "#D7F5E0",
+  "brightBlack": "#1CA152",
+  "brightRed": "#FF6B6B",
+  "brightGreen": "#00AD15",
+  "brightYellow": "#FFC857",
+  "brightBlue": "#1CA152",
+  "brightPurple": "#00FF41",
+  "brightCyan": "#00FF41",
+  "brightWhite": "#D7F5E0"
+}

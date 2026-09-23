@@ -1,0 +1,23 @@
+{
+  "name": "Steelbore Green",
+  "background": "#0D0208",
+  "foreground": "#00FF41",
+  "cursorColor": "#E8FFF0",
+  "selectionBackground": "#E8FFF040",
+  "black": "#0D0208",
+  "red": "#FF6B6B",
+  "green": "#00AD15",
+  "yellow": "#FFC857",
+  "blue": "#1CA152",
+  "purple": "#E8FFF0",
+  "cyan": "#E8FFF0",
+  "white": "#00FF41",
+  "brightBlack": "#1CA152",
+  "brightRed": "#FF6B6B",
+  "brightGreen": "#00AD15",
+  "brightYellow": "#FFC857",
+  "brightBlue": "#1CA152",
+  "brightPurple": "#E8FFF0",
+  "brightCyan": "#E8FFF0",
+  "brightWhite": "#00FF41"
+}

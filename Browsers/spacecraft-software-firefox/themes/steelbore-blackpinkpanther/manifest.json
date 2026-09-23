@@ -1,0 +1,60 @@
+{
+  "manifest_version": 2,
+  "version": "2.0",
+  "name": "Steelbore BlackPinkPanther",
+  "description": "Steelbore BlackPinkPanther \u2014 a Spacecraft Software Steelbore palette theme for Mozilla Firefox.",
+  "author": "Mohamed Hammad",
+  "developer": {
+    "name": "Mohamed Hammad",
+    "url": "https://SpacecraftSoftware.org"
+  },
+  "homepage_url": "https://SpacecraftSoftware.org",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "spacecraft-steelbore-blackpinkpanther-firefox@SpacecraftSoftware.org",
+      "strict_min_version": "63.0"
+    }
+  },
+  "theme": {
+    "colors": {
+      "frame": "#000000",
+      "frame_inactive": "#FF46AA",
+      "tab_background_text": "#FF46AA",
+      "toolbar": "#2E0020",
+      "toolbar_text": "#FFFFFF",
+      "toolbar_field": "#18000E",
+      "toolbar_field_text": "#FFFFFF",
+      "toolbar_field_border": "#FF46AA",
+      "toolbar_field_focus": "#18000E",
+      "toolbar_field_border_focus": "#F400A1",
+      "toolbar_field_highlight": "#F400A1",
+      "toolbar_field_highlight_text": "#000000",
+      "toolbar_top_separator": "#FF46AA",
+      "toolbar_bottom_separator": "#000000",
+      "tab_line": "#F400A1",
+      "tab_loading": "#F400A1",
+      "tab_selected": "#2E0020",
+      "tab_text": "#FFFFFF",
+      "ntp_background": "#000000",
+      "ntp_text": "#FFFFFF",
+      "popup": "#2E0020",
+      "popup_text": "#FFFFFF",
+      "popup_border": "#FF46AA",
+      "popup_highlight": "#F400A1",
+      "popup_highlight_text": "#000000",
+      "sidebar": "#000000",
+      "sidebar_text": "#FFFFFF",
+      "sidebar_border": "#FF46AA",
+      "sidebar_highlight": "#F400A1",
+      "sidebar_highlight_text": "#000000",
+      "bookmark_text": "#FFFFFF",
+      "button_background_hover": "#2E0020",
+      "button_background_active": "#F400A1",
+      "icons": "#FFFFFF",
+      "icons_attention": "#5BE49B"
+    },
+    "properties": {
+      "color_scheme": "dark"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "manifest_version": 2,
+  "version": "2.0",
+  "name": "Tokyo Night High Contrast",
+  "description": "Tokyo Night High Contrast \u2014 the \u00a711.1.1 high-contrast Spacecraft Software theme for Mozilla Firefox.",
+  "author": "Mohamed Hammad",
+  "developer": {
+    "name": "Mohamed Hammad",
+    "url": "https://SpacecraftSoftware.org"
+  },
+  "homepage_url": "https://SpacecraftSoftware.org",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "spacecraft-tokyonight-high-contrast-firefox@SpacecraftSoftware.org",
+      "strict_min_version": "63.0"
+    }
+  },
+  "theme": {
+    "colors": {
+      "frame": "#1A1B26",
+      "frame_inactive": "#BB9AF7",
+      "tab_background_text": "#BB9AF7",
+      "toolbar": "#24283B",
+      "toolbar_text": "#C0CAF5",
+      "toolbar_field": "#16161E",
+      "toolbar_field_text": "#C0CAF5",
+      "toolbar_field_border": "#BB9AF7",
+      "toolbar_field_focus": "#16161E",
+      "toolbar_field_border_focus": "#7DCFFF",
+      "toolbar_field_highlight": "#97B6F9",
+      "toolbar_field_highlight_text": "#1A1B26",
+      "toolbar_top_separator": "#BB9AF7",
+      "toolbar_bottom_separator": "#1A1B26",
+      "tab_line": "#97B6F9",
+      "tab_loading": "#97B6F9",
+      "tab_selected": "#24283B",
+      "tab_text": "#C0CAF5",
+      "ntp_background": "#1A1B26",
+      "ntp_text": "#C0CAF5",
+      "popup": "#24283B",
+      "popup_text": "#C0CAF5",
+      "popup_border": "#BB9AF7",
+      "popup_highlight": "#97B6F9",
+      "popup_highlight_text": "#1A1B26",
+      "sidebar": "#1A1B26",
+      "sidebar_text": "#C0CAF5",
+      "sidebar_border": "#BB9AF7",
+      "sidebar_highlight": "#97B6F9",
+      "sidebar_highlight_text": "#1A1B26",
+      "bookmark_text": "#C0CAF5",
+      "button_background_hover": "#24283B",
+      "button_background_active": "#97B6F9",
+      "icons": "#C0CAF5",
+      "icons_attention": "#9ECE6A"
+    },
+    "properties": {
+      "color_scheme": "dark"
+    }
+  }
+}

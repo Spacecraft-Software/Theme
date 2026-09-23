@@ -1,0 +1,41 @@
+{
+  "name": "Spacecraft Software \u2014 Tokyo Night",
+  "description": "The Spacecraft Software Tokyo Night theme for Opera GX (Steelbore palette family, Tokyo Night).",
+  "developer": {
+    "name": "Mohamed Hammad"
+  },
+  "manifest_version": 3,
+  "mod": {
+    "schema_version": 1,
+    "license": "license.txt",
+    "payload": {
+      "theme": {
+        "dark": {
+          "gx_accent": {
+            "h": 221,
+            "s": 89,
+            "l": 72
+          },
+          "gx_secondary_base": {
+            "h": 230,
+            "s": 24,
+            "l": 19
+          }
+        },
+        "light": {
+          "gx_accent": {
+            "h": 221,
+            "s": 89,
+            "l": 72
+          },
+          "gx_secondary_base": {
+            "h": 230,
+            "s": 24,
+            "l": 19
+          }
+        }
+      }
+    }
+  },
+  "version": "2.0"
+}

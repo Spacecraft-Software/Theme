@@ -1,0 +1,23 @@
+{
+  "name": "Steelbore",
+  "background": "#000027",
+  "foreground": "#D9DEE5",
+  "cursorColor": "#B4FF00",
+  "selectionBackground": "#FF5E0040",
+  "black": "#000027",
+  "red": "#FF3B3B",
+  "green": "#B4FF00",
+  "yellow": "#E445FF",
+  "blue": "#8A6CFF",
+  "purple": "#FF5E00",
+  "cyan": "#B4FF00",
+  "white": "#D9DEE5",
+  "brightBlack": "#8A6CFF",
+  "brightRed": "#FF3B3B",
+  "brightGreen": "#B4FF00",
+  "brightYellow": "#E445FF",
+  "brightBlue": "#8A6CFF",
+  "brightPurple": "#FF5E00",
+  "brightCyan": "#B4FF00",
+  "brightWhite": "#D9DEE5"
+}

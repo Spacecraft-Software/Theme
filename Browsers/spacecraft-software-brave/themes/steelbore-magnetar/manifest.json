@@ -1,0 +1,127 @@
+{
+  "manifest_version": 3,
+  "version": "2.0",
+  "name": "Steelbore Magnetar",
+  "description": "The Spacecraft Software Steelbore palette family for Brave \u2014 Steelbore Magnetar (Steelbore Magnetar palette).",
+  "author": "Mohamed Hammad",
+  "homepage_url": "https://Theme.SpacecraftSoftware.org/",
+  "theme": {
+    "colors": {
+      "frame": [
+        20,
+        20,
+        24
+      ],
+      "frame_inactive": [
+        20,
+        20,
+        24
+      ],
+      "frame_incognito": [
+        40,
+        40,
+        45
+      ],
+      "frame_incognito_inactive": [
+        40,
+        40,
+        45
+      ],
+      "toolbar": [
+        30,
+        30,
+        34
+      ],
+      "toolbar_text": [
+        255,
+        255,
+        255
+      ],
+      "tab_text": [
+        255,
+        255,
+        255
+      ],
+      "tab_background_text": [
+        252,
+        138,
+        255
+      ],
+      "tab_background_text_inactive": [
+        252,
+        138,
+        255
+      ],
+      "bookmark_text": [
+        255,
+        255,
+        255
+      ],
+      "ntp_background": [
+        20,
+        20,
+        24
+      ],
+      "ntp_text": [
+        255,
+        255,
+        255
+      ],
+      "ntp_link": [
+        252,
+        138,
+        255
+      ],
+      "ntp_header": [
+        30,
+        30,
+        34
+      ],
+      "ntp_section": [
+        30,
+        30,
+        34
+      ],
+      "ntp_section_text": [
+        255,
+        255,
+        255
+      ],
+      "ntp_section_link": [
+        252,
+        138,
+        255
+      ],
+      "button_background": [
+        30,
+        30,
+        34
+      ],
+      "omnibox_background": [
+        40,
+        40,
+        45
+      ],
+      "omnibox_text": [
+        255,
+        255,
+        255
+      ],
+      "toolbar_button_icon": [
+        255,
+        255,
+        255
+      ]
+    },
+    "tints": {
+      "buttons": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "properties": {
+      "ntp_background_alignment": "bottom"
+    }
+  }
+}

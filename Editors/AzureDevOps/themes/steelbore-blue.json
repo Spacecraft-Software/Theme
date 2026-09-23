@@ -1,0 +1,27 @@
+{
+  "id": "spacecraft-software-steelbore-blue-theme",
+  "type": "ms.vss-web.theme",
+  "description": "Steelbore Blue theme for Azure DevOps",
+  "targets": [
+    "ms.vss-web.theme-collection"
+  ],
+  "properties": {
+    "name": "Steelbore Blue",
+    "uiTheme": "dark",
+    "variables": {
+      "background-color": "#0A1024",
+      "primary-text-color": "#E6F0FF",
+      "secondary-text-color": "#3390FF",
+      "primary-button-background": "#0066FF",
+      "primary-button-text": "#0A1024",
+      "accent-color": "#0066FF",
+      "error-color": "#FF6B6B",
+      "success-color": "#28C76F",
+      "warning-color": "#FFC857",
+      "link-color": "#3390FF",
+      "border-color": "#3390FF",
+      "card-background": "#0F1728",
+      "input-background": "#1B2436"
+    }
+  }
+}

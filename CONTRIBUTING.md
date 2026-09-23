@@ -41,7 +41,7 @@ Spacecraft Software respects the user. Any application, script, or extension bui
 When contributing UI elements, themes, or front-end code, the following standards apply:
 
 ### Visual Language
-- **Material Design**: UI architecture and component layouts must follow the principles of Material Design (grid systems, elevation, spacing) while utilizing the Spacecraft Software "Void Navy" industrial palette.
+- **Material Design**: UI architecture and component layouts must follow the principles of Material Design (grid systems, elevation, spacing) while utilizing the Steelbore palette family (The Steelbore Standard §11) — Steelbore Modern on its Void Navy canvas by default, or exactly one declared alternate; never a mix.
 - **Accessibility**: All color combinations must be strictly WCAG compliant for contrast ratios to prevent eye strain and ensure legibility.
 
 ### Fonts
@@ -51,7 +51,7 @@ Only completely Free and Open Source (FOSS) fonts are permitted in the UI. Allow
 - Apache License
 - Ubuntu Font License
 - Creative Commons Zero v1.0 Universal (CC0)
-(Recommendation: We prefer fonts sourced via Google Fonts that meet the above criteria, such as JetBrains Mono or Consolas-alternatives).
+(The Standard §12 pairing is **Share Tech Mono** for headings and **Inconsolata** for body and code, both OFL, with the system `monospace` as fallback.)
 
 ### Input & Navigation
 Key Bindings: Applications must support a dual-navigation approach:

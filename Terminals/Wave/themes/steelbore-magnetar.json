@@ -1,0 +1,30 @@
+{
+  "name": "Steelbore Magnetar",
+  "version": "2.0",
+  "author": "Mohamed Hammad",
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://SpacecraftSoftware.org",
+  "dark": true,
+  "terminal": {
+    "background": "#141418",
+    "foreground": "#FFFFFF",
+    "cursor": "#FDBBFF",
+    "selectionBackground": "#E445FF",
+    "black": "#141418",
+    "red": "#FF6B6B",
+    "green": "#5BE49B",
+    "yellow": "#FFC857",
+    "blue": "#FC8AFF",
+    "magenta": "#E445FF",
+    "cyan": "#FDBBFF",
+    "white": "#FFFFFF",
+    "brightBlack": "#FC8AFF",
+    "brightRed": "#FF6B6B",
+    "brightGreen": "#5BE49B",
+    "brightYellow": "#FFC857",
+    "brightBlue": "#FC8AFF",
+    "brightMagenta": "#E445FF",
+    "brightCyan": "#FDBBFF",
+    "brightWhite": "#FFFFFF"
+  }
+}

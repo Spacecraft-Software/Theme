@@ -1,0 +1,27 @@
+{
+  "id": "spacecraft-software-steelbore-biolume-high-contrast-theme",
+  "type": "ms.vss-web.theme",
+  "description": "Steelbore Biolume High Contrast theme for Azure DevOps",
+  "targets": [
+    "ms.vss-web.theme-collection"
+  ],
+  "properties": {
+    "name": "Steelbore Biolume High Contrast",
+    "uiTheme": "dark",
+    "variables": {
+      "background-color": "#0C1A2B",
+      "primary-text-color": "#C7D2D9",
+      "secondary-text-color": "#00F0FF",
+      "primary-button-background": "#B6FF3B",
+      "primary-button-text": "#0C1A2B",
+      "accent-color": "#B6FF3B",
+      "error-color": "#FF8F8F",
+      "success-color": "#2FD3BB",
+      "warning-color": "#FFC857",
+      "link-color": "#00F0FF",
+      "border-color": "#00F0FF",
+      "card-background": "#1B2630",
+      "input-background": "#05070A"
+    }
+  }
+}

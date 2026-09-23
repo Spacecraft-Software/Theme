@@ -1,0 +1,27 @@
+{
+  "id": "spacecraft-software-solarized-dark-theme",
+  "type": "ms.vss-web.theme",
+  "description": "Solarized Dark theme for Azure DevOps",
+  "targets": [
+    "ms.vss-web.theme-collection"
+  ],
+  "properties": {
+    "name": "Solarized Dark",
+    "uiTheme": "dark",
+    "variables": {
+      "background-color": "#002B36",
+      "primary-text-color": "#839496",
+      "secondary-text-color": "#6C71C4",
+      "primary-button-background": "#268BD2",
+      "primary-button-text": "#002B36",
+      "accent-color": "#268BD2",
+      "error-color": "#DC322F",
+      "success-color": "#859900",
+      "warning-color": "#B58900",
+      "link-color": "#6C71C4",
+      "border-color": "#6C71C4",
+      "card-background": "#073642",
+      "input-background": "#073642"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "manifest_version": 2,
+  "version": "2.0",
+  "name": "Steelbore Classic High Contrast",
+  "description": "Steelbore Classic High Contrast \u2014 the \u00a711.1.1 high-contrast Spacecraft Software theme for Zen Browser.",
+  "author": "Mohamed Hammad",
+  "developer": {
+    "name": "Mohamed Hammad",
+    "url": "https://SpacecraftSoftware.org"
+  },
+  "homepage_url": "https://SpacecraftSoftware.org",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "spacecraft-steelbore-classic-high-contrast-zen@SpacecraftSoftware.org",
+      "strict_min_version": "63.0"
+    }
+  },
+  "theme": {
+    "colors": {
+      "frame": "#000027",
+      "frame_inactive": "#7FAEDC",
+      "tab_background_text": "#7FAEDC",
+      "toolbar": "#000027",
+      "toolbar_text": "#D98E32",
+      "toolbar_field": "#000027",
+      "toolbar_field_text": "#D98E32",
+      "toolbar_field_border": "#7FAEDC",
+      "toolbar_field_focus": "#000027",
+      "toolbar_field_border_focus": "#8BE9FD",
+      "toolbar_field_highlight": "#7FAEDC",
+      "toolbar_field_highlight_text": "#000027",
+      "toolbar_top_separator": "#7FAEDC",
+      "toolbar_bottom_separator": "#000027",
+      "tab_line": "#7FAEDC",
+      "tab_loading": "#7FAEDC",
+      "tab_selected": "#000027",
+      "tab_text": "#D98E32",
+      "ntp_background": "#000027",
+      "ntp_text": "#D98E32",
+      "popup": "#000027",
+      "popup_text": "#D98E32",
+      "popup_border": "#7FAEDC",
+      "popup_highlight": "#7FAEDC",
+      "popup_highlight_text": "#000027",
+      "sidebar": "#000027",
+      "sidebar_text": "#D98E32",
+      "sidebar_border": "#7FAEDC",
+      "sidebar_highlight": "#7FAEDC",
+      "sidebar_highlight_text": "#000027",
+      "bookmark_text": "#D98E32",
+      "button_background_hover": "#000027",
+      "button_background_active": "#7FAEDC",
+      "icons": "#D98E32",
+      "icons_attention": "#50FA7B"
+    },
+    "properties": {
+      "color_scheme": "dark"
+    }
+  }
+}
