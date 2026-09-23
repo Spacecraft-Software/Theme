@@ -1,0 +1,23 @@
+{
+  "name": "Steelbore Classic High Contrast",
+  "background": "#000027",
+  "foreground": "#D98E32",
+  "cursorColor": "#8BE9FD",
+  "selectionBackground": "#7FAEDC",
+  "black": "#000027",
+  "red": "#FF8080",
+  "green": "#50FA7B",
+  "yellow": "#D98E32",
+  "blue": "#7FAEDC",
+  "purple": "#7FAEDC",
+  "cyan": "#8BE9FD",
+  "white": "#D98E32",
+  "brightBlack": "#7FAEDC",
+  "brightRed": "#FF8080",
+  "brightGreen": "#50FA7B",
+  "brightYellow": "#D98E32",
+  "brightBlue": "#7FAEDC",
+  "brightPurple": "#7FAEDC",
+  "brightCyan": "#8BE9FD",
+  "brightWhite": "#D98E32"
+}

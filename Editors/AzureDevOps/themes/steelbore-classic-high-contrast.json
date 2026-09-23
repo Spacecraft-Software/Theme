@@ -1,0 +1,27 @@
+{
+  "id": "spacecraft-software-steelbore-classic-high-contrast-theme",
+  "type": "ms.vss-web.theme",
+  "description": "Steelbore Classic High Contrast theme for Azure DevOps",
+  "targets": [
+    "ms.vss-web.theme-collection"
+  ],
+  "properties": {
+    "name": "Steelbore Classic High Contrast",
+    "uiTheme": "dark",
+    "variables": {
+      "background-color": "#000027",
+      "primary-text-color": "#D98E32",
+      "secondary-text-color": "#7FAEDC",
+      "primary-button-background": "#7FAEDC",
+      "primary-button-text": "#000027",
+      "accent-color": "#7FAEDC",
+      "error-color": "#FF8080",
+      "success-color": "#50FA7B",
+      "warning-color": "#D98E32",
+      "link-color": "#7FAEDC",
+      "border-color": "#7FAEDC",
+      "card-background": "#000027",
+      "input-background": "#000027"
+    }
+  }
+}

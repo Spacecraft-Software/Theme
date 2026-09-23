@@ -1,54 +1,681 @@
 {
-    "manifestVersion": 1,
-    "id": "spacecraft-software-theme",
-    "version": "1.0.0",
-    "name": "Spacecraft Software Theme",
-    "description": "Industrial dark theme for Azure DevOps boards and pipelines.",
-    "publisher": "Mohamed Hammad",
-    "icons": {
-        "default": "icon.png"
+  "manifestVersion": 1,
+  "id": "spacecraft-software-theme",
+  "version": "2.0.0",
+  "name": "Spacecraft Software Theme",
+  "description": "The Steelbore palette family for Azure DevOps boards and pipelines.",
+  "publisher": "Spacecraft-Software",
+  "icons": {
+    "default": "icon.png"
+  },
+  "links": {
+    "home": {
+      "uri": "https://SpacecraftSoftware.org"
+    }
+  },
+  "categories": [
+    "Azure Pipelines",
+    "Azure Boards"
+  ],
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "contributions": [
+    {
+      "id": "spacecraft-software-steelbore-theme",
+      "type": "ms.vss-web.theme",
+      "description": "Steelbore theme for Azure DevOps",
+      "targets": [
+        "ms.vss-web.theme-collection"
+      ],
+      "properties": {
+        "name": "Steelbore",
+        "uiTheme": "dark",
+        "variables": {
+          "background-color": "#000027",
+          "primary-text-color": "#D9DEE5",
+          "secondary-text-color": "#8A6CFF",
+          "primary-button-background": "#FF5E00",
+          "primary-button-text": "#000027",
+          "accent-color": "#FF5E00",
+          "error-color": "#FF3B3B",
+          "success-color": "#B4FF00",
+          "warning-color": "#E445FF",
+          "link-color": "#8A6CFF",
+          "border-color": "#8A6CFF",
+          "card-background": "#0E2A47",
+          "input-background": "#0B1A12"
+        }
+      }
     },
-    "links": {
-        "home": {
-            "uri": "https://SpacecraftSoftware.org"
+    {
+      "id": "spacecraft-software-steelbore-high-contrast-theme",
+      "type": "ms.vss-web.theme",
+      "description": "Steelbore High Contrast theme for Azure DevOps",
+      "targets": [
+        "ms.vss-web.theme-collection"
+      ],
+      "properties": {
+        "name": "Steelbore High Contrast",
+        "uiTheme": "dark",
+        "variables": {
+          "background-color": "#000027",
+          "primary-text-color": "#D9DEE5",
+          "secondary-text-color": "#B3A1FF",
+          "primary-button-background": "#FF8A3D",
+          "primary-button-text": "#000027",
+          "accent-color": "#FF8A3D",
+          "error-color": "#FF7A7A",
+          "success-color": "#B4FF00",
+          "warning-color": "#EE7BFF",
+          "link-color": "#B3A1FF",
+          "border-color": "#B3A1FF",
+          "card-background": "#0E2A47",
+          "input-background": "#0B1A12"
         }
+      }
     },
-    "categories": [
-        "Azure Pipelines",
-        "Azure Boards"
-    ],
-    "targets": [
-        {
-            "id": "Microsoft.VisualStudio.Services"
+    {
+      "id": "spacecraft-software-steelbore-blue-theme",
+      "type": "ms.vss-web.theme",
+      "description": "Steelbore Blue theme for Azure DevOps",
+      "targets": [
+        "ms.vss-web.theme-collection"
+      ],
+      "properties": {
+        "name": "Steelbore Blue",
+        "uiTheme": "dark",
+        "variables": {
+          "background-color": "#0A1024",
+          "primary-text-color": "#E6F0FF",
+          "secondary-text-color": "#3390FF",
+          "primary-button-background": "#0066FF",
+          "primary-button-text": "#0A1024",
+          "accent-color": "#0066FF",
+          "error-color": "#FF6B6B",
+          "success-color": "#28C76F",
+          "warning-color": "#FFC857",
+          "link-color": "#3390FF",
+          "border-color": "#3390FF",
+          "card-background": "#0F1728",
+          "input-background": "#1B2436"
         }
-    ],
-    "contributions": [
-        {
-            "id": "spacecraft-software-dark-theme",
-            "type": "ms.vss-web.theme",
-            "description": "Spacecraft Software Dark Theme",
-            "targets": [
-                "ms.vss-web.theme-collection"
-            ],
-            "properties": {
-                "name": "Spacecraft Software",
-                "uiTheme": "dark",
-                "variables": {
-                    "background-color": "#000027",
-                    "primary-text-color": "#D98E32",
-                    "secondary-text-color": "#6272A4",
-                    "primary-button-background": "#4B7EB0",
-                    "primary-button-text": "#000027",
-                    "accent-color": "#FE6B00",
-                    "error-color": "#FF5C5C"
-                }
-            }
+      }
+    },
+    {
+      "id": "spacecraft-software-steelbore-blue-high-contrast-theme",
+      "type": "ms.vss-web.theme",
+      "description": "Steelbore Blue High Contrast theme for Azure DevOps",
+      "targets": [
+        "ms.vss-web.theme-collection"
+      ],
+      "properties": {
+        "name": "Steelbore Blue High Contrast",
+        "uiTheme": "dark",
+        "variables": {
+          "background-color": "#0A1024",
+          "primary-text-color": "#E6F0FF",
+          "secondary-text-color": "#66A3FF",
+          "primary-button-background": "#79B4FF",
+          "primary-button-text": "#0A1024",
+          "accent-color": "#79B4FF",
+          "error-color": "#FF8F8F",
+          "success-color": "#28C76F",
+          "warning-color": "#FFC857",
+          "link-color": "#66A3FF",
+          "border-color": "#66A3FF",
+          "card-background": "#0F1728",
+          "input-background": "#1B2436"
         }
-    ],
-    "files": [
-        {
-            "path": "icon.png",
-            "addressable": true
+      }
+    },
+    {
+      "id": "spacecraft-software-steelbore-magnetar-theme",
+      "type": "ms.vss-web.theme",
+      "description": "Steelbore Magnetar theme for Azure DevOps",
+      "targets": [
+        "ms.vss-web.theme-collection"
+      ],
+      "properties": {
+        "name": "Steelbore Magnetar",
+        "uiTheme": "dark",
+        "variables": {
+          "background-color": "#141418",
+          "primary-text-color": "#FFFFFF",
+          "secondary-text-color": "#FC8AFF",
+          "primary-button-background": "#E445FF",
+          "primary-button-text": "#141418",
+          "accent-color": "#E445FF",
+          "error-color": "#FF6B6B",
+          "success-color": "#5BE49B",
+          "warning-color": "#FFC857",
+          "link-color": "#FC8AFF",
+          "border-color": "#FC8AFF",
+          "card-background": "#1E1E22",
+          "input-background": "#28282D"
         }
-    ]
+      }
+    },
+    {
+      "id": "spacecraft-software-steelbore-magnetar-high-contrast-theme",
+      "type": "ms.vss-web.theme",
+      "description": "Steelbore Magnetar High Contrast theme for Azure DevOps",
+      "targets": [
+        "ms.vss-web.theme-collection"
+      ],
+      "properties": {
+        "name": "Steelbore Magnetar High Contrast",
+        "uiTheme": "dark",
+        "variables": {
+          "background-color": "#141418",
+          "primary-text-color": "#FFFFFF",
+          "secondary-text-color": "#FC8AFF",
+          "primary-button-background": "#F07BFF",
+          "primary-button-text": "#141418",
+          "accent-color": "#F07BFF",
+          "error-color": "#FF8F8F",
+          "success-color": "#5BE49B",
+          "warning-color": "#FFC857",
+          "link-color": "#FC8AFF",
+          "border-color": "#FC8AFF",
+          "card-background": "#1E1E22",
+          "input-background": "#28282D"
+        }
+      }
+    },
+    {
+      "id": "spacecraft-software-steelbore-biolume-theme",
+      "type": "ms.vss-web.theme",
+      "description": "Steelbore Biolume theme for Azure DevOps",
+      "targets": [
+        "ms.vss-web.theme-collection"
+      ],
+      "properties": {
+        "name": "Steelbore Biolume",
+        "uiTheme": "dark",
+        "variables": {
+          "background-color": "#0C1A2B",
+          "primary-text-color": "#C7D2D9",
+          "secondary-text-color": "#00F0FF",
+          "primary-button-background": "#B6FF3B",
+          "primary-button-text": "#0C1A2B",
+          "accent-color": "#B6FF3B",
+          "error-color": "#FF6B6B",
+          "success-color": "#00B39A",
+          "warning-color": "#FFC857",
+          "link-color": "#00F0FF",
+          "border-color": "#00F0FF",
+          "card-background": "#1B2630",
+          "input-background": "#05070A"
+        }
+      }
+    },
+    {
+      "id": "spacecraft-software-steelbore-biolume-high-contrast-theme",
+      "type": "ms.vss-web.theme",
+      "description": "Steelbore Biolume High Contrast theme for Azure DevOps",
+      "targets": [
+        "ms.vss-web.theme-collection"
+      ],
+      "properties": {
+        "name": "Steelbore Biolume High Contrast",
+        "uiTheme": "dark",
+        "variables": {
+          "background-color": "#0C1A2B",
+          "primary-text-color": "#C7D2D9",
+          "secondary-text-color": "#00F0FF",
+          "primary-button-background": "#B6FF3B",
+          "primary-button-text": "#0C1A2B",
+          "accent-color": "#B6FF3B",
+          "error-color": "#FF8F8F",
+          "success-color": "#2FD3BB",
+          "warning-color": "#FFC857",
+          "link-color": "#00F0FF",
+          "border-color": "#00F0FF",
+          "card-background": "#1B2630",
+          "input-background": "#05070A"
+        }
+      }
+    },
+    {
+      "id": "spacecraft-software-steelbore-navywhite-theme",
+      "type": "ms.vss-web.theme",
+      "description": "Steelbore NavyWhite theme for Azure DevOps",
+      "targets": [
+        "ms.vss-web.theme-collection"
+      ],
+      "properties": {
+        "name": "Steelbore NavyWhite",
+        "uiTheme": "light",
+        "variables": {
+          "background-color": "#E7E5E0",
+          "primary-text-color": "#111827",
+          "secondary-text-color": "#1C2433",
+          "primary-button-background": "#2A5580",
+          "primary-button-text": "#E7E5E0",
+          "accent-color": "#2A5580",
+          "error-color": "#93211F",
+          "success-color": "#2A6349",
+          "warning-color": "#6F4E0C",
+          "link-color": "#1C2433",
+          "border-color": "#1C2433",
+          "card-background": "#F4F3F1",
+          "input-background": "#D4D2CD"
+        }
+      }
+    },
+    {
+      "id": "spacecraft-software-steelbore-navywhite-high-contrast-theme",
+      "type": "ms.vss-web.theme",
+      "description": "Steelbore NavyWhite High Contrast theme for Azure DevOps",
+      "targets": [
+        "ms.vss-web.theme-collection"
+      ],
+      "properties": {
+        "name": "Steelbore NavyWhite High Contrast",
+        "uiTheme": "light",
+        "variables": {
+          "background-color": "#E7E5E0",
+          "primary-text-color": "#111827",
+          "secondary-text-color": "#1C2433",
+          "primary-button-background": "#1F4A73",
+          "primary-button-text": "#E7E5E0",
+          "accent-color": "#1F4A73",
+          "error-color": "#7E1C1A",
+          "success-color": "#16452F",
+          "warning-color": "#5A3F09",
+          "link-color": "#1C2433",
+          "border-color": "#1C2433",
+          "card-background": "#F4F3F1",
+          "input-background": "#D4D2CD"
+        }
+      }
+    },
+    {
+      "id": "spacecraft-software-tokyonight-theme",
+      "type": "ms.vss-web.theme",
+      "description": "Tokyo Night theme for Azure DevOps",
+      "targets": [
+        "ms.vss-web.theme-collection"
+      ],
+      "properties": {
+        "name": "Tokyo Night",
+        "uiTheme": "dark",
+        "variables": {
+          "background-color": "#1A1B26",
+          "primary-text-color": "#C0CAF5",
+          "secondary-text-color": "#BB9AF7",
+          "primary-button-background": "#7AA2F7",
+          "primary-button-text": "#1A1B26",
+          "accent-color": "#7AA2F7",
+          "error-color": "#F7768E",
+          "success-color": "#9ECE6A",
+          "warning-color": "#E0AF68",
+          "link-color": "#BB9AF7",
+          "border-color": "#BB9AF7",
+          "card-background": "#24283B",
+          "input-background": "#16161E"
+        }
+      }
+    },
+    {
+      "id": "spacecraft-software-tokyonight-high-contrast-theme",
+      "type": "ms.vss-web.theme",
+      "description": "Tokyo Night High Contrast theme for Azure DevOps",
+      "targets": [
+        "ms.vss-web.theme-collection"
+      ],
+      "properties": {
+        "name": "Tokyo Night High Contrast",
+        "uiTheme": "dark",
+        "variables": {
+          "background-color": "#1A1B26",
+          "primary-text-color": "#C0CAF5",
+          "secondary-text-color": "#BB9AF7",
+          "primary-button-background": "#97B6F9",
+          "primary-button-text": "#1A1B26",
+          "accent-color": "#97B6F9",
+          "error-color": "#F998AA",
+          "success-color": "#9ECE6A",
+          "warning-color": "#E0AF68",
+          "link-color": "#BB9AF7",
+          "border-color": "#BB9AF7",
+          "card-background": "#24283B",
+          "input-background": "#16161E"
+        }
+      }
+    },
+    {
+      "id": "spacecraft-software-steelbore-hanzosteel-theme",
+      "type": "ms.vss-web.theme",
+      "description": "Steelbore Hanzo Steel theme for Azure DevOps",
+      "targets": [
+        "ms.vss-web.theme-collection"
+      ],
+      "properties": {
+        "name": "Steelbore Hanzo Steel",
+        "uiTheme": "dark",
+        "variables": {
+          "background-color": "#000000",
+          "primary-text-color": "#F5F0E6",
+          "secondary-text-color": "#F4B900",
+          "primary-button-background": "#FCD612",
+          "primary-button-text": "#000000",
+          "accent-color": "#FCD612",
+          "error-color": "#F04A44",
+          "success-color": "#5BE49B",
+          "warning-color": "#F7D02A",
+          "link-color": "#F4B900",
+          "border-color": "#F4B900",
+          "card-background": "#1C1811",
+          "input-background": "#0C0A06"
+        }
+      }
+    },
+    {
+      "id": "spacecraft-software-steelbore-hanzosteel-high-contrast-theme",
+      "type": "ms.vss-web.theme",
+      "description": "Steelbore Hanzo Steel High Contrast theme for Azure DevOps",
+      "targets": [
+        "ms.vss-web.theme-collection"
+      ],
+      "properties": {
+        "name": "Steelbore Hanzo Steel High Contrast",
+        "uiTheme": "dark",
+        "variables": {
+          "background-color": "#000000",
+          "primary-text-color": "#F5F0E6",
+          "secondary-text-color": "#F4B900",
+          "primary-button-background": "#FCD612",
+          "primary-button-text": "#000000",
+          "accent-color": "#FCD612",
+          "error-color": "#FF8F8F",
+          "success-color": "#5BE49B",
+          "warning-color": "#F7D02A",
+          "link-color": "#F4B900",
+          "border-color": "#F4B900",
+          "card-background": "#1C1811",
+          "input-background": "#0C0A06"
+        }
+      }
+    },
+    {
+      "id": "spacecraft-software-steelbore-blackpinkpanther-theme",
+      "type": "ms.vss-web.theme",
+      "description": "Steelbore BlackPinkPanther theme for Azure DevOps",
+      "targets": [
+        "ms.vss-web.theme-collection"
+      ],
+      "properties": {
+        "name": "Steelbore BlackPinkPanther",
+        "uiTheme": "dark",
+        "variables": {
+          "background-color": "#000000",
+          "primary-text-color": "#FFFFFF",
+          "secondary-text-color": "#FF46AA",
+          "primary-button-background": "#F400A1",
+          "primary-button-text": "#000000",
+          "accent-color": "#F400A1",
+          "error-color": "#FF6B6B",
+          "success-color": "#5BE49B",
+          "warning-color": "#FFC857",
+          "link-color": "#FF46AA",
+          "border-color": "#FF46AA",
+          "card-background": "#2E0020",
+          "input-background": "#18000E"
+        }
+      }
+    },
+    {
+      "id": "spacecraft-software-steelbore-blackpinkpanther-high-contrast-theme",
+      "type": "ms.vss-web.theme",
+      "description": "Steelbore BlackPinkPanther High Contrast theme for Azure DevOps",
+      "targets": [
+        "ms.vss-web.theme-collection"
+      ],
+      "properties": {
+        "name": "Steelbore BlackPinkPanther High Contrast",
+        "uiTheme": "dark",
+        "variables": {
+          "background-color": "#000000",
+          "primary-text-color": "#FFFFFF",
+          "secondary-text-color": "#FF70BE",
+          "primary-button-background": "#FF5FC0",
+          "primary-button-text": "#000000",
+          "accent-color": "#FF5FC0",
+          "error-color": "#FF6B6B",
+          "success-color": "#5BE49B",
+          "warning-color": "#FFC857",
+          "link-color": "#FF70BE",
+          "border-color": "#FF70BE",
+          "card-background": "#2E0020",
+          "input-background": "#18000E"
+        }
+      }
+    },
+    {
+      "id": "spacecraft-software-steelbore-green-theme",
+      "type": "ms.vss-web.theme",
+      "description": "Steelbore Green theme for Azure DevOps",
+      "targets": [
+        "ms.vss-web.theme-collection"
+      ],
+      "properties": {
+        "name": "Steelbore Green",
+        "uiTheme": "dark",
+        "variables": {
+          "background-color": "#0D0208",
+          "primary-text-color": "#00FF41",
+          "secondary-text-color": "#1CA152",
+          "primary-button-background": "#E8FFF0",
+          "primary-button-text": "#0D0208",
+          "accent-color": "#E8FFF0",
+          "error-color": "#FF6B6B",
+          "success-color": "#00AD15",
+          "warning-color": "#FFC857",
+          "link-color": "#1CA152",
+          "border-color": "#1CA152",
+          "card-background": "#08180C",
+          "input-background": "#030303"
+        }
+      }
+    },
+    {
+      "id": "spacecraft-software-steelbore-green-high-contrast-theme",
+      "type": "ms.vss-web.theme",
+      "description": "Steelbore Green High Contrast theme for Azure DevOps",
+      "targets": [
+        "ms.vss-web.theme-collection"
+      ],
+      "properties": {
+        "name": "Steelbore Green High Contrast",
+        "uiTheme": "dark",
+        "variables": {
+          "background-color": "#0D0208",
+          "primary-text-color": "#00FF41",
+          "secondary-text-color": "#25B85F",
+          "primary-button-background": "#E8FFF0",
+          "primary-button-text": "#0D0208",
+          "accent-color": "#E8FFF0",
+          "error-color": "#FF6B6B",
+          "success-color": "#00B81C",
+          "warning-color": "#FFC857",
+          "link-color": "#25B85F",
+          "border-color": "#25B85F",
+          "card-background": "#08180C",
+          "input-background": "#030303"
+        }
+      }
+    },
+    {
+      "id": "spacecraft-software-steelbore-greenalt-theme",
+      "type": "ms.vss-web.theme",
+      "description": "Steelbore Green Alt theme for Azure DevOps",
+      "targets": [
+        "ms.vss-web.theme-collection"
+      ],
+      "properties": {
+        "name": "Steelbore Green Alt",
+        "uiTheme": "dark",
+        "variables": {
+          "background-color": "#0D0208",
+          "primary-text-color": "#D7F5E0",
+          "secondary-text-color": "#1CA152",
+          "primary-button-background": "#00FF41",
+          "primary-button-text": "#0D0208",
+          "accent-color": "#00FF41",
+          "error-color": "#FF6B6B",
+          "success-color": "#00AD15",
+          "warning-color": "#FFC857",
+          "link-color": "#1CA152",
+          "border-color": "#1CA152",
+          "card-background": "#08180C",
+          "input-background": "#030303"
+        }
+      }
+    },
+    {
+      "id": "spacecraft-software-steelbore-greenalt-high-contrast-theme",
+      "type": "ms.vss-web.theme",
+      "description": "Steelbore Green Alt High Contrast theme for Azure DevOps",
+      "targets": [
+        "ms.vss-web.theme-collection"
+      ],
+      "properties": {
+        "name": "Steelbore Green Alt High Contrast",
+        "uiTheme": "dark",
+        "variables": {
+          "background-color": "#0D0208",
+          "primary-text-color": "#D7F5E0",
+          "secondary-text-color": "#25B85F",
+          "primary-button-background": "#00FF41",
+          "primary-button-text": "#0D0208",
+          "accent-color": "#00FF41",
+          "error-color": "#FF6B6B",
+          "success-color": "#00B81C",
+          "warning-color": "#FFC857",
+          "link-color": "#25B85F",
+          "border-color": "#25B85F",
+          "card-background": "#08180C",
+          "input-background": "#030303"
+        }
+      }
+    },
+    {
+      "id": "spacecraft-software-steelbore-classic-theme",
+      "type": "ms.vss-web.theme",
+      "description": "Steelbore Classic theme for Azure DevOps",
+      "targets": [
+        "ms.vss-web.theme-collection"
+      ],
+      "properties": {
+        "name": "Steelbore Classic",
+        "uiTheme": "dark",
+        "variables": {
+          "background-color": "#000027",
+          "primary-text-color": "#D98E32",
+          "secondary-text-color": "#4B7EB0",
+          "primary-button-background": "#4B7EB0",
+          "primary-button-text": "#000027",
+          "accent-color": "#4B7EB0",
+          "error-color": "#FF5C5C",
+          "success-color": "#50FA7B",
+          "warning-color": "#D98E32",
+          "link-color": "#4B7EB0",
+          "border-color": "#4B7EB0",
+          "card-background": "#000027",
+          "input-background": "#000027"
+        }
+      }
+    },
+    {
+      "id": "spacecraft-software-steelbore-classic-high-contrast-theme",
+      "type": "ms.vss-web.theme",
+      "description": "Steelbore Classic High Contrast theme for Azure DevOps",
+      "targets": [
+        "ms.vss-web.theme-collection"
+      ],
+      "properties": {
+        "name": "Steelbore Classic High Contrast",
+        "uiTheme": "dark",
+        "variables": {
+          "background-color": "#000027",
+          "primary-text-color": "#D98E32",
+          "secondary-text-color": "#7FAEDC",
+          "primary-button-background": "#7FAEDC",
+          "primary-button-text": "#000027",
+          "accent-color": "#7FAEDC",
+          "error-color": "#FF8080",
+          "success-color": "#50FA7B",
+          "warning-color": "#D98E32",
+          "link-color": "#7FAEDC",
+          "border-color": "#7FAEDC",
+          "card-background": "#000027",
+          "input-background": "#000027"
+        }
+      }
+    },
+    {
+      "id": "spacecraft-software-solarized-dark-theme",
+      "type": "ms.vss-web.theme",
+      "description": "Solarized Dark theme for Azure DevOps",
+      "targets": [
+        "ms.vss-web.theme-collection"
+      ],
+      "properties": {
+        "name": "Solarized Dark",
+        "uiTheme": "dark",
+        "variables": {
+          "background-color": "#002B36",
+          "primary-text-color": "#839496",
+          "secondary-text-color": "#6C71C4",
+          "primary-button-background": "#268BD2",
+          "primary-button-text": "#002B36",
+          "accent-color": "#268BD2",
+          "error-color": "#DC322F",
+          "success-color": "#859900",
+          "warning-color": "#B58900",
+          "link-color": "#6C71C4",
+          "border-color": "#6C71C4",
+          "card-background": "#073642",
+          "input-background": "#073642"
+        }
+      }
+    },
+    {
+      "id": "spacecraft-software-solarized-light-theme",
+      "type": "ms.vss-web.theme",
+      "description": "Solarized Light theme for Azure DevOps",
+      "targets": [
+        "ms.vss-web.theme-collection"
+      ],
+      "properties": {
+        "name": "Solarized Light",
+        "uiTheme": "light",
+        "variables": {
+          "background-color": "#FDF6E3",
+          "primary-text-color": "#657B83",
+          "secondary-text-color": "#6C71C4",
+          "primary-button-background": "#268BD2",
+          "primary-button-text": "#FDF6E3",
+          "accent-color": "#268BD2",
+          "error-color": "#DC322F",
+          "success-color": "#859900",
+          "warning-color": "#B58900",
+          "link-color": "#6C71C4",
+          "border-color": "#6C71C4",
+          "card-background": "#EEE8D5",
+          "input-background": "#EEE8D5"
+        }
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "icon.png",
+      "addressable": true
+    }
+  ]
 }

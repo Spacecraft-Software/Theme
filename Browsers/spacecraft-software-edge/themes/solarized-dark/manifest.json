@@ -1,0 +1,127 @@
+{
+  "manifest_version": 3,
+  "version": "2.0",
+  "name": "Solarized Dark",
+  "description": "The Spacecraft Software Steelbore palette family for Microsoft Edge \u2014 Solarized Dark (Solarized Dark palette).",
+  "author": "Mohamed Hammad",
+  "homepage_url": "https://Theme.SpacecraftSoftware.org/",
+  "theme": {
+    "colors": {
+      "frame": [
+        0,
+        43,
+        54
+      ],
+      "frame_inactive": [
+        0,
+        43,
+        54
+      ],
+      "frame_incognito": [
+        7,
+        54,
+        66
+      ],
+      "frame_incognito_inactive": [
+        7,
+        54,
+        66
+      ],
+      "toolbar": [
+        7,
+        54,
+        66
+      ],
+      "toolbar_text": [
+        131,
+        148,
+        150
+      ],
+      "tab_text": [
+        131,
+        148,
+        150
+      ],
+      "tab_background_text": [
+        108,
+        113,
+        196
+      ],
+      "tab_background_text_inactive": [
+        108,
+        113,
+        196
+      ],
+      "bookmark_text": [
+        131,
+        148,
+        150
+      ],
+      "ntp_background": [
+        0,
+        43,
+        54
+      ],
+      "ntp_text": [
+        131,
+        148,
+        150
+      ],
+      "ntp_link": [
+        108,
+        113,
+        196
+      ],
+      "ntp_header": [
+        7,
+        54,
+        66
+      ],
+      "ntp_section": [
+        7,
+        54,
+        66
+      ],
+      "ntp_section_text": [
+        131,
+        148,
+        150
+      ],
+      "ntp_section_link": [
+        108,
+        113,
+        196
+      ],
+      "button_background": [
+        7,
+        54,
+        66
+      ],
+      "omnibox_background": [
+        7,
+        54,
+        66
+      ],
+      "omnibox_text": [
+        131,
+        148,
+        150
+      ],
+      "toolbar_button_icon": [
+        131,
+        148,
+        150
+      ]
+    },
+    "tints": {
+      "buttons": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "properties": {
+      "ntp_background_alignment": "bottom"
+    }
+  }
+}

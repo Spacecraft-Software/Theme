@@ -1,0 +1,30 @@
+{
+  "name": "Steelbore Biolume",
+  "version": "2.0",
+  "author": "Mohamed Hammad",
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://SpacecraftSoftware.org",
+  "dark": true,
+  "terminal": {
+    "background": "#0C1A2B",
+    "foreground": "#C7D2D9",
+    "cursor": "#B6FF3B",
+    "selectionBackground": "#B6FF3B",
+    "black": "#0C1A2B",
+    "red": "#FF6B6B",
+    "green": "#00B39A",
+    "yellow": "#FFC857",
+    "blue": "#00F0FF",
+    "magenta": "#B6FF3B",
+    "cyan": "#B6FF3B",
+    "white": "#C7D2D9",
+    "brightBlack": "#00F0FF",
+    "brightRed": "#FF6B6B",
+    "brightGreen": "#00B39A",
+    "brightYellow": "#FFC857",
+    "brightBlue": "#00F0FF",
+    "brightMagenta": "#B6FF3B",
+    "brightCyan": "#B6FF3B",
+    "brightWhite": "#C7D2D9"
+  }
+}

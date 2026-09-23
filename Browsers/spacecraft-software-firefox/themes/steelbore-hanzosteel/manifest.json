@@ -1,0 +1,60 @@
+{
+  "manifest_version": 2,
+  "version": "2.0",
+  "name": "Steelbore Hanzo Steel",
+  "description": "Steelbore Hanzo Steel \u2014 a Spacecraft Software Steelbore palette theme for Mozilla Firefox.",
+  "author": "Mohamed Hammad",
+  "developer": {
+    "name": "Mohamed Hammad",
+    "url": "https://SpacecraftSoftware.org"
+  },
+  "homepage_url": "https://SpacecraftSoftware.org",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "spacecraft-steelbore-hanzosteel-firefox@SpacecraftSoftware.org",
+      "strict_min_version": "63.0"
+    }
+  },
+  "theme": {
+    "colors": {
+      "frame": "#000000",
+      "frame_inactive": "#F4B900",
+      "tab_background_text": "#F4B900",
+      "toolbar": "#1C1811",
+      "toolbar_text": "#F5F0E6",
+      "toolbar_field": "#0C0A06",
+      "toolbar_field_text": "#F5F0E6",
+      "toolbar_field_border": "#F4B900",
+      "toolbar_field_focus": "#0C0A06",
+      "toolbar_field_border_focus": "#FCD612",
+      "toolbar_field_highlight": "#FCD612",
+      "toolbar_field_highlight_text": "#000000",
+      "toolbar_top_separator": "#F4B900",
+      "toolbar_bottom_separator": "#000000",
+      "tab_line": "#FCD612",
+      "tab_loading": "#FCD612",
+      "tab_selected": "#1C1811",
+      "tab_text": "#F5F0E6",
+      "ntp_background": "#000000",
+      "ntp_text": "#F5F0E6",
+      "popup": "#1C1811",
+      "popup_text": "#F5F0E6",
+      "popup_border": "#F4B900",
+      "popup_highlight": "#FCD612",
+      "popup_highlight_text": "#000000",
+      "sidebar": "#000000",
+      "sidebar_text": "#F5F0E6",
+      "sidebar_border": "#F4B900",
+      "sidebar_highlight": "#FCD612",
+      "sidebar_highlight_text": "#000000",
+      "bookmark_text": "#F5F0E6",
+      "button_background_hover": "#1C1811",
+      "button_background_active": "#FCD612",
+      "icons": "#F5F0E6",
+      "icons_attention": "#5BE49B"
+    },
+    "properties": {
+      "color_scheme": "dark"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Steelbore Biolume",
+  "background": "#0C1A2B",
+  "foreground": "#C7D2D9",
+  "cursorColor": "#B6FF3B",
+  "selectionBackground": "#B6FF3B40",
+  "black": "#0C1A2B",
+  "red": "#FF6B6B",
+  "green": "#00B39A",
+  "yellow": "#FFC857",
+  "blue": "#00F0FF",
+  "purple": "#B6FF3B",
+  "cyan": "#B6FF3B",
+  "white": "#C7D2D9",
+  "brightBlack": "#00F0FF",
+  "brightRed": "#FF6B6B",
+  "brightGreen": "#00B39A",
+  "brightYellow": "#FFC857",
+  "brightBlue": "#00F0FF",
+  "brightPurple": "#B6FF3B",
+  "brightCyan": "#B6FF3B",
+  "brightWhite": "#C7D2D9"
+}

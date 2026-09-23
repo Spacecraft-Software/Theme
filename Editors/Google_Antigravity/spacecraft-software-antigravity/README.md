@@ -1,47 +1,69 @@
-# Spacecraft Software Theme for VS Code & Antigravity
+# Spacecraft Software Themes for Antigravity
 
-[![Visual Studio Marketplace](https://img.shields.io/visual-studio-marketplace/v/SteelBore.spacecraft-software?color=FE6B00&label=Marketplace)](https://marketplace.visualstudio.com/items?itemName=SteelBore.spacecraft-software)
-[![License: GPL 3+](https://img.shields.io/badge/License-GPL%203%2b-000027.svg)](https://www.gnu.org/licenses/gpl-3.0)
+The full Steelbore palette family (The Steelbore Standard §11) as a Google Antigravity theme collection — Steelbore default, ten alternates, high-contrast siblings, and the Solarized fidelity pair.
 
-**Spacecraft Software** is a high-contrast, industrial dark theme designed for focus and memory-safe aesthetics. Optimized for **VS Code**, **VSCodium**, and **Google Antigravity**, it brings the **Void Navy** and **Molten Amber** palette to your favorite code editor.
+## The Steelbore palette family
 
-![Spacecraft Software Preview](https://raw.githubusercontent.com/Spacecraft-Software/Theme/main/Editors/VSCode/preview.png)
+This package ships the full Steelbore palette family (The Steelbore Standard §11) as 24 VS Code-compatible colour themes — one JSON file per theme, generated from the canonical `steelbore.toml` contract. **Steelbore** (`steelbore`) is the default; every palette also ships a `-high-contrast` sibling for §18.1 accessible mode, each measured at 7:1 or better against its own canvas.
 
-## 🎨 Professional Palette
+`solarized-dark` and `solarized-light` are §11.5 **fidelity palettes** — reproduced verbatim from upstream Solarized for interoperability, non-conforming, and not adoptable as a project palette. They carry no high-contrast sibling of their own.
 
-Spacecraft Software uses a strictly enforced color theory to ensure maximum readability and reduced eye strain:
+## Choosing a theme
 
-| Component | Color | Hex |
-| :--- | :--- | :--- |
-| **Background** | Void Navy | `#000027` |
-| **Foreground** | Molten Amber | `#D98E32` |
-| **Accents** | Steel Blue | `#4B7EB0` |
-| **Alerts** | Crimson Echo | `#FF5C5C` |
-| **Comments** | Slate Mist | `#6272A4` |
+| Slug | Name | Type |
+| --- | --- | --- |
+| `steelbore` | Steelbore | dark |
+| `steelbore-high-contrast` | Steelbore High Contrast | hc |
+| `steelbore-blue` | Steelbore Blue | dark |
+| `steelbore-blue-high-contrast` | Steelbore Blue High Contrast | hc |
+| `steelbore-magnetar` | Steelbore Magnetar | dark |
+| `steelbore-magnetar-high-contrast` | Steelbore Magnetar High Contrast | hc |
+| `steelbore-biolume` | Steelbore Biolume | dark |
+| `steelbore-biolume-high-contrast` | Steelbore Biolume High Contrast | hc |
+| `steelbore-navywhite` | Steelbore NavyWhite | light |
+| `steelbore-navywhite-high-contrast` | Steelbore NavyWhite High Contrast | hcLight |
+| `tokyonight` | Tokyo Night | dark |
+| `tokyonight-high-contrast` | Tokyo Night High Contrast | hc |
+| `steelbore-hanzosteel` | Steelbore Hanzo Steel | dark |
+| `steelbore-hanzosteel-high-contrast` | Steelbore Hanzo Steel High Contrast | hc |
+| `steelbore-blackpinkpanther` | Steelbore BlackPinkPanther | dark |
+| `steelbore-blackpinkpanther-high-contrast` | Steelbore BlackPinkPanther High Contrast | hc |
+| `steelbore-green` | Steelbore Green | dark |
+| `steelbore-green-high-contrast` | Steelbore Green High Contrast | hc |
+| `steelbore-greenalt` | Steelbore Green Alt | dark |
+| `steelbore-greenalt-high-contrast` | Steelbore Green Alt High Contrast | hc |
+| `steelbore-classic` | Steelbore Classic | dark |
+| `steelbore-classic-high-contrast` | Steelbore Classic High Contrast | hc |
+| `solarized-dark` | Solarized Dark | dark |
+| `solarized-light` | Solarized Light | light |
 
-## 🚀 Installation
+Open the Command Palette → **Preferences: Color Theme** and pick one by its Name column above.
 
-### Marketplace
-Search for **Spacecraft Software** in the VS Code Extensions view (`Ctrl+Shift+X`) and click **Install**.
+## Installation
 
-### Manual (.vsix)
-1. Download the latest `spacecraft-software-x.x.x.vsix` from the [Releases](https://github.com/Spacecraft-Software/Theme/releases).
-2. Run the following command:
-   ```bash
-   code --install-extension spacecraft-software-1.0.0.vsix
-   ```
+1. Copy this folder into the editor's extensions directory.
+2. Restart the editor.
+3. Open the Command Palette → **Preferences: Color Theme** → select **Steelbore** (or any theme from the table above).
 
-## 🛠️ Supported Languages
-While Spacecraft Software works across all languages, it is optimized for the **Rust-Native** stack:
-- Rust (`rust-analyzer`)
-- NuShell
-- TOML / JSON / YAML
-- Markdown
-- C / C++
+## Steelbore — the default palette
 
-## 🛡️ License
-Copyright (C) 2026 **Mohamed Hammad**.
-Distributed under the **GNU General Public License v3.0**.
+| Role | Hex |
+| --- | --- |
+| Background | `#000027` |
+| Surface | `#0E2A47` |
+| Surface Alt | `#0B1A12` |
+| Foreground | `#D9DEE5` |
+| Accent | `#FF5E00` |
+| Structure | `#8A6CFF` |
+| Success | `#B4FF00` |
+| Error | `#FF3B3B` |
+| Warning | `#E445FF` |
+| Focus | `#B4FF00` |
+| Border | `#8A6CFF` |
+
+## License
+
+Copyright (C) 2026 Mohamed Hammad. Distributed under the GNU General Public License v3.0-or-later.
 
 ---
 *Part of the Spacecraft Software Ecosystem.*

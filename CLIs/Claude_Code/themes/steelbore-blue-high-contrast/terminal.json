@@ -1,0 +1,23 @@
+{
+  "name": "Steelbore Blue High Contrast",
+  "background": "#0A1024",
+  "foreground": "#E6F0FF",
+  "cursorColor": "#FF8A4B",
+  "selectionBackground": "#79B4FF40",
+  "black": "#0A1024",
+  "red": "#FF8F8F",
+  "green": "#28C76F",
+  "yellow": "#FFC857",
+  "blue": "#66A3FF",
+  "purple": "#79B4FF",
+  "cyan": "#FF8A4B",
+  "white": "#E6F0FF",
+  "brightBlack": "#66A3FF",
+  "brightRed": "#FF8F8F",
+  "brightGreen": "#28C76F",
+  "brightYellow": "#FFC857",
+  "brightBlue": "#66A3FF",
+  "brightPurple": "#79B4FF",
+  "brightCyan": "#FF8A4B",
+  "brightWhite": "#E6F0FF"
+}

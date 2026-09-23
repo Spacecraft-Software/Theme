@@ -1,33 +1,23 @@
-# Installing Spacecraft Software Theme for Opera Neon
+# Installing the Spacecraft Software look in Opera Neon
 
-**Version:** 1.0 | **Author:** Mohamed Hammad | **License:** GPL3+ | **Website:** [SpacecraftSoftware.org](https://SpacecraftSoftware.org)
+**Version:** 2.0 | **Author:** Mohamed Hammad | **License:** GPL-3.0-or-later | **Website:** [SpacecraftSoftware.org](https://SpacecraftSoftware.org)
 
-## Installation
+Opera Neon does not support theme extensions, so nothing is generated for it.
+Customisation is manual through the Settings UI; the values below are the
+default **Steelbore** palette read from `Steelbore/steelbore.json` — pick any
+other theme's `background` / `accent` roles from that registry to match a
+different palette.
 
-Opera Neon does not support theme extensions. Customization is done manually through the Settings UI.
-
-### Set the Wallpaper
+## Set the wallpaper
 
 1. Open Opera Neon.
-2. Go to **Settings** → **Customization** → **Wallpapers**.
-3. Click **Add your wallpaper**.
-4. Select the `background.png` file from this folder.
+2. **Settings** → **Customization** → **Wallpapers** → **Add your wallpaper**.
+3. Select `background.png` from this folder.
 
-### Set the Accent Color
+## Set the accent colour
 
-1. In **Settings** → **Customization**, find the color/accent options.
-2. Set the accent color to **Steel Orange**: `#FE6B00`.
+1. **Settings** → **Customization** → colour / accent options.
+2. Set the accent to Plasma Orange `#FF5E00` on the Void Navy canvas `#000027`.
 
-## Recommended Color Settings
-
-| Element | Hex | Description |
-|---|---|---|
-| Accent Color | `#FE6B00` | Steel Orange — primary brand accent |
-| Background | `#0E141D` | Charcoal Navy — primary dark background |
-| Toolbar | `#142E46` | Midnight Navy — secondary background |
-| Text | `#F0F0F0` | Off-White — main text color |
-
-## Files
-
-- `background.png` — Spacecraft Software wallpaper
-- `icon.png` — Spacecraft Software brand icon
+For a light reading of the brand use Steelbore NavyWhite
+(`steelbore-navywhite` in the registry) instead.

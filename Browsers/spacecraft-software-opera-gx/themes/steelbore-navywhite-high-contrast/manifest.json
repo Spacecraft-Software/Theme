@@ -1,0 +1,41 @@
+{
+  "name": "Spacecraft Software \u2014 Steelbore NavyWhite High Contrast",
+  "description": "The Spacecraft Software Steelbore NavyWhite High Contrast theme for Opera GX (Steelbore palette family, Steelbore NavyWhite).",
+  "developer": {
+    "name": "Mohamed Hammad"
+  },
+  "manifest_version": 3,
+  "mod": {
+    "schema_version": 1,
+    "license": "license.txt",
+    "payload": {
+      "theme": {
+        "dark": {
+          "gx_accent": {
+            "h": 209,
+            "s": 58,
+            "l": 29
+          },
+          "gx_secondary_base": {
+            "h": 40,
+            "s": 12,
+            "l": 95
+          }
+        },
+        "light": {
+          "gx_accent": {
+            "h": 209,
+            "s": 58,
+            "l": 29
+          },
+          "gx_secondary_base": {
+            "h": 40,
+            "s": 12,
+            "l": 95
+          }
+        }
+      }
+    }
+  },
+  "version": "2.0"
+}

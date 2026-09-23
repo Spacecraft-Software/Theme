@@ -1,0 +1,41 @@
+{
+  "name": "Spacecraft Software \u2014 Steelbore BlackPinkPanther",
+  "description": "The Spacecraft Software Steelbore BlackPinkPanther theme for Opera GX (Steelbore palette family, Steelbore BlackPinkPanther).",
+  "developer": {
+    "name": "Mohamed Hammad"
+  },
+  "manifest_version": 3,
+  "mod": {
+    "schema_version": 1,
+    "license": "license.txt",
+    "payload": {
+      "theme": {
+        "dark": {
+          "gx_accent": {
+            "h": 320,
+            "s": 100,
+            "l": 48
+          },
+          "gx_secondary_base": {
+            "h": 318,
+            "s": 100,
+            "l": 9
+          }
+        },
+        "light": {
+          "gx_accent": {
+            "h": 320,
+            "s": 100,
+            "l": 48
+          },
+          "gx_secondary_base": {
+            "h": 318,
+            "s": 100,
+            "l": 9
+          }
+        }
+      }
+    }
+  },
+  "version": "2.0"
+}

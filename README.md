@@ -1,125 +1,103 @@
-# 🌐 Supported Environments
-Spacecraft Software is designed to be a ubiquitous, cross-platform experience. It provides configurations and installation scripts for the following environments:
+# Spacecraft Software Theme
 
-### Desktop Environments & Window Managers (Linux)
-- **GNOME**: (GTK4/Libadwaita)
-- **KDE Plasma**: `.colors` scheme
-- **COSMIC DE**: `.ron` configuration
-- **XFCE4 & MATE**: GTK3 overrides & Metacity/Xfwm4
-- **LeftWM & Niri**: Tiling WM configurations
+The Spacecraft Software visual identity — the **Steelbore palette family** of
+The Steelbore Standard §11 — rendered for every editor, terminal, desktop,
+shell, browser and CLI in the maintainer's toolchain.
 
-### Terminals & Shells
-- **Starship Prompt**: Cross-shell configuration
-- **POSIX Shells**: `bash`, `zsh`, `fish`, `csh`, `tcsh`
-- **Modern Shells**: `nu`, `ion` (Redox OS)
-- **Linux TTY**: TrueColor hex overrides
+Every theme file here is **generated** from one source, `Steelbore/steelbore.toml`
+(palette family v3.5.0, Standard v2.08), by `tools/steelbore_themes`. Each
+platform folder ships one file per theme under `themes/<slug>.<ext>`:
 
-### Developer Tools & Applications
-- **Editors**: VS Code, JetBrains IDEs
-- **Browsers**: Chrome, Edge, Firefox
-- **Productivity**: Microsoft Office (VBA Macros)
-- **Deployment**: Flatpak, Snap, AppImage support
+| Slug | Palette | Notes |
+|------|---------|-------|
+| `steelbore` | Steelbore Modern | **default** — Void Navy canvas, Plasma Orange accent |
+| `steelbore-blue` · `steelbore-magnetar` · `steelbore-biolume` · `steelbore-navywhite` (light) · `tokyonight` · `steelbore-hanzosteel` · `steelbore-blackpinkpanther` · `steelbore-green` · `steelbore-greenalt` | nine alternates (§11.3) | opt-in |
+| `<slug>-high-contrast` | accessible-mode sibling of each palette above | every token ≥ 7:1 on the canvas (§11.1.1) |
+| `steelbore-classic` (+ `-high-contrast`) | Steelbore Classic | the original Void Navy / Molten Amber look (§11.2) |
+| `solarized-dark` · `solarized-light` | Solarized, verbatim | fidelity palettes (§11.5): **not WCAG-conforming**, shipped for interoperability |
+| `steelbore-mono` | 4-bit ANSI names | `NO_COLOR` theme; shells, Starship and the TTY only |
 
-## 🚀 Installation Guide
-We have provided automated POSIX-compliant shell scripts to deploy the theme across Linux/Unix systems, alongside manual templates for Windows and specialized software.
+Pick a theme by slug; set `SPACECRAFT_THEME=<slug>` where a platform's
+installer reads it (§11.6). Each folder's `INSTALL.md` has the details.
 
-### 1. Linux / Unix (Automated)
-The easiest way to apply Spacecraft Software to your Linux desktop, window managers, and browsers is using the all-in-one script.
+## Project Posture
 
-```bash
-git clone https://github.com/Spacecraft-Software/Theme.git
-cd Spacecraft-Software/Scripts
-./install-spacecraft-software.sh
+Spacecraft Software is a **personal hobby project**. This repository is
+developed at hobby pace and shaped around the maintainer's own use case, not a
+general audience.
+
+- **No warranty, no liability.** See [`NOTICE.md`](./NOTICE.md).
+- **Contributions are welcome but not guaranteed.** See [`CONTRIBUTING.md`](./CONTRIBUTING.md).
+- **Forking is encouraged.** GPL-3.0-or-later is there for exactly that.
+- **Security reports:** see [`SECURITY.md`](./SECURITY.md).
+
+Assurance category **D** (§19): a static configuration distribution with no
+runtime; conformance to The Steelbore Standard v2.08 is claimed in full for the
+generated artifacts and tailored for the repository (no Texinfo manual, no
+packaging manifests — nothing here is installed by a package manager).
+
+## Supported environments
+
+### Editors (`Editors/`)
+VS Code and Google Antigravity (one extension, all themes), Zed (family file
+plus per-theme files), Lapce, JetBrains IDEs and Android Studio (one plugin,
+all themes, plus importable `.icls` schemes), Visual Studio 2022 (`.vsix`),
+Azure DevOps.
+
+### Terminals (`Terminals/`)
+Alacritty, Ghostty, GNOME Terminal (dconf profile scripts), iTerm2, Kitty,
+Konsole, Rio, Warp, Wave, WezTerm, Windows Terminal (`schemes.json` for one
+paste), XFCE Terminal.
+
+### Desktops and window managers (`Desktops/`)
+GNOME (libadwaita GTK 4 + Shell CSS), KDE Plasma (`.colors`), COSMIC (`.ron`),
+XFCE and MATE (GTK CSS + Metacity), Hyprland, Niri, LeftWM (+ Polybar),
+MangoWC, Windows (`.theme` + console and accent `.reg`).
+
+### Shells (`Shells/`)
+Bash, Zsh, Fish, Csh/Tcsh, Ion, Nushell prompt and syntax modules, a Starship
+Powerline preset, and Linux TTY palette scripts. These also ship `steelbore-mono`.
+
+### Browsers (`Browsers/`)
+Chromium family (Chrome, Edge, Brave, Trivalent, Arc, Opera One) as MV3 theme
+extensions, Gecko family (Firefox, Zen, Tor Browser) as MV2 theme `.xpi`, Opera
+GX as a GX mod. One theme per extension archive.
+
+### CLIs, bootloaders, AI (`CLIs/`, `Bootloaders/`, `AI/`)
+Claude Code status-line fragments, the Zamak bootloader theme, and the three
+Claude skills this repository depends on (`spacecraft-theme-factory`,
+`spacecraft-brand-guidelines`, `steelbore-color-palette`) as `.skill` bundles.
+
+## Installation
+
+Every platform folder contains an `INSTALL.md` and, where the platform consumes
+one, a pre-built archive (`.zip`, `.tar.gz`, `.xpi`, `.vsix`). Copy the theme
+file(s) for the slug you want and follow the folder's instructions.
+
+The all-in-one installer (`Scripts/install-spacecraft-software.sh`) and the
+Microsoft Office VBA macro referenced by earlier versions of this README are
+**not yet in the tree** — they remain on the backlog.
+
+## Regenerating
+
+```sh
+cd tools
+python3 -m steelbore_themes generate    # every target
+python3 -m steelbore_themes validate    # exit 1 on any drift or palette violation
+python3 -m steelbore_themes package     # rebuild the archives
 ```
 
-This script will:
-- Install the **Spacecraft Software GTK theme** (GNOME, XFCE, MATE, COSMIC).
-- Apply the **.colors scheme** to KDE Plasma.
-- Set up the **Starship prompt** configuration.
-- Install **terminal color presets** (Alacritty, Kitty, Konsole, Windows Terminal).
-- Apply **browser theme extensions** (Chrome, Edge, Firefox).
-- Configure **LeftWM** and **Niri** tiling window managers.
-- Apply **Linux TTY** TrueColor overrides.
+Plain Python ≥ 3.11, no dependencies. See `tools/README.md` for the renderer
+contract and `AGENTS.md` for the repository invariants.
 
-## 🪟 Windows Installation
-For Windows users, we provide:
-- **Microsoft Office**: VBA macros to recolor Word, Excel, and PowerPoint.
-- **Windows Terminal**: JSON templates for the Spacecraft Software color scheme.
+## Typography (§12)
 
-## 🛠️ Manual Installation
-If you prefer to install components individually, follow the instructions below.
-### Desktop Environments & Window Managers
+Share Tech Mono for headings, Inconsolata for body and code, system
+`monospace` as fallback — all OFL. No proprietary fonts anywhere.
 
-#### GNOME (GTK4/Libadwaita)
-1. Copy the `spacecraft-software-dark` folder to `~/.themes/`.
-2. Run: `gsettings set org.gnome.desktop.interface gtk-theme 'spacecraft-software-dark'`
+## Maintainer
 
-#### KDE Plasma
-1. Copy the `spacecraft-software.colors` file to `~/.local/share/color-schemes/`.
-2. Go to **System Settings** > **Appearance** > **Colors** > **Import**.
+Mohamed Hammad — <Mohamed.Hammad@SpacecraftSoftware.org>
+<https://Theme.SpacecraftSoftware.org/>
 
-#### COSMIC DE
-1. Copy the `spacecraft-software.ron` file to `~/.config/cosmic/themes/`.
-2. Run: `cosmic-settings theme set spacecraft-software`
-
-#### XFCE4 & MATE
-1. Copy the `spacecraft-software-dark` folder to `~/.themes/`.
-2. Run: `xfconf-query -c xsettings -p /Net/ThemeName -s "spacecraft-software-dark"`
-
-#### Tiling WMs (LeftWM/Niri)
-- **LeftWM**: Copy `spacecraft-software.toml` to `~/.config/leftwm/themes/`.
-- **Niri**: Copy `spacecraft-software.ron` to `~/.config/niri/themes/`.
-
-### Terminals & Shells
-
-#### Starship Prompt
-Add the following to your shell profile (`~/.bashrc`, `~/.zshrc`, etc.):
-```bash
-eval "$(starship init bash)"
-```
-
-#### POSIX Shells (Bash, Zsh, Fish)
-Source the `spacecraft-software.sh` script in your shell profile:
-```bash
-source /path/to/Spacecraft-Software/Scripts/spacecraft-software.sh
-```
-
-#### Nushell
-Add to your `env.nu` or `config.nu`:
-```nushell
-source /path/to/Spacecraft-Software/Scripts/spacecraft-software.nu
-```
-
-#### Ion (Redox OS)
-Add to your `ion.rc`:
-```bash
-source /path/to/Spacecraft-Software/Scripts/spacecraft-software.ion
-```
-
-#### Linux TTY
-Run the TTY installation script:
-```bash
-sudo ./install-tty-colors.sh
-```
-
-### Developer Tools & Applications
-
-#### VS Code
-Install the **Spacecraft Software** extension from the VS Code Marketplace.
-
-#### JetBrains IDEs
-1. Copy `spacecraft-software.theme` to `~/.config/JetBrains/<VERSION>/colors/`.
-2. Select it in **Settings** > **Editor** > **Color Scheme**.
-
-#### Browsers (Chrome / Edge / Firefox)
-Install the **Spacecraft Software** theme from the respective extension stores (Chrome Web Store / Firefox Add-ons).
-
-#### Microsoft Office (VBA)
-1. Open Word/Excel/PowerPoint and press `Alt+F11`.
-2. Insert a new module and paste the contents of `Spacecraft-Software-Office-Theme.bas`.
-3. Run the `Apply_Spacecraft_Software_Theme` macro.
-
-#### Sandboxed & Containerized Apps
-- **Flatpak**: `flatpak override --user --env=GTK_THEME=spacecraft-software-dark`
-- **Snap**: `snap set-theme spacecraft-software-dark`
-- **AppImage**: Set `GTK_THEME=spacecraft-software-dark` before execution.
+**Copyright (C) 2026 Mohamed Hammad & Spacecraft Software** · software `GPL-3.0-or-later`, documentation `CC-BY-SA-4.0`

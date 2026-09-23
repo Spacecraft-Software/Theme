@@ -1,18 +1,30 @@
 # Spacecraft Software — Windows Desktop Theme
 
-**Version:** 1.0 | **Author:** Mohamed Hammad | **License:** GPL-3.0-or-later | **Website:** [SpacecraftSoftware.org](https://SpacecraftSoftware.org)
+**Version:** 2.0 | **Author:** Mohamed Hammad | **License:** GPL-3.0-or-later | **Website:** [SpacecraftSoftware.org](https://SpacecraftSoftware.org)
 
 ---
 
 ## Files included
 
+`themes/<slug>/` holds one directory per registered theme of the Steelbore
+palette family (The Steelbore Standard §11), each with three generated
+files:
+
 | File | Purpose |
 |---|---|
-| `Spacecraft-Software.theme` | Main theme definition (INI format per MS spec) |
-| `Spacecraft_Software_wallpaper_blue.png` | Spacecraft Software wallpaper |
-| `Spacecraft-Software-icon.png` | Spacecraft Software logo / icon |
-| `Spacecraft_Software_dark.reg` | Registry tweak — enforces system-wide Dark mode |
-| `Spacecraft_Software_CMD.reg` | Registry tweak — Spacecraft Software colors for `cmd.exe` |
+| `<slug>.theme` | Desktop theme definition (INI format per MS spec) — cursors, wallpaper reference, system colors, visual style |
+| `<slug>-console.reg` | Registry tweak — `cmd.exe` / Console-host colour table (`ColorTable00`–`15`) and font |
+| `<slug>-accent.reg` | Registry tweak — system light/dark mode and the DWM accent colour |
+
+`steelbore` is the default. Every conforming palette also ships a
+`-high-contrast` sibling for accessible mode. All files under `themes/` are
+generated from `Steelbore/steelbore.toml` — do not edit them by hand; edit
+`tools/steelbore_themes/renderers/windows.py` and regenerate.
+
+`Spacecraft_Software_wallpaper_blue.png` and `Spacecraft-Software-icon.png`
+in this directory are shared assets referenced by every `<slug>.theme` file
+by filename; keep them alongside whichever theme directory you install from
+(Step 1 below copies them together).
 
 ---
 
@@ -22,7 +34,9 @@
 
 ### Step 1 — Copy theme files
 
-Theme files can be installed in one of two locations:
+Pick a theme from the table below (`steelbore` if unsure) and copy its three
+files from `themes/<slug>/`, plus the two shared PNGs at the root of this
+directory, into one of:
 
 **Option A — Current user only** *(recommended, no admin needed for the .theme file)*
 
@@ -30,61 +44,84 @@ Theme files can be installed in one of two locations:
 %LOCALAPPDATA%\Microsoft\Windows\Themes\Spacecraft Software\
 ```
 
-Copy `Spacecraft-Software.theme` and `Spacecraft_Software_wallpaper_blue.png` into that folder.
-
 **Option B — All users** *(requires admin)*
 
 ```
 %WinDir%\Resources\Themes\Spacecraft Software\
 ```
 
-Copy `Spacecraft-Software.theme` and `Spacecraft_Software_wallpaper_blue.png` into that folder.
+Copy `<slug>.theme`, `Spacecraft_Software_wallpaper_blue.png` and
+`Spacecraft-Software-icon.png` into that folder.
 
 ### Step 2 — Apply the theme
 
-Double-click `Spacecraft-Software.theme`. Windows will open **Settings → Personalization → Themes** and activate Spacecraft Software automatically.
+Double-click `<slug>.theme`. Windows will open **Settings → Personalization → Themes** and activate it automatically.
 
 Alternatively:
 
 1. Go to **Settings → Personalization → Themes**.
-2. Select **Spacecraft Software** from the list.
+2. Select the theme's display name (e.g. **Steelbore**) from the list.
 
-### Step 3 — Apply Dark Mode (registry)
+### Step 3 — Apply light/dark mode and accent colour (registry)
 
-Double-click `Spacecraft_Software_dark.reg` and accept the UAC prompt. This sets:
+Double-click `<slug>-accent.reg` and accept the UAC prompt. This sets:
 
-- System apps → **Dark**
-- App theme → **Dark**
+- System apps and app theme → **Dark** (or **Light** for `steelbore-navywhite` and `solarized-light`, the family's two light canvases)
+- The DWM accent colour to the theme's accent
 
 A sign-out / sign-in may be required for the change to take full effect.
 
-### Step 4 — Apply CMD colors (optional)
+### Step 4 — Apply console colors (optional)
 
-Double-click `Spacecraft_Software_CMD.reg` and accept the UAC prompt.  
-This sets the default `cmd.exe` console colors to the Spacecraft Software palette.
+Double-click `<slug>-console.reg` and accept the UAC prompt.
+This sets the default `cmd.exe` / Console-host colours and font to match the theme.
 
 ---
 
-## Accent color
+## Choosing a theme
 
-The `.theme` file sets the Aero colorization to **Steel Blue `#4B7EB0`** automatically.
+| Slug | Palette | Notes |
+|------|---------|-------|
+| `steelbore` | Steelbore Modern | **default** |
+| `steelbore-high-contrast` | Steelbore Modern, lifted | accessible mode |
+| `steelbore-blue`, `steelbore-magnetar`, `steelbore-biolume`, `tokyonight`, `steelbore-hanzosteel`, `steelbore-blackpinkpanther`, `steelbore-green`, `steelbore-greenalt` | alternates (§11.3) | each with a `-high-contrast` sibling |
+| `steelbore-navywhite` | Steelbore NavyWhite | the family's light canvas |
+| `steelbore-classic` | Steelbore Classic | the original Void Navy / Molten Amber look (§11.2) |
+| `solarized-dark`, `solarized-light` | Solarized | fidelity palettes (§11.5): reproduced verbatim, **not WCAG-conforming**, no high-contrast sibling |
 
-To set it manually:
+Windows registry `.reg`/`.theme` formats are hex-only; the palette-independent
+`steelbore-mono` theme is not emitted for this target.
 
-1. **Settings → Personalization → Colors**
-2. Toggle **Custom color** under *Accent color*
-3. Enter `#4B7EB0`
+To follow the system-wide theme declaration (§11.6), install the theme whose
+slug matches `SPACECRAFT_THEME` in your environment or
+`$XDG_CONFIG_HOME/steelbore/theme.toml` under WSL/Steelbore OS interop.
+
+---
+
+## Accent colour
+
+Each `<slug>.theme` sets the Aero/DWM colorization to that theme's accent
+role automatically (`ColorizationColor` in `[VisualStyles]`), and
+`<slug>-accent.reg` sets the same colour as the DWM `AccentColor`. To set it
+manually instead, open **Settings → Personalization → Colors**, toggle
+**Custom color** under *Accent color*, and enter the accent hex from
+`Steelbore/steelbore.toml` for the theme you installed.
 
 ---
 
 ## Packaging as a .themepack
 
-A `.themepack` is a renamed `.cab` archive that bundles the theme files for distribution.
+`Spacecraft-Software.themepack` is a renamed `.cab` archive bundling a single
+theme's files for one-click distribution. It is **built by hand on Windows**
+from a chosen `themes/<slug>/` directory plus the shared PNGs and cannot be
+regenerated by the Python tool in this repository — see `AGENTS.md`. To
+rebuild it for a given theme:
 
 ```powershell
 # Run in the Theme\Desktops\Windows\ folder (PowerShell, no admin needed)
+$slug = "steelbore"
 $files = @(
-    "Spacecraft-Software.theme",
+    "themes\$slug\$slug.theme",
     "Spacecraft_Software_wallpaper_blue.png",
     "Spacecraft-Software-icon.png"
 )
@@ -100,12 +137,13 @@ Or simply:
 
 ```powershell
 # Quick method using Compress-Archive + rename (ZIP-based, works on all Win 10/11)
-Compress-Archive -Path Spacecraft-Software.theme, Spacecraft_Software_wallpaper_blue.png, Spacecraft-Software-icon.png `
+$slug = "steelbore"
+Compress-Archive -Path "themes\$slug\$slug.theme", Spacecraft_Software_wallpaper_blue.png, Spacecraft-Software-icon.png `
     -DestinationPath Spacecraft-Software.zip -Force
-Rename-Item Spacecraft-Software.zip Spacecraft-Software.themepack
+Rename-Item Spacecraft-Software.zip Spacecraft-Software.themepack -Force
 ```
 
-Double-clicking `Spacecraft-Software.themepack` will install the theme automatically via Windows.
+Double-clicking `Spacecraft-Software.themepack` will install that theme automatically via Windows.
 
 ---
 
@@ -114,4 +152,4 @@ Double-clicking `Spacecraft-Software.themepack` will install the theme automatic
 1. Go to **Settings → Personalization → Themes**.
 2. Switch to a different theme.
 3. Delete the `Spacecraft Software\` folder from whichever location you used in Step 1.
-4. To revert the registry tweaks, open **Registry Editor** and delete the keys applied by `Spacecraft_Software_dark.reg` and `Spacecraft_Software_CMD.reg`, or re-run them with `DefaultValue=` set to the original values.
+4. To revert the registry tweaks, open **Registry Editor** and delete the keys applied by `<slug>-accent.reg` and `<slug>-console.reg`, or re-run them with the original Windows default values.

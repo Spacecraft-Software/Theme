@@ -1,0 +1,27 @@
+{
+  "id": "spacecraft-software-steelbore-blackpinkpanther-high-contrast-theme",
+  "type": "ms.vss-web.theme",
+  "description": "Steelbore BlackPinkPanther High Contrast theme for Azure DevOps",
+  "targets": [
+    "ms.vss-web.theme-collection"
+  ],
+  "properties": {
+    "name": "Steelbore BlackPinkPanther High Contrast",
+    "uiTheme": "dark",
+    "variables": {
+      "background-color": "#000000",
+      "primary-text-color": "#FFFFFF",
+      "secondary-text-color": "#FF70BE",
+      "primary-button-background": "#FF5FC0",
+      "primary-button-text": "#000000",
+      "accent-color": "#FF5FC0",
+      "error-color": "#FF6B6B",
+      "success-color": "#5BE49B",
+      "warning-color": "#FFC857",
+      "link-color": "#FF70BE",
+      "border-color": "#FF70BE",
+      "card-background": "#2E0020",
+      "input-background": "#18000E"
+    }
+  }
+}

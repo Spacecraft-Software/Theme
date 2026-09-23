@@ -1,0 +1,23 @@
+{
+  "name": "Steelbore Blue",
+  "background": "#0A1024",
+  "foreground": "#E6F0FF",
+  "cursorColor": "#FF8A4B",
+  "selectionBackground": "#0066FF",
+  "black": "#0A1024",
+  "red": "#FF6B6B",
+  "green": "#28C76F",
+  "yellow": "#FFC857",
+  "blue": "#3390FF",
+  "purple": "#3390FF",
+  "cyan": "#FF8A4B",
+  "white": "#E6F0FF",
+  "brightBlack": "#3390FF",
+  "brightRed": "#FF6B6B",
+  "brightGreen": "#28C76F",
+  "brightYellow": "#FFC857",
+  "brightBlue": "#3390FF",
+  "brightPurple": "#3390FF",
+  "brightCyan": "#FF8A4B",
+  "brightWhite": "#E6F0FF"
+}

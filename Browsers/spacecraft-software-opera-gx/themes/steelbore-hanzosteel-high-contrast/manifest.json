@@ -1,0 +1,41 @@
+{
+  "name": "Spacecraft Software \u2014 Steelbore Hanzo Steel High Contrast",
+  "description": "The Spacecraft Software Steelbore Hanzo Steel High Contrast theme for Opera GX (Steelbore palette family, Steelbore Hanzo Steel).",
+  "developer": {
+    "name": "Mohamed Hammad"
+  },
+  "manifest_version": 3,
+  "mod": {
+    "schema_version": 1,
+    "license": "license.txt",
+    "payload": {
+      "theme": {
+        "dark": {
+          "gx_accent": {
+            "h": 50,
+            "s": 98,
+            "l": 53
+          },
+          "gx_secondary_base": {
+            "h": 38,
+            "s": 24,
+            "l": 9
+          }
+        },
+        "light": {
+          "gx_accent": {
+            "h": 50,
+            "s": 98,
+            "l": 53
+          },
+          "gx_secondary_base": {
+            "h": 38,
+            "s": 24,
+            "l": 9
+          }
+        }
+      }
+    }
+  },
+  "version": "2.0"
+}

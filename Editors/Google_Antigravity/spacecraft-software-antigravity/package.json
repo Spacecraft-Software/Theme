@@ -1,33 +1,148 @@
 {
-    "name": "spacecraft-software-antigravity",
-    "displayName": "Spacecraft Software Theme (Antigravity)",
-    "description": "A high-contrast, industrial dark theme for Google Antigravity.",
-    "version": "1.0.0",
-    "publisher": "SteelBore",
-    "author": "Mohamed Hammad",
-    "license": "GPL3+",
-    "icon": "icon.png",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Spacecraft-Software/Theme"
-    },
-    "bugs": {
-        "url": "https://github.com/Spacecraft-Software/Theme/issues"
-    },
-    "homepage": "https://github.com/Spacecraft-Software/Theme",
-    "engines": {
-        "vscode": "^1.60.0"
-    },
-    "categories": [
-        "Themes"
-    ],
-    "contributes": {
-        "themes": [
-            {
-                "label": "Spacecraft Software",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Spacecraft-Software-color-theme.json"
-            }
-        ]
-    }
+  "name": "spacecraft-software-antigravity",
+  "displayName": "Spacecraft Software Themes for Antigravity",
+  "description": "The full Steelbore palette family (The Steelbore Standard \u00a711) as a Google Antigravity theme collection \u2014 Steelbore default, ten alternates, high-contrast siblings, and the Solarized fidelity pair.",
+  "version": "2.0.0",
+  "publisher": "Spacecraft-Software",
+  "author": "Mohamed Hammad",
+  "license": "GPL-3.0-or-later",
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Spacecraft-Software/Theme"
+  },
+  "bugs": {
+    "url": "https://github.com/Spacecraft-Software/Theme/issues"
+  },
+  "homepage": "https://github.com/Spacecraft-Software/Theme",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Steelbore",
+        "uiTheme": "vs-dark",
+        "path": "./themes/steelbore.json"
+      },
+      {
+        "label": "Steelbore High Contrast",
+        "uiTheme": "hc-black",
+        "path": "./themes/steelbore-high-contrast.json"
+      },
+      {
+        "label": "Steelbore Blue",
+        "uiTheme": "vs-dark",
+        "path": "./themes/steelbore-blue.json"
+      },
+      {
+        "label": "Steelbore Blue High Contrast",
+        "uiTheme": "hc-black",
+        "path": "./themes/steelbore-blue-high-contrast.json"
+      },
+      {
+        "label": "Steelbore Magnetar",
+        "uiTheme": "vs-dark",
+        "path": "./themes/steelbore-magnetar.json"
+      },
+      {
+        "label": "Steelbore Magnetar High Contrast",
+        "uiTheme": "hc-black",
+        "path": "./themes/steelbore-magnetar-high-contrast.json"
+      },
+      {
+        "label": "Steelbore Biolume",
+        "uiTheme": "vs-dark",
+        "path": "./themes/steelbore-biolume.json"
+      },
+      {
+        "label": "Steelbore Biolume High Contrast",
+        "uiTheme": "hc-black",
+        "path": "./themes/steelbore-biolume-high-contrast.json"
+      },
+      {
+        "label": "Steelbore NavyWhite",
+        "uiTheme": "vs",
+        "path": "./themes/steelbore-navywhite.json"
+      },
+      {
+        "label": "Steelbore NavyWhite High Contrast",
+        "uiTheme": "hc-light",
+        "path": "./themes/steelbore-navywhite-high-contrast.json"
+      },
+      {
+        "label": "Tokyo Night",
+        "uiTheme": "vs-dark",
+        "path": "./themes/tokyonight.json"
+      },
+      {
+        "label": "Tokyo Night High Contrast",
+        "uiTheme": "hc-black",
+        "path": "./themes/tokyonight-high-contrast.json"
+      },
+      {
+        "label": "Steelbore Hanzo Steel",
+        "uiTheme": "vs-dark",
+        "path": "./themes/steelbore-hanzosteel.json"
+      },
+      {
+        "label": "Steelbore Hanzo Steel High Contrast",
+        "uiTheme": "hc-black",
+        "path": "./themes/steelbore-hanzosteel-high-contrast.json"
+      },
+      {
+        "label": "Steelbore BlackPinkPanther",
+        "uiTheme": "vs-dark",
+        "path": "./themes/steelbore-blackpinkpanther.json"
+      },
+      {
+        "label": "Steelbore BlackPinkPanther High Contrast",
+        "uiTheme": "hc-black",
+        "path": "./themes/steelbore-blackpinkpanther-high-contrast.json"
+      },
+      {
+        "label": "Steelbore Green",
+        "uiTheme": "vs-dark",
+        "path": "./themes/steelbore-green.json"
+      },
+      {
+        "label": "Steelbore Green High Contrast",
+        "uiTheme": "hc-black",
+        "path": "./themes/steelbore-green-high-contrast.json"
+      },
+      {
+        "label": "Steelbore Green Alt",
+        "uiTheme": "vs-dark",
+        "path": "./themes/steelbore-greenalt.json"
+      },
+      {
+        "label": "Steelbore Green Alt High Contrast",
+        "uiTheme": "hc-black",
+        "path": "./themes/steelbore-greenalt-high-contrast.json"
+      },
+      {
+        "label": "Steelbore Classic",
+        "uiTheme": "vs-dark",
+        "path": "./themes/steelbore-classic.json"
+      },
+      {
+        "label": "Steelbore Classic High Contrast",
+        "uiTheme": "hc-black",
+        "path": "./themes/steelbore-classic-high-contrast.json"
+      },
+      {
+        "label": "Solarized Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/solarized-dark.json"
+      },
+      {
+        "label": "Solarized Light",
+        "uiTheme": "vs",
+        "path": "./themes/solarized-light.json"
+      }
+    ]
+  }
 }

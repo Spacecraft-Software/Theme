@@ -1,0 +1,60 @@
+{
+  "manifest_version": 2,
+  "version": "2.0",
+  "name": "Steelbore High Contrast",
+  "description": "Steelbore High Contrast \u2014 the \u00a711.1.1 high-contrast Spacecraft Software theme for Mozilla Firefox.",
+  "author": "Mohamed Hammad",
+  "developer": {
+    "name": "Mohamed Hammad",
+    "url": "https://SpacecraftSoftware.org"
+  },
+  "homepage_url": "https://SpacecraftSoftware.org",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "spacecraft-steelbore-high-contrast-firefox@SpacecraftSoftware.org",
+      "strict_min_version": "63.0"
+    }
+  },
+  "theme": {
+    "colors": {
+      "frame": "#000027",
+      "frame_inactive": "#B3A1FF",
+      "tab_background_text": "#B3A1FF",
+      "toolbar": "#0E2A47",
+      "toolbar_text": "#D9DEE5",
+      "toolbar_field": "#0B1A12",
+      "toolbar_field_text": "#D9DEE5",
+      "toolbar_field_border": "#B3A1FF",
+      "toolbar_field_focus": "#0B1A12",
+      "toolbar_field_border_focus": "#B4FF00",
+      "toolbar_field_highlight": "#FF8A3D",
+      "toolbar_field_highlight_text": "#000027",
+      "toolbar_top_separator": "#B3A1FF",
+      "toolbar_bottom_separator": "#000027",
+      "tab_line": "#FF8A3D",
+      "tab_loading": "#FF8A3D",
+      "tab_selected": "#0E2A47",
+      "tab_text": "#D9DEE5",
+      "ntp_background": "#000027",
+      "ntp_text": "#D9DEE5",
+      "popup": "#0E2A47",
+      "popup_text": "#D9DEE5",
+      "popup_border": "#B3A1FF",
+      "popup_highlight": "#FF8A3D",
+      "popup_highlight_text": "#000027",
+      "sidebar": "#000027",
+      "sidebar_text": "#D9DEE5",
+      "sidebar_border": "#B3A1FF",
+      "sidebar_highlight": "#FF8A3D",
+      "sidebar_highlight_text": "#000027",
+      "bookmark_text": "#D9DEE5",
+      "button_background_hover": "#0E2A47",
+      "button_background_active": "#FF8A3D",
+      "icons": "#D9DEE5",
+      "icons_attention": "#B4FF00"
+    },
+    "properties": {
+      "color_scheme": "dark"
+    }
+  }
+}

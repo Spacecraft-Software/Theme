@@ -1,0 +1,29 @@
+# SPDX-FileCopyrightText: 2026 Mohamed Hammad <Mohamed.Hammad@SpacecraftSoftware.org>
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+[project]
+name = "steelbore-themes"
+version = "2.0.0"
+description = "Renders the Steelbore palette family (Standard §11) into every platform theme format in Spacecraft-Software/Theme"
+requires-python = ">=3.11"
+license = "GPL-3.0-or-later"
+authors = [{ name = "Mohamed Hammad", email = "Mohamed.Hammad@SpacecraftSoftware.org" }]
+dependencies = []
+
+[tool.mypy]
+strict = true
+disallow_any_generics = true
+warn_unreachable = true
+python_version = "3.11"
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["ASYNC", "ANN", "B", "E", "F", "I", "RUF", "TCH", "UP"]
+# Prompt glyphs and typographic dashes emitted into theme files are intentional.
+allowed-confusables = ["❯", "❮", "–", "—", "·"]
+
+[tool.pytest.ini_options]
+filterwarnings = ["error"]

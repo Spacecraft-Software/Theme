@@ -1,0 +1,27 @@
+{
+  "id": "spacecraft-software-steelbore-hanzosteel-high-contrast-theme",
+  "type": "ms.vss-web.theme",
+  "description": "Steelbore Hanzo Steel High Contrast theme for Azure DevOps",
+  "targets": [
+    "ms.vss-web.theme-collection"
+  ],
+  "properties": {
+    "name": "Steelbore Hanzo Steel High Contrast",
+    "uiTheme": "dark",
+    "variables": {
+      "background-color": "#000000",
+      "primary-text-color": "#F5F0E6",
+      "secondary-text-color": "#F4B900",
+      "primary-button-background": "#FCD612",
+      "primary-button-text": "#000000",
+      "accent-color": "#FCD612",
+      "error-color": "#FF8F8F",
+      "success-color": "#5BE49B",
+      "warning-color": "#F7D02A",
+      "link-color": "#F4B900",
+      "border-color": "#F4B900",
+      "card-background": "#1C1811",
+      "input-background": "#0C0A06"
+    }
+  }
+}

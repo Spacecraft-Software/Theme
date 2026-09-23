@@ -1,0 +1,27 @@
+{
+  "id": "spacecraft-software-steelbore-greenalt-high-contrast-theme",
+  "type": "ms.vss-web.theme",
+  "description": "Steelbore Green Alt High Contrast theme for Azure DevOps",
+  "targets": [
+    "ms.vss-web.theme-collection"
+  ],
+  "properties": {
+    "name": "Steelbore Green Alt High Contrast",
+    "uiTheme": "dark",
+    "variables": {
+      "background-color": "#0D0208",
+      "primary-text-color": "#D7F5E0",
+      "secondary-text-color": "#25B85F",
+      "primary-button-background": "#00FF41",
+      "primary-button-text": "#0D0208",
+      "accent-color": "#00FF41",
+      "error-color": "#FF6B6B",
+      "success-color": "#00B81C",
+      "warning-color": "#FFC857",
+      "link-color": "#25B85F",
+      "border-color": "#25B85F",
+      "card-background": "#08180C",
+      "input-background": "#030303"
+    }
+  }
+}

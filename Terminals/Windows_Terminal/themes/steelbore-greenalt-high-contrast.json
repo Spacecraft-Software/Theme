@@ -1,0 +1,23 @@
+{
+  "name": "Steelbore Green Alt High Contrast",
+  "background": "#0D0208",
+  "foreground": "#D7F5E0",
+  "cursorColor": "#00FF41",
+  "selectionBackground": "#00FF41",
+  "black": "#0D0208",
+  "red": "#FF6B6B",
+  "green": "#00B81C",
+  "yellow": "#FFC857",
+  "blue": "#25B85F",
+  "purple": "#00FF41",
+  "cyan": "#00FF41",
+  "white": "#D7F5E0",
+  "brightBlack": "#25B85F",
+  "brightRed": "#FF6B6B",
+  "brightGreen": "#00B81C",
+  "brightYellow": "#FFC857",
+  "brightBlue": "#25B85F",
+  "brightPurple": "#00FF41",
+  "brightCyan": "#00FF41",
+  "brightWhite": "#D7F5E0"
+}

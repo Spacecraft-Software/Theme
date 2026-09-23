@@ -1,0 +1,30 @@
+{
+  "name": "Steelbore High Contrast",
+  "version": "2.0",
+  "author": "Mohamed Hammad",
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://SpacecraftSoftware.org",
+  "dark": true,
+  "terminal": {
+    "background": "#000027",
+    "foreground": "#D9DEE5",
+    "cursor": "#B4FF00",
+    "selectionBackground": "#FF8A3D",
+    "black": "#000027",
+    "red": "#FF7A7A",
+    "green": "#B4FF00",
+    "yellow": "#EE7BFF",
+    "blue": "#B3A1FF",
+    "magenta": "#FF8A3D",
+    "cyan": "#B4FF00",
+    "white": "#D9DEE5",
+    "brightBlack": "#B3A1FF",
+    "brightRed": "#FF7A7A",
+    "brightGreen": "#B4FF00",
+    "brightYellow": "#EE7BFF",
+    "brightBlue": "#B3A1FF",
+    "brightMagenta": "#FF8A3D",
+    "brightCyan": "#B4FF00",
+    "brightWhite": "#D9DEE5"
+  }
+}

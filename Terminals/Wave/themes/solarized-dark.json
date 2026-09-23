@@ -1,0 +1,30 @@
+{
+  "name": "Solarized Dark",
+  "version": "2.0",
+  "author": "Mohamed Hammad",
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://SpacecraftSoftware.org",
+  "dark": true,
+  "terminal": {
+    "background": "#002B36",
+    "foreground": "#839496",
+    "cursor": "#2AA198",
+    "selectionBackground": "#268BD2",
+    "black": "#002B36",
+    "red": "#DC322F",
+    "green": "#859900",
+    "yellow": "#B58900",
+    "blue": "#6C71C4",
+    "magenta": "#268BD2",
+    "cyan": "#2AA198",
+    "white": "#839496",
+    "brightBlack": "#6C71C4",
+    "brightRed": "#DC322F",
+    "brightGreen": "#859900",
+    "brightYellow": "#B58900",
+    "brightBlue": "#6C71C4",
+    "brightMagenta": "#268BD2",
+    "brightCyan": "#2AA198",
+    "brightWhite": "#839496"
+  }
+}

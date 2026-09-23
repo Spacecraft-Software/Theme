@@ -1,0 +1,41 @@
+{
+  "name": "Spacecraft Software \u2014 Solarized Dark",
+  "description": "The Spacecraft Software Solarized Dark theme for Opera GX (Steelbore palette family, Solarized Dark).",
+  "developer": {
+    "name": "Mohamed Hammad"
+  },
+  "manifest_version": 3,
+  "mod": {
+    "schema_version": 1,
+    "license": "license.txt",
+    "payload": {
+      "theme": {
+        "dark": {
+          "gx_accent": {
+            "h": 205,
+            "s": 69,
+            "l": 49
+          },
+          "gx_secondary_base": {
+            "h": 192,
+            "s": 81,
+            "l": 14
+          }
+        },
+        "light": {
+          "gx_accent": {
+            "h": 205,
+            "s": 69,
+            "l": 49
+          },
+          "gx_secondary_base": {
+            "h": 192,
+            "s": 81,
+            "l": 14
+          }
+        }
+      }
+    }
+  },
+  "version": "2.0"
+}

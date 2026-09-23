@@ -1,0 +1,60 @@
+{
+  "manifest_version": 2,
+  "version": "2.0",
+  "name": "Steelbore BlackPinkPanther High Contrast",
+  "description": "Steelbore BlackPinkPanther High Contrast \u2014 the \u00a711.1.1 high-contrast Spacecraft Software theme for Tor Browser.",
+  "author": "Mohamed Hammad",
+  "developer": {
+    "name": "Mohamed Hammad",
+    "url": "https://SpacecraftSoftware.org"
+  },
+  "homepage_url": "https://SpacecraftSoftware.org",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "spacecraft-steelbore-blackpinkpanther-high-contrast-tor@SpacecraftSoftware.org",
+      "strict_min_version": "63.0"
+    }
+  },
+  "theme": {
+    "colors": {
+      "frame": "#000000",
+      "frame_inactive": "#FF70BE",
+      "tab_background_text": "#FF70BE",
+      "toolbar": "#2E0020",
+      "toolbar_text": "#FFFFFF",
+      "toolbar_field": "#18000E",
+      "toolbar_field_text": "#FFFFFF",
+      "toolbar_field_border": "#FF70BE",
+      "toolbar_field_focus": "#18000E",
+      "toolbar_field_border_focus": "#FF5FC0",
+      "toolbar_field_highlight": "#FF5FC0",
+      "toolbar_field_highlight_text": "#000000",
+      "toolbar_top_separator": "#FF70BE",
+      "toolbar_bottom_separator": "#000000",
+      "tab_line": "#FF5FC0",
+      "tab_loading": "#FF5FC0",
+      "tab_selected": "#2E0020",
+      "tab_text": "#FFFFFF",
+      "ntp_background": "#000000",
+      "ntp_text": "#FFFFFF",
+      "popup": "#2E0020",
+      "popup_text": "#FFFFFF",
+      "popup_border": "#FF70BE",
+      "popup_highlight": "#FF5FC0",
+      "popup_highlight_text": "#000000",
+      "sidebar": "#000000",
+      "sidebar_text": "#FFFFFF",
+      "sidebar_border": "#FF70BE",
+      "sidebar_highlight": "#FF5FC0",
+      "sidebar_highlight_text": "#000000",
+      "bookmark_text": "#FFFFFF",
+      "button_background_hover": "#2E0020",
+      "button_background_active": "#FF5FC0",
+      "icons": "#FFFFFF",
+      "icons_attention": "#5BE49B"
+    },
+    "properties": {
+      "color_scheme": "dark"
+    }
+  }
+}

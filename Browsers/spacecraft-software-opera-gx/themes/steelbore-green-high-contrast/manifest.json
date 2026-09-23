@@ -1,0 +1,41 @@
+{
+  "name": "Spacecraft Software \u2014 Steelbore Green High Contrast",
+  "description": "The Spacecraft Software Steelbore Green High Contrast theme for Opera GX (Steelbore palette family, Steelbore Green).",
+  "developer": {
+    "name": "Mohamed Hammad"
+  },
+  "manifest_version": 3,
+  "mod": {
+    "schema_version": 1,
+    "license": "license.txt",
+    "payload": {
+      "theme": {
+        "dark": {
+          "gx_accent": {
+            "h": 141,
+            "s": 100,
+            "l": 95
+          },
+          "gx_secondary_base": {
+            "h": 135,
+            "s": 50,
+            "l": 6
+          }
+        },
+        "light": {
+          "gx_accent": {
+            "h": 141,
+            "s": 100,
+            "l": 95
+          },
+          "gx_secondary_base": {
+            "h": 135,
+            "s": 50,
+            "l": 6
+          }
+        }
+      }
+    }
+  },
+  "version": "2.0"
+}

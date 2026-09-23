@@ -1,0 +1,23 @@
+{
+  "name": "Steelbore BlackPinkPanther",
+  "background": "#000000",
+  "foreground": "#FFFFFF",
+  "cursorColor": "#F400A1",
+  "selectionBackground": "#F400A140",
+  "black": "#000000",
+  "red": "#FF6B6B",
+  "green": "#5BE49B",
+  "yellow": "#FFC857",
+  "blue": "#FF46AA",
+  "purple": "#F400A1",
+  "cyan": "#F400A1",
+  "white": "#FFFFFF",
+  "brightBlack": "#FF46AA",
+  "brightRed": "#FF6B6B",
+  "brightGreen": "#5BE49B",
+  "brightYellow": "#FFC857",
+  "brightBlue": "#FF46AA",
+  "brightPurple": "#F400A1",
+  "brightCyan": "#F400A1",
+  "brightWhite": "#FFFFFF"
+}

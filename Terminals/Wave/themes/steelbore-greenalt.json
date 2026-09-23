@@ -1,0 +1,30 @@
+{
+  "name": "Steelbore Green Alt",
+  "version": "2.0",
+  "author": "Mohamed Hammad",
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://SpacecraftSoftware.org",
+  "dark": true,
+  "terminal": {
+    "background": "#0D0208",
+    "foreground": "#D7F5E0",
+    "cursor": "#00FF41",
+    "selectionBackground": "#00FF41",
+    "black": "#0D0208",
+    "red": "#FF6B6B",
+    "green": "#00AD15",
+    "yellow": "#FFC857",
+    "blue": "#1CA152",
+    "magenta": "#00FF41",
+    "cyan": "#00FF41",
+    "white": "#D7F5E0",
+    "brightBlack": "#1CA152",
+    "brightRed": "#FF6B6B",
+    "brightGreen": "#00AD15",
+    "brightYellow": "#FFC857",
+    "brightBlue": "#1CA152",
+    "brightMagenta": "#00FF41",
+    "brightCyan": "#00FF41",
+    "brightWhite": "#D7F5E0"
+  }
+}

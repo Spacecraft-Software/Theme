@@ -1,0 +1,41 @@
+{
+  "name": "Spacecraft Software \u2014 Steelbore Blue",
+  "description": "The Spacecraft Software Steelbore Blue theme for Opera GX (Steelbore palette family, Steelbore Blue).",
+  "developer": {
+    "name": "Mohamed Hammad"
+  },
+  "manifest_version": 3,
+  "mod": {
+    "schema_version": 1,
+    "license": "license.txt",
+    "payload": {
+      "theme": {
+        "dark": {
+          "gx_accent": {
+            "h": 216,
+            "s": 100,
+            "l": 50
+          },
+          "gx_secondary_base": {
+            "h": 221,
+            "s": 45,
+            "l": 11
+          }
+        },
+        "light": {
+          "gx_accent": {
+            "h": 216,
+            "s": 100,
+            "l": 50
+          },
+          "gx_secondary_base": {
+            "h": 221,
+            "s": 45,
+            "l": 11
+          }
+        }
+      }
+    }
+  },
+  "version": "2.0"
+}

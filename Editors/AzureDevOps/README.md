@@ -1,6 +1,17 @@
 # Spacecraft Software Azure DevOps Theme
 
-Port of the Spacecraft Software aesthetic to Azure DevOps.
+The Steelbore palette family (The Steelbore Standard §11), ported to Azure
+DevOps boards and pipelines as an `ms.vss-web.theme` extension — one theme
+per registered palette, `steelbore` as the default.
+
+`themes/<slug>.json` holds each theme's bare contribution object; the
+canonical values behind every role token live in `Steelbore/steelbore.toml`,
+never quoted here (§11.4) — see the `steelbore-color-palette` skill for the
+full contract. `vss-extension.json` is the generated manifest bundling all of
+them; both are produced by `tools/steelbore_themes` from that TOML. Do not
+edit either by hand — edit the renderer
+(`tools/steelbore_themes/renderers/azuredevops.py`) or the TOML upstream and
+regenerate.
 
 ## Packaging
 
@@ -18,7 +29,6 @@ To package this extension for your organization:
 
 3. Upload the generated `.vsix` to your [Azure DevOps Marketplace Management console](https://marketplace.visualstudio.com/manage).
 
-## Palette
-- **Void Navy:** `#000027`
-- **Molten Amber:** `#D98E32`
-- **Steel Blue:** `#4B7EB0`
+See `INSTALL.md` for installing the pre-built
+`SpacecraftSoftware.spacecraft-software-theme-2.0.0.vsix` instead, and for the
+full theme table.

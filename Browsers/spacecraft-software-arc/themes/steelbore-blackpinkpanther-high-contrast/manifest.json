@@ -1,0 +1,127 @@
+{
+  "manifest_version": 3,
+  "version": "2.0",
+  "name": "Steelbore BlackPinkPanther High Contrast",
+  "description": "The Spacecraft Software Steelbore palette family for Arc \u2014 Steelbore BlackPinkPanther High Contrast (Steelbore BlackPinkPanther palette).",
+  "author": "Mohamed Hammad",
+  "homepage_url": "https://Theme.SpacecraftSoftware.org/",
+  "theme": {
+    "colors": {
+      "frame": [
+        0,
+        0,
+        0
+      ],
+      "frame_inactive": [
+        0,
+        0,
+        0
+      ],
+      "frame_incognito": [
+        24,
+        0,
+        14
+      ],
+      "frame_incognito_inactive": [
+        24,
+        0,
+        14
+      ],
+      "toolbar": [
+        46,
+        0,
+        32
+      ],
+      "toolbar_text": [
+        255,
+        255,
+        255
+      ],
+      "tab_text": [
+        255,
+        255,
+        255
+      ],
+      "tab_background_text": [
+        255,
+        112,
+        190
+      ],
+      "tab_background_text_inactive": [
+        255,
+        112,
+        190
+      ],
+      "bookmark_text": [
+        255,
+        255,
+        255
+      ],
+      "ntp_background": [
+        0,
+        0,
+        0
+      ],
+      "ntp_text": [
+        255,
+        255,
+        255
+      ],
+      "ntp_link": [
+        255,
+        112,
+        190
+      ],
+      "ntp_header": [
+        46,
+        0,
+        32
+      ],
+      "ntp_section": [
+        46,
+        0,
+        32
+      ],
+      "ntp_section_text": [
+        255,
+        255,
+        255
+      ],
+      "ntp_section_link": [
+        255,
+        112,
+        190
+      ],
+      "button_background": [
+        46,
+        0,
+        32
+      ],
+      "omnibox_background": [
+        24,
+        0,
+        14
+      ],
+      "omnibox_text": [
+        255,
+        255,
+        255
+      ],
+      "toolbar_button_icon": [
+        255,
+        255,
+        255
+      ]
+    },
+    "tints": {
+      "buttons": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    "properties": {
+      "ntp_background_alignment": "bottom"
+    }
+  }
+}

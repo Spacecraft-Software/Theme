@@ -1,2 +1,7 @@
 Chat.txt
 .claude/settings.local.json
+.agent-log.jsonl
+__pycache__/
+*.pyc
+.mypy_cache/
+.ruff_cache/

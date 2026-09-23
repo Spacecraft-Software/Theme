@@ -1,0 +1,41 @@
+{
+  "name": "Spacecraft Software \u2014 Steelbore Classic",
+  "description": "The Spacecraft Software Steelbore Classic theme for Opera GX (Steelbore palette family, Steelbore Classic).",
+  "developer": {
+    "name": "Mohamed Hammad"
+  },
+  "manifest_version": 3,
+  "mod": {
+    "schema_version": 1,
+    "license": "license.txt",
+    "payload": {
+      "theme": {
+        "dark": {
+          "gx_accent": {
+            "h": 210,
+            "s": 40,
+            "l": 49
+          },
+          "gx_secondary_base": {
+            "h": 240,
+            "s": 100,
+            "l": 8
+          }
+        },
+        "light": {
+          "gx_accent": {
+            "h": 210,
+            "s": 40,
+            "l": 49
+          },
+          "gx_secondary_base": {
+            "h": 240,
+            "s": 100,
+            "l": 8
+          }
+        }
+      }
+    }
+  },
+  "version": "2.0"
+}

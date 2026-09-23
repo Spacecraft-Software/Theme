@@ -1,0 +1,23 @@
+{
+  "name": "Steelbore Magnetar High Contrast",
+  "background": "#141418",
+  "foreground": "#FFFFFF",
+  "cursorColor": "#FDBBFF",
+  "selectionBackground": "#F07BFF",
+  "black": "#141418",
+  "red": "#FF8F8F",
+  "green": "#5BE49B",
+  "yellow": "#FFC857",
+  "blue": "#FC8AFF",
+  "purple": "#F07BFF",
+  "cyan": "#FDBBFF",
+  "white": "#FFFFFF",
+  "brightBlack": "#FC8AFF",
+  "brightRed": "#FF8F8F",
+  "brightGreen": "#5BE49B",
+  "brightYellow": "#FFC857",
+  "brightBlue": "#FC8AFF",
+  "brightPurple": "#F07BFF",
+  "brightCyan": "#FDBBFF",
+  "brightWhite": "#FFFFFF"
+}
