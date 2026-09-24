@@ -11,7 +11,16 @@ theme under `spacecraft-software-antigravity/themes/<slug>.json`.
 from upstream Solarized for interoperability, non-conforming, and not
 adoptable as a project palette.
 
-## Method 1: Manual Installation
+## Method 1: Install from VSIX (Recommended)
+
+1. Open Antigravity.
+2. Open the Command Palette (`Ctrl+Shift+P`).
+3. Type **Extensions: Install from VSIX…**
+4. Select `spacecraft-software-antigravity/spacecraft-software-antigravity-2.0.0.vsix`.
+5. Open Command Palette → **Preferences: Color Theme** → select **Steelbore**
+   (or any theme from the table below).
+
+## Method 2: Manual Installation
 
 1. Copy the `spacecraft-software-antigravity/` folder to the Antigravity
    extensions directory:
@@ -20,15 +29,6 @@ adoptable as a project palette.
 2. Restart the editor.
 3. Open Command Palette → **Preferences: Color Theme** → select **Steelbore**
    (or any theme from the table below).
-
-## Method 2: Build a VSIX
-
-Antigravity does not ship a pre-built `.vsix` for this package; build one
-if your installation needs it:
-
-1. Install `vsce`: `npm install -g @vscode/vsce`
-2. Run `vsce package` inside the `spacecraft-software-antigravity/` folder.
-3. Install the resulting `.vsix` via **Extensions: Install from VSIX…**.
 
 ## Choosing a theme
 

@@ -5,9 +5,8 @@
 One render function serves both vendor directories — Antigravity is a VS Code
 fork and consumes the identical theme JSON and `package.json` shape. A small
 factory builds the two :class:`~steelbore_themes.renderers.Target` objects
-with different ids, directories, package identities and archives; only the
-VS Code target also emits a `.vsix` container manifest pair, since
-Antigravity ships as a folder/zip install only.
+with different ids, directories, package identities and archives; each also
+emits the `.vsix` container manifest pair and a `.vsix` archive.
 """
 
 from __future__ import annotations
@@ -480,7 +479,7 @@ def _make_render_bundle(meta: _PackageMeta) -> BundleFn:
             readme_lines += [
                 "1. Open the Command Palette (`Ctrl+Shift+P`).",
                 "2. Run **Extensions: Install from VSIX…**",
-                "3. Select `spacecraft-software-2.0.0.vsix`.",
+                f"3. Select `{meta.name}-2.0.0.vsix`.",
                 "4. Open the Command Palette → **Preferences: Color Theme** → "
                 f"select **{default_theme.name}** (or any theme from the table "
                 "above).",
@@ -551,6 +550,8 @@ def _make_render_bundle(meta: _PackageMeta) -> BundleFn:
                 'Path="extension/README.md" Addressable="true" />',
                 '    <Asset Type="Microsoft.VisualStudio.Services.Content.License" '
                 'Path="extension/LICENSE" Addressable="true" />',
+                '    <Asset Type="Microsoft.VisualStudio.Services.Icons.Default" '
+                'Path="extension/icon.png" Addressable="true" />',
                 "  </Assets>",
                 "</PackageManifest>",
             ]
@@ -560,6 +561,7 @@ def _make_render_bundle(meta: _PackageMeta) -> BundleFn:
                 '<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">'
                 '<Default Extension=".json" ContentType="application/json"/>'
                 '<Default Extension=".md" ContentType="text/markdown"/>'
+                '<Default Extension=".png" ContentType="image/png"/>'
                 '<Default Extension=".vsixmanifest" ContentType="text/xml"/>'
                 '<Override PartName="/extension/LICENSE" ContentType="text/plain"/>'
                 "</Types>\n"
@@ -612,8 +614,25 @@ _ANTIGRAVITY_META = _PackageMeta(
         "alternates, high-contrast siblings, and the Solarized fidelity pair."
     ),
     homepage="https://github.com/Spacecraft-Software/Theme",
-    ship_vsix=False,
+    ship_vsix=True,
 )
+
+
+def _vsix_archive(target_dir: str, name: str) -> Archive:
+    return Archive(
+        path=f"{target_dir}/{name}-2.0.0.vsix",
+        fmt="vsix",
+        entries=(
+            ("extension.vsixmanifest", "extension.vsixmanifest"),
+            ("[Content_Types].xml", "[Content_Types].xml"),
+            ("package.json", "extension/package.json"),
+            ("README.md", "extension/README.md"),
+            ("LICENSE", "extension/LICENSE"),
+            ("icon.png", "extension/icon.png"),
+            ("themes", "extension/themes"),
+        ),
+    )
+
 
 TARGETS = (
     _make_target(
@@ -637,18 +656,7 @@ TARGETS = (
                     ("../INSTALL.md", "INSTALL.md"),
                 ),
             ),
-            Archive(
-                path="Editors/VSCode/spacecraft-software-theme/spacecraft-software-2.0.0.vsix",
-                fmt="vsix",
-                entries=(
-                    ("extension.vsixmanifest", "extension.vsixmanifest"),
-                    ("[Content_Types].xml", "[Content_Types].xml"),
-                    ("package.json", "extension/package.json"),
-                    ("README.md", "extension/README.md"),
-                    ("LICENSE", "extension/LICENSE"),
-                    ("themes", "extension/themes"),
-                ),
-            ),
+            _vsix_archive("Editors/VSCode/spacecraft-software-theme", _VSCODE_META.name),
         ),
     ),
     _make_target(
@@ -667,6 +675,10 @@ TARGETS = (
                     ("LICENSE", "LICENSE"),
                     ("../INSTALL.md", "INSTALL.md"),
                 ),
+            ),
+            _vsix_archive(
+                "Editors/Google_Antigravity/spacecraft-software-antigravity",
+                _ANTIGRAVITY_META.name,
             ),
         ),
     ),

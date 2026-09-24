@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Language="en-US" Id="spacecraft-software" Version="2.0.0" Publisher="Spacecraft-Software" />
-    <DisplayName>Spacecraft Software Themes</DisplayName>
-    <Description xml:space="preserve">The full Steelbore palette family (The Steelbore Standard §11) as a VS Code theme collection — Steelbore default, ten alternates, high-contrast siblings, and the Solarized fidelity pair.</Description>
+    <Identity Language="en-US" Id="spacecraft-software-antigravity" Version="2.0.0" Publisher="Spacecraft-Software" />
+    <DisplayName>Spacecraft Software Themes for Antigravity</DisplayName>
+    <Description xml:space="preserve">The full Steelbore palette family (The Steelbore Standard §11) as a Google Antigravity theme collection — Steelbore default, ten alternates, high-contrast siblings, and the Solarized fidelity pair.</Description>
     <Tags>theme,color-theme,__web_extension</Tags>
     <Categories>Themes</Categories>
     <GalleryFlags>Public</GalleryFlags>
