@@ -11,7 +11,25 @@ theme under `spacecraft-software-antigravity/themes/<slug>.json`.
 from upstream Solarized for interoperability, non-conforming, and not
 adoptable as a project palette.
 
-## Method 1: Install from VSIX (Recommended)
+## Method 1: The installer script (Recommended)
+
+`Editors/install-extensions.sh` (POSIX sh) and its Nushell twin
+`Editors/install-extensions.nu` install the extension into Antigravity
+(`antigravity`) and Antigravity IDE (`antigravity-ide`), and into any VS Code
+or VSCodium they find, after verifying the signed checksums below. From the
+`Editors/` directory:
+
+```sh
+./install-extensions.sh --dry-run                  # show the plan
+./install-extensions.sh --editor antigravity-ide   # install from the VSIX here
+./install-extensions.sh --source release           # from the latest GitHub release
+```
+
+On NixOS, the FHS-wrapped Antigravity commands open the editor instead of
+installing, so the installer switches those editors to its `unpack` method
+automatically. `nu install-extensions.nu` takes the same flags.
+
+## Method 2: Install from VSIX
 
 1. Open Antigravity.
 2. Open the Command Palette (`Ctrl+Shift+P`).
@@ -34,15 +52,20 @@ sha256sum -c SHA256SUMS
 Both must succeed (`Good "file" signature …`, then `OK` per file) before you
 install.
 
-## Method 2: Manual Installation
+## Method 3: Without the editor's CLI
 
-1. Copy the `spacecraft-software-antigravity/` folder to the Antigravity
-   extensions directory:
-   - **Windows:** `%USERPROFILE%\.antigravity\extensions\` (or equivalent)
-   - **macOS/Linux:** `~/.antigravity/extensions/`
-2. Restart the editor.
-3. Open Command Palette → **Preferences: Color Theme** → select **Steelbore**
-   (or any theme from the table below).
+Copying the folder into the extensions directory is **not enough**: once the
+directory holds an `extensions.json` (it does after any normal install), the
+editor ignores every folder that file does not list. The installer's `unpack`
+method extracts the VSIX and adds the entry for you:
+
+```sh
+./install-extensions.sh --editor antigravity-ide --method unpack
+```
+
+Extensions directories: `~/.antigravity/extensions` (Antigravity) and
+`~/.antigravity-ide/extensions` (Antigravity IDE); on Windows the same names
+under `%USERPROFILE%`. Restart the editor afterwards.
 
 ## Choosing a theme
 

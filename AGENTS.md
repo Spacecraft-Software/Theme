@@ -50,6 +50,58 @@ rm -f SHA256SUMS.sig && ssh-keygen -Y sign -f ~/.ssh/id_ed25519.pub -n file SHA2
 
 `validate` does not check the sums; `sha256sum -c SHA256SUMS` does.
 
+### Editor installers
+
+`Editors/install-extensions.sh` (POSIX sh) and `Editors/install-extensions.nu`
+(Nushell 0.112+) are twins: same flags, stdout rows, JSON envelope,
+diagnostics, and exit codes (0 ok, 1 editor failed, 2 usage, 3 not found,
+6 verification failed). Change both in the same commit. The one unavoidable
+difference: Nushell rejects an unknown flag in its own parser, exit 1.
+
+- **Editors**: `code`, `code-flatpak`, `codium`, `codium-flatpak`,
+  `antigravity` (`~/.antigravity`), `antigravity-ide` (`~/.antigravity-ide`).
+  Antigravity gets `spacecraft-software.themes-antigravity`, the rest
+  `spacecraft-software.themes`. Auto-detection requires the editor's command;
+  a bare extensions directory counts only with an explicit `--editor`.
+- **Methods**: `cli` runs `--install-extension … --force`; `unpack` extracts
+  the VSIX and registers it in `extensions.json`. A folder copied into an
+  extensions directory is **ignored** whenever `extensions.json` exists, so
+  never document a plain copy. When `extensions.json` is absent the installer
+  must not create it (that would hide every other extension). `auto` picks
+  `unpack` for Antigravity commands that resolve into `/nix/store/`: the
+  Nix FHS wrappers launch the GUI and never return.
+- **Trust anchor**: both scripts embed the signer
+  (`Mohamed.Hammad@SpacecraftSoftware.org`) and its public key. If the key
+  rotates, update both scripts and `Editors/allowed_signers` together, then
+  re-sign `SHA256SUMS`. The installers find a VSIX by the **basename** of its
+  `SHA256SUMS` line, so the same signed file serves the repository tree and a
+  flat release.
+- **Network**: downloads happen only on explicit `--source release` (GitHub
+  releases of `Spacecraft-Software/Theme`) or `--source marketplace` (the
+  editor's own gallery). `--source auto` stays offline in a checkout. No
+  telemetry.
+- **Verify a change** with `shellcheck -s sh`, a run under `dash` (`/bin/sh`
+  may be bash, which hides bashisms), and `nu`, using `--extensions-dir`
+  into a throwaway directory so no real profile is touched. For Flatpak
+  VS Code that directory must sit under
+  `~/.var/app/com.visualstudio.code/`, which the sandbox can see.
+
+### GitHub releases
+
+A release is cut by the maintainer, not CI: the checksums are signed with the
+maintainer's key, which never leaves the workstation. The installers depend
+on this asset layout, flat, on a tag `v<version>` matching the VSIX version:
+
+| Asset | Source |
+|-------|--------|
+| `themes-<version>.vsix` | `Editors/VSCode/spacecraft-software-theme/` |
+| `themes-antigravity-<version>.vsix` | `Editors/Google_Antigravity/spacecraft-software-antigravity/` |
+| `SHA256SUMS`, `SHA256SUMS.sig`, `allowed_signers` | `Editors/`, uploaded unchanged |
+| `install-extensions.sh`, `install-extensions.nu` | `Editors/` |
+
+`--source release` without `--release` resolves `releases/latest`, which only
+exists once a non-prerelease release does.
+
 **Aspirational README references** — `README.md` documents several artifacts
 that don't yet exist in the tree. Don't try to invoke or locate them; treat them
 as a backlog:

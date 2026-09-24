@@ -10,7 +10,23 @@ is the default; every palette also ships a `-high-contrast` sibling for
 **fidelity palettes** — reproduced verbatim from upstream Solarized for
 interoperability, non-conforming, and not adoptable as a project palette.
 
-## Method 1: Install from VSIX (Recommended)
+## Method 1: The installer script (Recommended)
+
+`Editors/install-extensions.sh` (POSIX sh) and its Nushell twin
+`Editors/install-extensions.nu` install the extension into every VS Code,
+VSCodium and Antigravity they detect, native or Flatpak, after verifying the
+signed checksums below. From the `Editors/` directory:
+
+```sh
+./install-extensions.sh --dry-run          # show the plan
+./install-extensions.sh                    # install from the VSIX files here
+./install-extensions.sh --source release   # from the latest GitHub release
+./install-extensions.sh --source marketplace --editor code
+```
+
+`nu install-extensions.nu` takes the same flags. `--help` lists them all.
+
+## Method 2: Install from VSIX
 
 1. Open VS Code.
 2. Open the Command Palette (`Ctrl+Shift+P`).
@@ -34,18 +50,22 @@ sha256sum -c SHA256SUMS
 Both must succeed (`Good "file" signature …`, then `OK` per file) before you
 install.
 
-## Method 2: Manual Installation
+## Method 3: Without the VS Code CLI
 
-1. Copy the entire `spacecraft-software-theme/` folder to your VS Code
-   extensions directory:
-   - **Windows:** `%USERPROFILE%\.vscode\extensions\`
-   - **macOS:** `~/.vscode/extensions/`
-   - **Linux:** `~/.vscode/extensions/`
-2. Restart VS Code.
-3. Open Command Palette → **Preferences: Color Theme** → select a theme from
-   the table below.
+Copying the folder into the extensions directory is **not enough**: once the
+directory holds an `extensions.json` (it does after any normal install), VS
+Code ignores every folder that file does not list. The installer's `unpack`
+method extracts the VSIX and adds the entry for you:
 
-## Method 3: Package and Publish
+```sh
+./install-extensions.sh --editor code --method unpack
+```
+
+Extensions directories: `~/.vscode/extensions` (native),
+`~/.var/app/com.visualstudio.code/data/vscode/extensions` (Flatpak),
+`%USERPROFILE%\.vscode\extensions` (Windows). Restart VS Code afterwards.
+
+## Method 4: Package and Publish
 
 1. Install `vsce`: `npm install -g @vscode/vsce`
 2. Run `vsce package` inside the `spacecraft-software-theme/` folder.
