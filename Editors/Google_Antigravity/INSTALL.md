@@ -20,6 +20,20 @@ adoptable as a project palette.
 5. Open Command Palette → **Preferences: Color Theme** → select **Steelbore**
    (or any theme from the table below).
 
+### Verify the VSIX first (optional)
+
+`Editors/SHA256SUMS` lists the checksum of every pre-built `.vsix` and is
+signed with the maintainer's Ed25519 SSH key. From the `Editors/` directory:
+
+```sh
+ssh-keygen -Y verify -f allowed_signers -I Mohamed.Hammad@SpacecraftSoftware.org \
+  -n file -s SHA256SUMS.sig < SHA256SUMS
+sha256sum -c SHA256SUMS
+```
+
+Both must succeed (`Good "file" signature …`, then `OK` per file) before you
+install.
+
 ## Method 2: Manual Installation
 
 1. Copy the `spacecraft-software-antigravity/` folder to the Antigravity
