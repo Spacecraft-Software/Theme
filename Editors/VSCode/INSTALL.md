@@ -15,10 +15,24 @@ interoperability, non-conforming, and not adoptable as a project palette.
 1. Open VS Code.
 2. Open the Command Palette (`Ctrl+Shift+P`).
 3. Type **Extensions: Install from VSIX…**
-4. Select `spacecraft-software-theme/spacecraft-software-2.0.0.vsix`.
+4. Select `spacecraft-software-theme/themes-2.0.0.vsix`.
 5. Restart VS Code when prompted.
 6. Open Command Palette → **Preferences: Color Theme** → select **Steelbore**
    (or any theme from the table below).
+
+### Verify the VSIX first (optional)
+
+`Editors/SHA256SUMS` lists the checksum of every pre-built `.vsix` and is
+signed with the maintainer's Ed25519 SSH key. From the `Editors/` directory:
+
+```sh
+ssh-keygen -Y verify -f allowed_signers -I Mohamed.Hammad@SpacecraftSoftware.org \
+  -n file -s SHA256SUMS.sig < SHA256SUMS
+sha256sum -c SHA256SUMS
+```
+
+Both must succeed (`Good "file" signature …`, then `OK` per file) before you
+install.
 
 ## Method 2: Manual Installation
 

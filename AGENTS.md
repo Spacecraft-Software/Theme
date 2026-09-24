@@ -37,6 +37,19 @@ pre-built archive (`.zip` / `.tar.gz` / `.xpi` / `.vsix`). Archives are
 deliverables rebuilt by `package` — treat them as stale until rebuilt, and
 rebuild them in the same commit as a renderer change.
 
+`Editors/SHA256SUMS` covers both `.vsix` files and is signed by the maintainer
+(`Editors/SHA256SUMS.sig`, verified against `Editors/allowed_signers`). VSIX
+builds are reproducible, so the sums only change when a VSIX's content does —
+but when one does, regenerate and re-sign in the same commit, from `Editors/`:
+
+```sh
+sha256sum VSCode/spacecraft-software-theme/*.vsix \
+  Google_Antigravity/spacecraft-software-antigravity/*.vsix > SHA256SUMS
+rm -f SHA256SUMS.sig && ssh-keygen -Y sign -f ~/.ssh/id_ed25519.pub -n file SHA256SUMS
+```
+
+`validate` does not check the sums; `sha256sum -c SHA256SUMS` does.
+
 **Aspirational README references** — `README.md` documents several artifacts
 that don't yet exist in the tree. Don't try to invoke or locate them; treat them
 as a backlog:
