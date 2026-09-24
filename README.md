@@ -74,6 +74,13 @@ Every platform folder contains an `INSTALL.md` and, where the platform consumes
 one, a pre-built archive (`.zip`, `.tar.gz`, `.xpi`, `.vsix`). Copy the theme
 file(s) for the slug you want and follow the folder's instructions.
 
+For VS Code, VSCodium, Antigravity and Antigravity IDE, native or Flatpak,
+`Editors/install-extensions.sh` (POSIX sh) or `Editors/install-extensions.nu`
+(Nushell) installs the extension into every editor it detects. It installs
+from the VSIX files in this tree, a GitHub release, or the VS Code Marketplace
+and Open VSX, and checks the signed `Editors/SHA256SUMS` first. Run it with
+`--help`.
+
 The all-in-one installer (`Scripts/install-spacecraft-software.sh`) and the
 Microsoft Office VBA macro referenced by earlier versions of this README are
 **not yet in the tree** — they remain on the backlog.
