@@ -63,13 +63,19 @@ difference: Nushell rejects an unknown flag in its own parser, exit 1.
   Antigravity gets `spacecraft-software.themes-antigravity`, the rest
   `spacecraft-software.themes`. Auto-detection requires the editor's command;
   a bare extensions directory counts only with an explicit `--editor`.
+  `antigravity` is never auto-detected: that command now belongs to
+  Antigravity 2.0, which is not a VS Code fork and takes no extensions, so the
+  target serves only legacy Antigravity 1.x IDE installs named explicitly.
 - **Methods**: `cli` runs `--install-extension … --force`; `unpack` extracts
   the VSIX and registers it in `extensions.json`. A folder copied into an
   extensions directory is **ignored** whenever `extensions.json` exists, so
   never document a plain copy. When `extensions.json` is absent the installer
   must not create it (that would hide every other extension). `auto` picks
-  `unpack` for Antigravity commands that resolve into `/nix/store/`: the
-  Nix FHS wrappers launch the GUI and never return.
+  `unpack` for Antigravity commands that resolve into `/nix/store/`: older
+  `antigravity-nix` wrappers exec the Electron binary, launch the GUI, and
+  never return. From `antigravity-nix` commit "fix(ide): launch through the
+  upstream CLI script" on, `--method cli` works there too; `auto` keeps
+  `unpack` because a wrapper's age cannot be told from its path.
 - **Trust anchor**: both scripts embed the signer
   (`Mohamed.Hammad@SpacecraftSoftware.org`) and its public key. If the key
   rotates, update both scripts and `Editors/allowed_signers` together, then

@@ -14,9 +14,11 @@ adoptable as a project palette.
 ## Method 1: The installer script (Recommended)
 
 `Editors/install-extensions.sh` (POSIX sh) and its Nushell twin
-`Editors/install-extensions.nu` install the extension into Antigravity
-(`antigravity`) and Antigravity IDE (`antigravity-ide`), and into any VS Code
-or VSCodium they find, after verifying the signed checksums below. From the
+`Editors/install-extensions.nu` install the extension into Antigravity IDE
+(`antigravity-ide`), and into any VS Code or VSCodium they find, after
+verifying the signed checksums below. The legacy Antigravity 1.x IDE, whose
+command was `antigravity`, is targeted only with `--editor antigravity`:
+Antigravity 2.0 reuses that name and takes no extensions. From the
 `Editors/` directory:
 
 ```sh
@@ -25,9 +27,10 @@ or VSCodium they find, after verifying the signed checksums below. From the
 ./install-extensions.sh --source release           # from the latest GitHub release
 ```
 
-On NixOS, the FHS-wrapped Antigravity commands open the editor instead of
-installing, so the installer switches those editors to its `unpack` method
-automatically. `nu install-extensions.nu` takes the same flags.
+On NixOS, older `antigravity-nix` wrappers open the editor instead of
+installing, so for Nix-installed Antigravity the installer uses its `unpack`
+method by default. With a current `antigravity-nix`, `--method cli` works as
+well. `nu install-extensions.nu` takes the same flags.
 
 ## Method 2: Install from VSIX
 

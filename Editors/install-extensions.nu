@@ -13,6 +13,10 @@ const WEBSITE = "https://Theme.SpacecraftSoftware.org/"
 const SIGNER = "Mohamed.Hammad@SpacecraftSoftware.org"
 const SIGNER_KEY = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICAwZ9xGo7DR5LMIyJv6VoyoRrcgZXLPF76zdSYrQT/f"
 const ALL_EDITORS = [code code-flatpak codium codium-flatpak antigravity antigravity-ide]
+# `antigravity` is the legacy Antigravity 1.x IDE command; Antigravity 2.0
+# reuses that name for an app that takes no extensions, so it is never
+# auto-detected, only installed into when named with --editor.
+const AUTO_EDITORS = [code code-flatpak codium codium-flatpak antigravity-ide]
 
 const EXIT_FAIL = 1
 const EXIT_USAGE = 2
@@ -407,7 +411,7 @@ def install-editor [ctx: record name: string]: nothing -> any {
 def main [
     --source: string = "auto" # marketplace, local, release or auto
     --release: string = "latest" # Release tag for --source release
-    --editor: string = "" # Comma-separated editors (default: all detected)
+    --editor: string = "" # Comma-separated editors (default: all detected; antigravity only when named)
     --method: string = "auto" # cli, unpack or auto
     --extensions-dir: string = "" # Extensions directory (one editor only)
     --insecure-skip-signature # Check sums without verifying their signature
@@ -498,7 +502,7 @@ def main [
     })
 
     let explicit = ($editor | is-not-empty)
-    let editors = (if $explicit { $editor | split row "," | str trim | where { |x| $x != "" } } else { $ALL_EDITORS })
+    let editors = (if $explicit { $editor | split row "," | str trim | where { |x| $x != "" } } else { $AUTO_EDITORS })
     for e in $editors {
         if $e not-in $ALL_EDITORS {
             die $ctx $EXIT_USAGE USAGE $"unknown editor: ($e)" $"($PROG) --editor code"

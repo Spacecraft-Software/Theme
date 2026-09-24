@@ -15,7 +15,10 @@ PUBLISHER=spacecraft-software
 WEBSITE=https://Theme.SpacecraftSoftware.org/
 SIGNER=Mohamed.Hammad@SpacecraftSoftware.org
 SIGNER_KEY='ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICAwZ9xGo7DR5LMIyJv6VoyoRrcgZXLPF76zdSYrQT/f'
-ALL_EDITORS='code code-flatpak codium codium-flatpak antigravity antigravity-ide'
+# `antigravity` is the legacy Antigravity 1.x IDE command; Antigravity 2.0
+# reuses that name for an app that takes no extensions, so it is never
+# auto-detected, only installed into when named with --editor.
+AUTO_EDITORS='code code-flatpak codium codium-flatpak antigravity-ide'
 
 EXIT_FAIL=1
 EXIT_USAGE=2
@@ -52,7 +55,8 @@ Options:
                                      otherwise marketplace (default)
   --release <tag>     Release tag for --source release (default: latest)
   --editor <list>     Comma-separated editors to target (default: all
-                      detected): $ALL_EDITORS
+                      detected): $AUTO_EDITORS
+                      antigravity (the Antigravity 1.x IDE) only when named
   --method <m>        cli     the editor's --install-extension
                       unpack  extract the VSIX into the extensions
                               directory and register it
@@ -311,7 +315,7 @@ if [ -n "$OPT_EDITORS" ]; then
 	done
 	EXPLICIT=1
 else
-	EDITORS=$ALL_EDITORS
+	EDITORS=$AUTO_EDITORS
 	EXPLICIT=0
 fi
 if [ -n "$OPT_EXTDIR" ]; then
