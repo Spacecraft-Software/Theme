@@ -15,7 +15,7 @@ interoperability, non-conforming, and not adoptable as a project palette.
 1. Open VS Code.
 2. Open the Command Palette (`Ctrl+Shift+P`).
 3. Type **Extensions: Install from VSIX…**
-4. Select `spacecraft-software-theme/spacecraft-software-2.0.0.vsix`.
+4. Select `spacecraft-software-theme/themes-2.0.0.vsix`.
 5. Restart VS Code when prompted.
 6. Open Command Palette → **Preferences: Color Theme** → select **Steelbore**
    (or any theme from the table below).

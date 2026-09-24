@@ -43,7 +43,7 @@ Open the Command Palette → **Preferences: Color Theme** and pick one by its Na
 
 1. Open the Command Palette (`Ctrl+Shift+P`).
 2. Run **Extensions: Install from VSIX…**
-3. Select `spacecraft-software-antigravity-2.0.0.vsix`.
+3. Select `themes-antigravity-2.0.0.vsix`.
 4. Open the Command Palette → **Preferences: Color Theme** → select **Steelbore** (or any theme from the table above).
 
 ## Steelbore — the default palette

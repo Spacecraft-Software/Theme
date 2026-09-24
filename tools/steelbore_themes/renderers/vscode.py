@@ -594,7 +594,7 @@ def _make_target(
 
 
 _VSCODE_META = _PackageMeta(
-    name="spacecraft-software",
+    name="themes",
     display_name="Spacecraft Software Themes",
     description=(
         "The full Steelbore palette family (The Steelbore Standard §11) as a "
@@ -606,7 +606,7 @@ _VSCODE_META = _PackageMeta(
 )
 
 _ANTIGRAVITY_META = _PackageMeta(
-    name="spacecraft-software-antigravity",
+    name="themes-antigravity",
     display_name="Spacecraft Software Themes for Antigravity",
     description=(
         "The full Steelbore palette family (The Steelbore Standard §11) as a "
@@ -643,6 +643,7 @@ TARGETS = (
             "themes/Spacecraft-Software-color-theme.json",
             "../settings.json",
             "spacecraft-software-1.0.0.vsix",
+            "spacecraft-software-2.0.0.vsix",
         ),
         archives=(
             Archive(

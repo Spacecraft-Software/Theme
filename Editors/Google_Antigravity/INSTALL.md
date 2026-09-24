@@ -16,7 +16,7 @@ adoptable as a project palette.
 1. Open Antigravity.
 2. Open the Command Palette (`Ctrl+Shift+P`).
 3. Type **Extensions: Install from VSIX…**
-4. Select `spacecraft-software-antigravity/spacecraft-software-antigravity-2.0.0.vsix`.
+4. Select `spacecraft-software-antigravity/themes-antigravity-2.0.0.vsix`.
 5. Open Command Palette → **Preferences: Color Theme** → select **Steelbore**
    (or any theme from the table below).
 
